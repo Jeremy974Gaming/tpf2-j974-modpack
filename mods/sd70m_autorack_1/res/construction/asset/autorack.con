@@ -1,0 +1,108 @@
+local ParamBuilder = require "parambuilder_v1_1"
+local sd70m_autorack_positionx = ParamBuilder.Slider("sd70m_autorack_offsetx", _("name_sd70m_offsetx"), ParamBuilder.rangeSymm(1,0.01), 1/0.01, _("name_sd70m_offsetx_tooltip") )
+
+function data()
+
+return { 
+	type = "ASSET_TRACK",
+	description = {
+			description = _("desc_autorack"),
+			name = _("Bi-Level Autorack"),
+	},
+	availability =
+	{
+			yearFrom = 1977,
+			yearTo = 0
+	},
+	buildMode = "MULTI",
+	categories = { "tracks" },
+	order = -1977,
+	skipCollision = true,
+	autoRemovable = false,
+	params = {
+		
+		{
+			key = "sd70m_position",
+			name = _("name_sd70m_height"),
+			values = { _("name_sd70m_ground"), _("name_sd70m_rail") },
+			defaultIndex = 1,
+		},
+		sd70m_autorack_positionx.params,
+		{
+			key = "type_autorack",
+			name = _("name_sd70m_type"),
+			uiType = "COMBOBOX",
+			values = { _("name_sd70m_yellow"), _("name_sd70m_red"), _("name_sd70m_blue"), _("name_sd70m_turquoise"), _("name_sd70m_brown"), _("name_sd70m_green"), _("name_sd70m_black") },
+			defaultIndex = 0,
+		},
+		{
+			key = "eot_autorack",
+			uiType = "CHECKBOX",
+			name = _("name_sd70m_eot"),
+			values = {"0", "1"},
+			defaultIndex = 0,
+		},
+	},
+		updateFn = function(params)
+		local trax = sd70m_autorack_positionx.getValue(params)
+		local height = 0
+		if params.sd70m_position == 1 then
+			height = 1.05
+		end
+		
+	local result = { }
+	result.models = { }
+
+
+	if params.type_autorack == 0 then
+			result.models[#result.models+1] = 
+			{id = "asset/autorack/autorack.mdl",
+			transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, trax, 0, height, 1 }}
+			
+	elseif params.type_autorack == 1 then
+			result.models[#result.models+1] = 
+			{id = "asset/autorack/autorack_red.mdl",
+			transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, trax, 0, height, 1 }}
+			
+	elseif params.type_autorack == 2 then
+			result.models[#result.models+1] = 
+			{id = "asset/autorack/autorack_blue.mdl",
+			transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, trax, 0, height, 1 }}
+			
+	elseif params.type_autorack == 3 then
+			result.models[#result.models+1] = 
+			{id = "asset/autorack/autorack_turquoise.mdl",
+			transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, trax, 0, height, 1 }}
+			
+	elseif params.type_autorack == 4 then
+			result.models[#result.models+1] = 
+			{id = "asset/autorack/autorack_brown.mdl",
+			transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, trax, 0, height, 1 }}
+			
+	elseif params.type_autorack == 5 then
+			result.models[#result.models+1] = 
+			{id = "asset/autorack/autorack_green.mdl",
+			transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, trax, 0, height, 1 }}
+			
+	elseif params.type_autorack == 6 then
+			result.models[#result.models+1] = 
+			{id = "asset/autorack/autorack_black.mdl",
+			transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, trax, 0, height, 1 }}
+	end
+	
+	if params.eot_autorack == 1 then
+			result.models[#result.models+1] = 
+			{id = "vehicle/waggon/autorack_eot.mdl",
+			transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, trax, 0, height, 1 }}	
+	end
+
+		result.terrainAlignmentLists = { {
+			type = "EQUAL",
+			faces =  { }
+		} }
+
+		return result
+	end		
+}
+
+end

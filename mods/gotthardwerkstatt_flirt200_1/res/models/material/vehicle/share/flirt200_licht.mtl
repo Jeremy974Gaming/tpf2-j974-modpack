@@ -1,0 +1,30 @@
+function data()
+return {
+	order = -1,
+	params = {
+		emissive_scale = {
+			emissiveScale = { 170.00001525879, 170.00001525879, 170.00001525879, },
+		},
+		fade_out_range = {
+			fadeOutEndDist = 20000,
+			fadeOutStartDist = 10000,
+		},
+		map_emissive = {
+			fileName = "models/vehicle/share/licht.hdr",
+			type = "TWOD",
+			wrapS = "REPEAT",
+			wrapT = "REPEAT",
+		},
+		polygon_offset = {
+			factor = -1,
+			forceDepthWrite = false,
+			units = -1,
+		},
+		two_sided = {
+			flipNormal = true,
+			twoSided = false,
+		},
+	},
+	type = "EMISSIVE",
+}
+end

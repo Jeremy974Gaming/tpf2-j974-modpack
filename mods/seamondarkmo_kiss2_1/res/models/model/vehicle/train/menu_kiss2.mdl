@@ -1,0 +1,216 @@
+local vec3 = require "vec3"
+local transf = require "transf"
+function data()
+return {
+	boundingInfo = {
+		bbMax = { 2.0, 1, 2, },
+		bbMin = { -2.0, -1, 0, },
+	},
+	collider = {
+		params = { },
+		transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+		type = "MESH",
+	},
+	lods = {
+		{
+			node = {
+				children = {
+					{
+						children = {
+							{
+								materials = { "vehicle/train/kiss2_bogie.mtl", },
+								mesh = "vehicle/train/kiss2/kiss2_lod0_bogie.msh",
+								name = "MSH_kiss2_lod0_bogie_1",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, -0.0384, 1, },
+							},
+							{
+								materials = { "vehicle/train/kiss2_bogie.mtl", },
+								mesh = "vehicle/train/kiss2/kiss2_lod0_traction_wheel.msh",
+								name = "MSH_kiss2_lod0_traction_wheel_1",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 1.25204, 0, 0.4265, 1, },
+							},
+							{
+								materials = { "vehicle/train/kiss2_bogie.mtl", },
+								mesh = "vehicle/train/kiss2/kiss2_lod0_traction_wheel.msh",
+								name = "MSH_kiss2_lod0_traction_wheel_2",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -1.25204, 0, 0.4265, 1, },
+							},
+						},
+						name = "GRP_kiss2_lod0_bogie_1",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						name = "comp",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+				},
+				name = "RootNode",
+				transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+			},
+			static = false,
+			visibleFrom = 0,
+			visibleTo = 180,
+		},
+		{
+			node = {
+				children = {
+					{
+						children = {
+							{
+								materials = { "vehicle/train/kiss2_bogie.mtl", },
+								mesh = "vehicle/train/kiss2/kiss2_lod1_bogie.msh",
+								name = "MSH_kiss2_lod1_bogie_1",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0.43635, 1, },
+							},
+							{
+								materials = { "vehicle/train/kiss2_bogie.mtl", },
+								mesh = "vehicle/train/kiss2/kiss2_lod1_wheel.msh",
+								name = "MSH_kiss2_lod1_wheel_1",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 1.25227, 0, 0.42556, 1, },
+							},
+							{
+								materials = { "vehicle/train/kiss2_bogie.mtl", },
+								mesh = "vehicle/train/kiss2/kiss2_lod1_wheel.msh",
+								name = "MSH_kiss2_lod1_wheel_2",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -1.25227, 0, 0.42556, 1, },
+							},
+						},
+						name = "GRP_kiss2_lod1_bogie_1",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						name = "comp",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+				},
+				name = "RootNode",
+				transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+			},
+			static = false,
+			visibleFrom = 180,
+			visibleTo = 400,
+		},
+		{
+			node = {
+				children = {
+					{
+						children = {
+							{
+								materials = { "vehicle/train/kiss2_bogie.mtl", },
+								mesh = "vehicle/train/kiss2/kiss2_lod3_bogie.msh",
+								name = "MSH_kiss2_lod3_bogie_1",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0.43635, 1, },
+							},
+							{
+								materials = { "vehicle/train/kiss2_bogie.mtl", },
+								mesh = "vehicle/train/kiss2/kiss2_lod3_wheel.msh",
+								name = "MSH_kiss2_lod3_wheel_1",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 1.25227, 0, 0.42556, 1, },
+							},
+							{
+								materials = { "vehicle/train/kiss2_bogie.mtl", },
+								mesh = "vehicle/train/kiss2/kiss2_lod3_wheel.msh",
+								name = "MSH_kiss2_lod3_wheel_2",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -1.25227, 0, 0.42556, 1, },
+							},
+						},
+						name = "GRP_kiss2_lod2_bogie_1",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						name = "comp",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+				},
+				name = "RootNode",
+				transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+			},
+			static = false,
+			visibleFrom = 400,
+			visibleTo = 2500,
+		},
+	},
+	metadata = {
+		availability = {
+			yearFrom = 9998,
+			yearTo = 9999,
+		},
+		cost = {
+			price = -1,
+		},
+		description = {
+			description = _("-"),
+			name = _("StadlerKISS2 Platzhalter"),
+		},
+		emission = {
+			idleEmission = -1,
+			powerEmission = -1,
+			speedEmission = -1,
+		},
+		maintenance = {
+			lifespan = 36525,
+			runningCosts = -1,
+		},
+		railVehicle = {
+			configs = {
+				{
+					axles = { "vehicle/train/kiss2/kiss2_lod0_traction_wheel.msh", },
+					backBackwardParts = { },
+					backForwardParts = { },
+					blinkingLights0 = { },
+					blinkingLights1 = { },
+					frontBackwardParts = { },
+					frontForwardParts = { },
+					innerBackwardParts = { },
+					innerForwardParts = { },
+				},
+				{
+					axles = { "vehicle/train/kiss2/kiss2_lod1_wheel.msh", },
+					backBackwardParts = { },
+					backForwardParts = { },
+					blinkingLights0 = { },
+					blinkingLights1 = { },
+					frontBackwardParts = { },
+					frontForwardParts = { },
+					innerBackwardParts = { },
+					innerForwardParts = { },
+				},
+				{
+					axles = { "vehicle/train/kiss2/kiss2_lod3_wheel.msh", },
+					backBackwardParts = { },
+					backForwardParts = { },
+					blinkingLights0 = { },
+					blinkingLights1 = { },
+					frontBackwardParts = { },
+					frontForwardParts = { },
+					innerBackwardParts = { },
+					innerForwardParts = { },
+				},
+			},
+			engines = {
+				{
+					power = 10,
+					tractiveEffort = 1,
+					type = "DIESEL",
+				},
+			},
+			topSpeed = 44.444444444444,
+			weight = 1.5,
+		},
+		seatProvider = {
+			drivingLicense = "RAIL",
+		},
+		transportVehicle = {
+			carrier = "RAIL",
+			compartments = {
+				{
+					{ },
+				},
+			},
+			loadSpeed = 0,
+			multipleUnitOnly = true,
+		},
+	},
+	version = 1,
+}
+end

@@ -1,0 +1,30 @@
+function data()
+return {
+	order = 0,
+	params = {
+		emissive_scale = {
+			emissiveScale = { 50, 20, 10, },
+		},
+		fade_out_range = {
+			fadeOutEndDist = 20000,
+			fadeOutStartDist = 10000,
+		},
+		map_emissive = {
+			fileName = "models/vehicle/asset/2000_lights.dds",
+			type = "TWOD",
+			wrapS = "REPEAT",
+			wrapT = "REPEAT",
+		},
+		polygon_offset = {
+			factor = -1,
+			forceDepthWrite = false,
+			units = -1,
+		},
+		two_sided = {
+			flipNormal = false,
+			twoSided = false,
+		},
+	},
+	type = "EMISSIVE",
+}
+end

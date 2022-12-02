@@ -1,0 +1,5 @@
+local sbb_ec_base_mats = require "sbb_ec_base_mats"
+
+function data()
+    return sbb_ec_base_mats.exterior_mat("sbb_ec_apm_pano_eurocity", "sbb_ec_apm_pano_eurocity")
+end

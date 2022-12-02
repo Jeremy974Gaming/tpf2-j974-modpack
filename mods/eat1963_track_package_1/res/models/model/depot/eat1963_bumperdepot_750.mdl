@@ -1,0 +1,61 @@
+local global = require "eatglobal_v1_16"
+local transf = global.transf
+local fScale = 750 / 1435
+function data()
+return {
+	boundingInfo = {
+		
+	},
+	collider = {
+		params = {
+			
+		},
+		type = "MESH",
+		
+	},
+	lods = {
+		{
+			animations = {
+				
+			},
+			children = {
+				{
+					id = "railroad/lod_0_bumper.msh",
+					transf = transf.create({-3.5, 0, -0.5}, {0, 0, 180}, {fScale, fScale, fScale}),
+					type = "MESH",
+				},  
+			},
+			events = {
+			},
+			matConfigs = {
+				{
+					0, 0, 
+				}, 
+			},
+			static = false,
+			visibleFrom = 0,
+			visibleTo = 700,
+			
+		}, 
+	},
+	metadata = {
+		vehicleDepot = {
+			carrier = "RAIL",
+			capacity = 5,
+			inNodes = { 0 },
+			outNodes = { 0 },
+		},
+		transportNetworkProvider = {
+			laneLists = {
+				{
+					transportModes = { "TRAIN", "ELECTRIC_TRAIN" },
+					nodes = {
+						{ {  0.5, 0, 0 }, { -10, 0, 0 }, 3.0 },
+						{ {  0.0, 0, 0 }, { -10, 0, 0 }, 3.0 },
+					}
+				}
+			}
+		}
+	},	
+}
+end

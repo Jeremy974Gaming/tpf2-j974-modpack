@@ -1,0 +1,725 @@
+local vec3 = require "vec3"
+local transf = require "transf"
+function data()
+return {
+	boundingInfo = {
+		bbMax = { 11.85, 1.42565, 3.87809, },
+		bbMin = { -11.75, -1.42565, -0.02772, },
+	},
+	collider = {
+		params = { },
+		transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+		type = "MESH",
+	},
+	lods = {
+		{
+			node = {
+				children = {
+					{
+						_meshId = 1,
+						_origMeshId = 1,
+						materials = { "vehicle/waggon/mark_86_ewi_bdt_976_sbb_material_alpha.mtl", "vehicle/waggon/mark_86_ewi_bdt_976_sbb_material_noalpha.mtl", },
+						mesh = "vehicle/waggon/mark_86_ewi_bdt_976_sbb/mark_86_ewi_bdt_976_sbb_mesh_lod_0.msh",
+						name = "MSH_mark_86_ewi_bdt_976_sbb_mesh_lod_0_1",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						_meshId = 2,
+						_origMeshId = 2,
+						animations = {
+							close_all_doors = {
+								params = {
+									id = "mark_86_ewi/mark_86_ewi_b_321_sbb_tuer_1_1_close.ani",
+								},
+								type = "FILE_REF",
+							},
+							close_doors_left = {
+								params = {
+									id = "mark_86_ewi/mark_86_ewi_b_321_sbb_tuer_1_1_close.ani",
+								},
+								type = "FILE_REF",
+							},
+							open_all_doors = {
+								params = {
+									id = "mark_86_ewi/mark_86_ewi_b_321_sbb_tuer_1_1_open.ani",
+								},
+								type = "FILE_REF",
+							},
+							open_doors_left = {
+								params = {
+									id = "mark_86_ewi/mark_86_ewi_b_321_sbb_tuer_1_1_open.ani",
+								},
+								type = "FILE_REF",
+							},
+						},
+						materials = { "vehicle/waggon/mark_86_ewi_bdt_976_sbb_material_alpha.mtl", },
+						mesh = "vehicle/waggon/mark_86_ewi_bdt_976_sbb/mark_86_ewi_bdt_976_sbb_tuer_1_1.msh",
+						name = "MSH_mark_86_ewi_bdt_976_sbb_tuer_1_1_1",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						_meshId = 3,
+						_origMeshId = 3,
+						animations = {
+							close_all_doors = {
+								params = {
+									id = "mark_86_ewi/mark_86_ewi_b_321_sbb_tuer_1_2_close.ani",
+								},
+								type = "FILE_REF",
+							},
+							close_doors_left = {
+								params = {
+									id = "mark_86_ewi/mark_86_ewi_b_321_sbb_tuer_1_2_close.ani",
+								},
+								type = "FILE_REF",
+							},
+							open_all_doors = {
+								params = {
+									id = "mark_86_ewi/mark_86_ewi_b_321_sbb_tuer_1_2_open.ani",
+								},
+								type = "FILE_REF",
+							},
+							open_doors_left = {
+								params = {
+									id = "mark_86_ewi/mark_86_ewi_b_321_sbb_tuer_1_2_open.ani",
+								},
+								type = "FILE_REF",
+							},
+						},
+						materials = { "vehicle/waggon/mark_86_ewi_bdt_976_sbb_material_alpha.mtl", },
+						mesh = "vehicle/waggon/mark_86_ewi_bdt_976_sbb/mark_86_ewi_bdt_976_sbb_tuer_1_2.msh",
+						name = "MSH_mark_86_ewi_bdt_976_sbb_tuer_1_2_1",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						_meshId = 4,
+						_origMeshId = 4,
+						animations = {
+							close_all_doors = {
+								params = {
+									id = "mark_86_ewi/mark_86_ewi_b_321_sbb_tuer_2_1_close.ani",
+								},
+								type = "FILE_REF",
+							},
+							close_doors_right = {
+								params = {
+									id = "mark_86_ewi/mark_86_ewi_b_321_sbb_tuer_2_1_close.ani",
+								},
+								type = "FILE_REF",
+							},
+							open_all_doors = {
+								params = {
+									id = "mark_86_ewi/mark_86_ewi_b_321_sbb_tuer_2_1_open.ani",
+								},
+								type = "FILE_REF",
+							},
+							open_doors_right = {
+								params = {
+									id = "mark_86_ewi/mark_86_ewi_b_321_sbb_tuer_2_1_open.ani",
+								},
+								type = "FILE_REF",
+							},
+						},
+						materials = { "vehicle/waggon/mark_86_ewi_bdt_976_sbb_material_alpha.mtl", },
+						mesh = "vehicle/waggon/mark_86_ewi_bdt_976_sbb/mark_86_ewi_bdt_976_sbb_tuer_2_1.msh",
+						name = "MSH_mark_86_ewi_bdt_976_sbb_tuer_2_1_1",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						_meshId = 5,
+						_origMeshId = 5,
+						animations = {
+							close_all_doors = {
+								params = {
+									id = "mark_86_ewi/mark_86_ewi_b_321_sbb_tuer_2_2_close.ani",
+								},
+								type = "FILE_REF",
+							},
+							close_doors_right = {
+								params = {
+									id = "mark_86_ewi/mark_86_ewi_b_321_sbb_tuer_2_2_close.ani",
+								},
+								type = "FILE_REF",
+							},
+							open_all_doors = {
+								params = {
+									id = "mark_86_ewi/mark_86_ewi_b_321_sbb_tuer_2_2_open.ani",
+								},
+								type = "FILE_REF",
+							},
+							open_doors_right = {
+								params = {
+									id = "mark_86_ewi/mark_86_ewi_b_321_sbb_tuer_2_2_open.ani",
+								},
+								type = "FILE_REF",
+							},
+						},
+						materials = { "vehicle/waggon/mark_86_ewi_bdt_976_sbb_material_alpha.mtl", },
+						mesh = "vehicle/waggon/mark_86_ewi_bdt_976_sbb/mark_86_ewi_bdt_976_sbb_tuer_2_2.msh",
+						name = "MSH_mark_86_ewi_bdt_976_sbb_tuer_2_2_1",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						_meshId = 10,
+						_origMeshId = 15,
+						materials = {"vehicle/asset/mark_86_lights/ug_lights_mark_86.mtl",},
+						mesh = "vehicle/asset/lod_0_light_square_white.msh",
+						name = "MSH_mark_86_light_white_round_4",
+						transf = {-1, 0, 0, 0, 0, 1.2, 0, 0, 0, 0, 0.7, 0, -11.012, 0.755, 1.595, 1,},						
+					},
+					{
+						_meshId = 11,
+						_origMeshId = 16,
+						materials = {"vehicle/asset/mark_86_lights/ug_lights_mark_86.mtl",},
+						mesh = "vehicle/asset/lod_0_light_square_white.msh",
+						name = "MSH_mark_86_light_white_round_4",
+						transf = {-1, 0, 0, 0, 0, 1.2, 0, 0, 0, 0, 0.7, 0, -11.012, -0.775, 1.595, 1,},						
+					},
+					{
+						_meshId = 12,
+						_origMeshId = 17,
+						materials = {"vehicle/asset/mark_86_lights/ug_lights_mark_86.mtl",},
+						mesh = "vehicle/asset/lod_0_light_round_white.msh",
+						name = "MSH_mark_86_light_white_round_4",
+						transf = {-1, 0, 0, 0, 0, 1.03, 0, 0, 0, 0, 1.03, 0, -10.632, 0, 3.668, 1,},						
+					},
+					{
+						_meshId = 13,
+						_origMeshId = 18,
+						materials = {"vehicle/asset/mark_86_lights/ug_light_red_mark_86.mtl",},
+						mesh = "vehicle/asset/lod_0_light_square_white.msh",
+						name = "MSH_mark_86_light_red_round_4",
+						transf = {-1, 0, 0, 0, 0, 0.42, 0, 0, 0, 0, 0.65, 0, -11.012, -0.91, 1.595, 1,},
+					},
+					{
+						children = {
+							{
+								_meshId = 17,
+								_origMeshId = 17,
+								materials = { "vehicle/waggon/mark_86_ewi_bdt_976_sbb_material_noalpha.mtl", },
+								mesh = "vehicle/waggon/mark_86_ewi_b_6914_sbb/mark_86_ewi_b_6914_sbb_achse_1_lod_0.msh",
+								name = "MSH_mark_86_ewi_bdt_976_sbb_achse_1_lod_0_1",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 1.35, 0, 0.4466, 1, },
+							},
+							{
+								_meshId = 18,
+								_origMeshId = 18,
+								materials = { "vehicle/waggon/mark_86_ewi_bdt_976_sbb_material_noalpha.mtl", },
+								mesh = "vehicle/waggon/mark_86_ewi_b_6914_sbb/mark_86_ewi_b_6914_sbb_achse_1_lod_0.msh",
+								name = "MSH_mark_86_ewi_bdt_976_sbb_achse_1_lod_0_2",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -1.35, 0, 0.4466, 1, },
+							},
+							{
+								_meshId = 19,
+								_origMeshId = 19,
+								materials = { "vehicle/waggon/mark_86_ewi_bdt_976_sbb_material_noalpha.mtl", },
+								mesh = "vehicle/waggon/mark_86_ewi_b_6914_sbb/mark_86_ewi_b_6914_sbb_dg_1_mesh_lod_0.msh",
+								name = "MSH_mark_86_ewi_bdt_976_sbb_dg_1_mesh_lod_0_1",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+							},
+						},
+						name = "GRP_mark_86_ewi_bdt_976_sbb_dg_1_group_lod_0_1",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 8.8, 0, 0, 1, },
+					},
+					{
+						children = {
+							{
+								_meshId = 21,
+								_origMeshId = 21,
+								materials = { "vehicle/waggon/mark_86_ewi_bdt_976_sbb_material_noalpha.mtl", },
+								mesh = "vehicle/waggon/mark_86_ewi_b_6914_sbb/mark_86_ewi_b_6914_sbb_achse_1_lod_0.msh",
+								name = "MSH_mark_86_ewi_bdt_976_sbb_achse_1_lod_0_3",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 1.35, 0, 0.4466, 1, },
+							},
+							{
+								_meshId = 22,
+								_origMeshId = 22,
+								materials = { "vehicle/waggon/mark_86_ewi_bdt_976_sbb_material_noalpha.mtl", },
+								mesh = "vehicle/waggon/mark_86_ewi_b_6914_sbb/mark_86_ewi_b_6914_sbb_achse_1_lod_0.msh",
+								name = "MSH_mark_86_ewi_bdt_976_sbb_achse_1_lod_0_4",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -1.35, 0, 0.4466, 1, },
+							},
+							{
+								_meshId = 23,
+								_origMeshId = 23,
+								materials = { "vehicle/waggon/mark_86_ewi_bdt_976_sbb_material_noalpha.mtl", },
+								mesh = "vehicle/waggon/mark_86_ewi_b_6914_sbb/mark_86_ewi_b_6914_sbb_dg_1_mesh_lod_0.msh",
+								name = "MSH_mark_86_ewi_bdt_976_sbb_dg_1_mesh_lod_0_2",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+							},
+						},
+						name = "GRP_mark_86_ewi_bdt_976_sbb_dg_1_group_lod_0_2",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -8.3, 0, 0, 1, },
+					},
+				},
+				name = "RootNode",
+				transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+			},
+			static = false,
+			visibleFrom = 0,
+			visibleTo = 65,
+		},
+		{
+			node = {
+				children = {
+					{
+						_meshId = 1,
+						_origMeshId = 1,
+						materials = { "vehicle/waggon/mark_86_ewi_bdt_976_sbb_material_alpha.mtl", "vehicle/waggon/mark_86_ewi_bdt_976_sbb_material_noalpha.mtl", },
+						mesh = "vehicle/waggon/mark_86_ewi_bdt_976_sbb/mark_86_ewi_bdt_976_sbb_mesh_lod_1.msh",
+						name = "MSH_mark_86_ewi_bdt_976_sbb_mesh_lod_1_1",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						_meshId = 2,
+						_origMeshId = 2,
+						animations = {
+							close_all_doors = {
+								params = {
+									id = "mark_86_ewi/mark_86_ewi_b_321_sbb_tuer_1_1_close.ani",
+								},
+								type = "FILE_REF",
+							},
+							close_doors_left = {
+								params = {
+									id = "mark_86_ewi/mark_86_ewi_b_321_sbb_tuer_1_1_close.ani",
+								},
+								type = "FILE_REF",
+							},
+							open_all_doors = {
+								params = {
+									id = "mark_86_ewi/mark_86_ewi_b_321_sbb_tuer_1_1_open.ani",
+								},
+								type = "FILE_REF",
+							},
+							open_doors_left = {
+								params = {
+									id = "mark_86_ewi/mark_86_ewi_b_321_sbb_tuer_1_1_open.ani",
+								},
+								type = "FILE_REF",
+							},
+						},
+						materials = { "vehicle/waggon/mark_86_ewi_bdt_976_sbb_material_alpha.mtl", },
+						mesh = "vehicle/waggon/mark_86_ewi_bdt_976_sbb/mark_86_ewi_bdt_976_sbb_tuer_1_1.msh",
+						name = "MSH_mark_86_ewi_bdt_976_sbb_tuer_1_1_1_lod_1",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						_meshId = 3,
+						_origMeshId = 3,
+						animations = {
+							close_all_doors = {
+								params = {
+									id = "mark_86_ewi/mark_86_ewi_b_321_sbb_tuer_1_2_close.ani",
+								},
+								type = "FILE_REF",
+							},
+							close_doors_left = {
+								params = {
+									id = "mark_86_ewi/mark_86_ewi_b_321_sbb_tuer_1_2_close.ani",
+								},
+								type = "FILE_REF",
+							},
+							open_all_doors = {
+								params = {
+									id = "mark_86_ewi/mark_86_ewi_b_321_sbb_tuer_1_2_open.ani",
+								},
+								type = "FILE_REF",
+							},
+							open_doors_left = {
+								params = {
+									id = "mark_86_ewi/mark_86_ewi_b_321_sbb_tuer_1_2_open.ani",
+								},
+								type = "FILE_REF",
+							},
+						},
+						materials = { "vehicle/waggon/mark_86_ewi_bdt_976_sbb_material_alpha.mtl", },
+						mesh = "vehicle/waggon/mark_86_ewi_bdt_976_sbb/mark_86_ewi_bdt_976_sbb_tuer_1_2.msh",
+						name = "MSH_mark_86_ewi_bdt_976_sbb_tuer_1_2_1_lod_1",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						_meshId = 4,
+						_origMeshId = 4,
+						animations = {
+							close_all_doors = {
+								params = {
+									id = "mark_86_ewi/mark_86_ewi_b_321_sbb_tuer_2_1_close.ani",
+								},
+								type = "FILE_REF",
+							},
+							close_doors_right = {
+								params = {
+									id = "mark_86_ewi/mark_86_ewi_b_321_sbb_tuer_2_1_close.ani",
+								},
+								type = "FILE_REF",
+							},
+							open_all_doors = {
+								params = {
+									id = "mark_86_ewi/mark_86_ewi_b_321_sbb_tuer_2_1_open.ani",
+								},
+								type = "FILE_REF",
+							},
+							open_doors_right = {
+								params = {
+									id = "mark_86_ewi/mark_86_ewi_b_321_sbb_tuer_2_1_open.ani",
+								},
+								type = "FILE_REF",
+							},
+						},
+						materials = { "vehicle/waggon/mark_86_ewi_bdt_976_sbb_material_alpha.mtl", },
+						mesh = "vehicle/waggon/mark_86_ewi_bdt_976_sbb/mark_86_ewi_bdt_976_sbb_tuer_2_1.msh",
+						name = "MSH_mark_86_ewi_bdt_976_sbb_tuer_2_1_1_lod_1",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						_meshId = 5,
+						_origMeshId = 5,
+						animations = {
+							close_all_doors = {
+								params = {
+									id = "mark_86_ewi/mark_86_ewi_b_321_sbb_tuer_2_2_close.ani",
+								},
+								type = "FILE_REF",
+							},
+							close_doors_right = {
+								params = {
+									id = "mark_86_ewi/mark_86_ewi_b_321_sbb_tuer_2_2_close.ani",
+								},
+								type = "FILE_REF",
+							},
+							open_all_doors = {
+								params = {
+									id = "mark_86_ewi/mark_86_ewi_b_321_sbb_tuer_2_2_open.ani",
+								},
+								type = "FILE_REF",
+							},
+							open_doors_right = {
+								params = {
+									id = "mark_86_ewi/mark_86_ewi_b_321_sbb_tuer_2_2_open.ani",
+								},
+								type = "FILE_REF",
+							},
+						},
+						materials = { "vehicle/waggon/mark_86_ewi_bdt_976_sbb_material_alpha.mtl", },
+						mesh = "vehicle/waggon/mark_86_ewi_bdt_976_sbb/mark_86_ewi_bdt_976_sbb_tuer_2_2.msh",
+						name = "MSH_mark_86_ewi_bdt_976_sbb_tuer_2_2_1_lod_1",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						_meshId = 10,
+						_origMeshId = 15,
+						materials = {"vehicle/asset/mark_86_lights/ug_lights_mark_86.mtl",},
+						mesh = "vehicle/asset/lod_0_light_round_white.msh",
+						name = "MSH_mark_86_light_white_round_4",
+						transf = {-1, 0, 0, 0, 0, 0.9, 0, 0, 0, 0, 0.9, 0, -11.031, 0.882, 1.595, 1,},						
+					},
+					{
+						_meshId = 11,
+						_origMeshId = 16,
+						materials = {"vehicle/asset/mark_86_lights/ug_lights_mark_86.mtl",},
+						mesh = "vehicle/asset/lod_0_light_round_white.msh",
+						name = "MSH_mark_86_light_white_round_4",
+						transf = {-1, 0, 0, 0, 0, 0.9, 0, 0, 0, 0, 0.9, 0, -11.031, -0.882, 1.595, 1,},						
+					},
+					{
+						_meshId = 12,
+						_origMeshId = 17,
+						materials = {"vehicle/asset/mark_86_lights/ug_lights_mark_86.mtl",},
+						mesh = "vehicle/asset/lod_0_light_round_white.msh",
+						name = "MSH_mark_86_light_white_round_4",
+						transf = {-1, 0, 0, 0, 0, 1.03, 0, 0, 0, 0, 1.03, 0, -10.632, 0, 3.668, 1,},						
+					},
+					{
+						_meshId = 13,
+						_origMeshId = 18,
+						materials = {"vehicle/asset/mark_86_lights/ug_light_red_mark_86.mtl",},
+						mesh = "vehicle/asset/lod_0_light_round_white.msh",
+						name = "MSH_mark_86_light_red_round_4",
+						transf = {-1, 0, 0, 0, 0, 0.42, 0, 0, 0, 0, 0.42, 0, -11.031, -0.89, 1.64, 1,},
+					},
+					{
+						children = {
+							{
+								_meshId = 17,
+								_origMeshId = 17,
+								materials = { "vehicle/waggon/mark_86_ewi_bdt_976_sbb_material_noalpha.mtl", },
+								mesh = "vehicle/waggon/mark_86_ewi_b_6914_sbb/mark_86_ewi_b_6914_sbb_achse_1_lod_1.msh",
+								name = "MSH_mark_86_ewi_bdt_976_sbb_achse_1_lod_1_1",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 1.35, 0, 0.4466, 1, },
+							},
+							{
+								_meshId = 18,
+								_origMeshId = 18,
+								materials = { "vehicle/waggon/mark_86_ewi_bdt_976_sbb_material_noalpha.mtl", },
+								mesh = "vehicle/waggon/mark_86_ewi_b_6914_sbb/mark_86_ewi_b_6914_sbb_achse_1_lod_1.msh",
+								name = "MSH_mark_86_ewi_bdt_976_sbb_achse_1_lod_1_2",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -1.35, 0, 0.4466, 1, },
+							},
+							{
+								_meshId = 19,
+								_origMeshId = 19,
+								materials = { "vehicle/waggon/mark_86_ewi_bdt_976_sbb_material_noalpha.mtl", },
+								mesh = "vehicle/waggon/mark_86_ewi_b_6914_sbb/mark_86_ewi_b_6914_sbb_dg_1_mesh_lod_1.msh",
+								name = "MSH_mark_86_ewi_bdt_976_sbb_dg_1_mesh_lod_1_1",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+							},
+						},
+						name = "GRP_mark_86_ewi_bdt_976_sbb_dg_1_group_lod_1_1",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 8.8, 0, 0, 1, },
+					},
+					{
+						children = {
+							{
+								_meshId = 21,
+								_origMeshId = 21,
+								materials = { "vehicle/waggon/mark_86_ewi_bdt_976_sbb_material_noalpha.mtl", },
+								mesh = "vehicle/waggon/mark_86_ewi_b_6914_sbb/mark_86_ewi_b_6914_sbb_achse_1_lod_1.msh",
+								name = "MSH_mark_86_ewi_bdt_976_sbb_achse_1_lod_1_3",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 1.35, 0, 0.4466, 1, },
+							},
+							{
+								_meshId = 22,
+								_origMeshId = 22,
+								materials = { "vehicle/waggon/mark_86_ewi_bdt_976_sbb_material_noalpha.mtl", },
+								mesh = "vehicle/waggon/mark_86_ewi_b_6914_sbb/mark_86_ewi_b_6914_sbb_achse_1_lod_1.msh",
+								name = "MSH_mark_86_ewi_bdt_976_sbb_achse_1_lod_1_4",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -1.35, 0, 0.4466, 1, },
+							},
+							{
+								_meshId = 23,
+								_origMeshId = 23,
+								materials = { "vehicle/waggon/mark_86_ewi_bdt_976_sbb_material_noalpha.mtl", },
+								mesh = "vehicle/waggon/mark_86_ewi_b_6914_sbb/mark_86_ewi_b_6914_sbb_dg_1_mesh_lod_1.msh",
+								name = "MSH_mark_86_ewi_bdt_976_sbb_dg_1_mesh_lod_1_2",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+							},
+						},
+						name = "GRP_mark_86_ewi_bdt_976_sbb_dg_1_group_lod_1_2",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -8.3, 0, 0, 1, },
+					},
+				},
+				name = "RootNode_lod_1",
+				transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+			},
+			static = false,
+			visibleFrom = 65,
+			visibleTo = 200,
+		},
+		{
+			node = {
+				children = {
+					{
+						_meshId = 1,
+						_origMeshId = 1,
+						materials = { "vehicle/waggon/mark_86_ewi_bdt_976_sbb_material_noalpha.mtl", },
+						mesh = "vehicle/waggon/mark_86_ewi_bdt_976_sbb/mark_86_ewi_bdt_976_sbb_mesh_lod_2.msh",
+						name = "MSH_mark_86_ewi_bdt_976_sbb_mesh_lod_2_1",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+				},
+				name = "RootNode_lod_2",
+				transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+			},
+			static = false,
+			visibleFrom = 200,
+			visibleTo = 500,
+		},
+		{
+			node = {
+				children = {
+					{
+						_meshId = 1,
+						_origMeshId = 1,
+						materials = { "vehicle/waggon/mark_86_ewi_bdt_976_sbb_material_noalpha.mtl", },
+						mesh = "vehicle/waggon/mark_86_ewi_abt_907_sbb/mark_86_ewi_abt_907_sbb_mesh_lod_3.msh",
+						name = "MSH_mark_86_ewi_bdt_976_sbb_mesh_lod_3_1",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+				},
+				name = "RootNode_lod_3",
+				transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+			},
+			static = false,
+			visibleFrom = 500,
+			visibleTo = 2400,
+		},
+	},
+	metadata = {
+		availability = {
+			yearFrom = 1987,
+			yearTo = 2021,
+		},
+		cost = {
+			price = -1,
+		},
+		description = {
+			description = _("2. Klasse Einheitswagen I BDt 976 der SBB. Steuerwagen in NPZ-Lackierung mit Gepäckabteil."),
+			name = _("EW I BDt 976 SBB"),
+		},
+		emission = {
+			idleEmission = -1,
+			powerEmission = -1,
+			speedEmission = -1,
+		},
+		maintenance = {
+			lifespan = 29220,
+			runningCosts = -1,
+		},
+		railVehicle = {
+			configs = {
+				{
+					axles = { "vehicle/waggon/mark_86_ewi_b_6914_sbb/mark_86_ewi_b_6914_sbb_achse_1_lod_0.msh", },
+					backBackwardParts = { },
+					backForwardParts = { 9, },
+					frontBackwardParts = { 6, 7, 8 },
+					frontForwardParts = { },
+					innerBackwardParts = { },
+					innerForwardParts = { },
+				},
+				{
+					axles = { "vehicle/waggon/mark_86_ewi_b_6914_sbb/mark_86_ewi_b_6914_sbb_achse_1_lod_1.msh", },
+					backBackwardParts = { },
+					backForwardParts = { 9, },
+					frontBackwardParts = { 6, 7, 8 },
+					frontForwardParts = { },
+					innerBackwardParts = { },
+					innerForwardParts = { },
+				},
+				{
+					fakeBogies = {
+						{
+							group = 1,
+							offset = 0,
+							position = 8.8,
+						},
+						{
+							group = 1,
+							offset = 0,
+							position = -8.3,
+						},
+					},
+				},
+				{
+					fakeBogies = {
+						{
+							group = 1,
+							offset = 0,
+							position = 8.8,
+						},
+						{
+							group = 1,
+							offset = 0,
+							position = -8.3,
+						},
+					},
+				},
+			},
+			engines = { },
+			soundSet = {
+				horn = "vehicle/train_electric_modern/mark_86_pfiff_domino_kurz.wav",
+				name = "waggon_old",
+			},
+			topSpeed = 38.888888888889,
+			weight = 32,
+		},
+		seatProvider = {
+			drivingLicense = "RAIL",
+			seats = {
+
+				{ animation = "driving_upright", crew = true, forward = false, group = 1, standing = false, transf = transf.rotZYXTransl(transf.degToRad(-168, 0, 0), vec3.new(-9.74, -0.85, 1.38)), },	
+			
+				-- vorwärts links
+			
+				{ animation = "sitting", crew = false, forward = true, group = 1, standing = false, transf = transf.rotZYXTransl(transf.degToRad(-14, 0, 0), vec3.new(06.90, 0.90, 1.08)), },
+				{ animation = "sitting", crew = false, forward = true, group = 1, standing = false, transf = transf.rotZYXTransl(transf.degToRad(-14, 0, 0), vec3.new(05.15, 0.90, 1.08)), },
+				{ animation = "sitting", crew = false, forward = true, group = 1, standing = false, transf = transf.rotZYXTransl(transf.degToRad(-14, 0, 0), vec3.new(03.55, 0.90, 1.08)), },
+				{ animation = "sitting", crew = false, forward = true, group = 1, standing = false, transf = transf.rotZYXTransl(transf.degToRad(-14, 0, 0), vec3.new(01.90, 0.90, 1.08)), },
+				{ animation = "sitting", crew = false, forward = true, group = 1, standing = false, transf = transf.rotZYXTransl(transf.degToRad(-14, 0, 0), vec3.new(00.25, 0.90, 1.08)), },
+								
+				-- vorwärts links gang
+				
+				{ animation = "sitting", crew = false, forward = true, group = 1, standing = false, transf = transf.rotZYXTransl(transf.degToRad(0, 0, 0), vec3.new(06.90, 0.5, 1.08)), },
+				{ animation = "sitting", crew = false, forward = true, group = 1, standing = false, transf = transf.rotZYXTransl(transf.degToRad(0, 0, 0), vec3.new(05.15, 0.5, 1.08)), },
+				{ animation = "sitting", crew = false, forward = true, group = 1, standing = false, transf = transf.rotZYXTransl(transf.degToRad(0, 0, 0), vec3.new(03.55, 0.5, 1.08)), },
+				{ animation = "sitting", crew = false, forward = true, group = 1, standing = false, transf = transf.rotZYXTransl(transf.degToRad(0, 0, 0), vec3.new(01.90, 0.5, 1.08)), },
+				{ animation = "sitting", crew = false, forward = true, group = 1, standing = false, transf = transf.rotZYXTransl(transf.degToRad(0, 0, 0), vec3.new(00.25, 0.5, 1.08)), },
+				
+				-- vorwärts rechts gang				
+				
+				{ animation = "sitting", crew = false, forward = true, group = 1, standing = false, transf = transf.rotZYXTransl(transf.degToRad(0, 0, 0), vec3.new(06.90, -0.53, 1.08)), },
+				{ animation = "sitting", crew = false, forward = true, group = 1, standing = false, transf = transf.rotZYXTransl(transf.degToRad(0, 0, 0), vec3.new(05.15, -0.53, 1.08)), },
+				{ animation = "sitting", crew = false, forward = true, group = 1, standing = false, transf = transf.rotZYXTransl(transf.degToRad(0, 0, 0), vec3.new(03.55, -0.53, 1.08)), },
+				{ animation = "sitting", crew = false, forward = true, group = 1, standing = false, transf = transf.rotZYXTransl(transf.degToRad(0, 0, 0), vec3.new(01.90, -0.53, 1.08)), },
+				{ animation = "sitting", crew = false, forward = true, group = 1, standing = false, transf = transf.rotZYXTransl(transf.degToRad(0, 0, 0), vec3.new(00.25, -0.53, 1.08)), },
+				
+				-- vorwärts rechts
+				
+				{ animation = "sitting", crew = false, forward = true, group = 1, standing = false, transf = transf.rotZYXTransl(transf.degToRad(16, 0, 0), vec3.new(06.90, -1.02, 1.08)), },
+				{ animation = "sitting", crew = false, forward = true, group = 1, standing = false, transf = transf.rotZYXTransl(transf.degToRad(16, 0, 0), vec3.new(05.15, -1.02, 1.08)), },
+				{ animation = "sitting", crew = false, forward = true, group = 1, standing = false, transf = transf.rotZYXTransl(transf.degToRad(16, 0, 0), vec3.new(03.55, -1.02, 1.08)), },
+				{ animation = "sitting", crew = false, forward = true, group = 1, standing = false, transf = transf.rotZYXTransl(transf.degToRad(16, 0, 0), vec3.new(01.90, -1.02, 1.08)), },
+				{ animation = "sitting", crew = false, forward = true, group = 1, standing = false, transf = transf.rotZYXTransl(transf.degToRad(16, 0, 0), vec3.new(00.25, -1.02, 1.08)), },
+				
+				-- rückwärts links				
+				
+				{ animation = "sitting", crew = false, forward = true, group = 1, standing = false, transf = transf.rotZYXTransl(transf.degToRad(-156, 0, 0), vec3.new(07.90, 1.02, 1.08)), },
+				{ animation = "sitting", crew = false, forward = true, group = 1, standing = false, transf = transf.rotZYXTransl(transf.degToRad(-156, 0, 0), vec3.new(06.25, 1.02, 1.08)), },
+				{ animation = "sitting", crew = false, forward = true, group = 1, standing = false, transf = transf.rotZYXTransl(transf.degToRad(-156, 0, 0), vec3.new(04.49, 1.02, 1.08)), },
+				{ animation = "sitting", crew = false, forward = true, group = 1, standing = false, transf = transf.rotZYXTransl(transf.degToRad(-156, 0, 0), vec3.new(03.00, 1.02, 1.08)), },
+				{ animation = "sitting", crew = false, forward = true, group = 1, standing = false, transf = transf.rotZYXTransl(transf.degToRad(-156, 0, 0), vec3.new(01.32, 1.02, 1.08)), },
+				
+				-- rückwärts links gang
+				
+				{ animation = "sitting", crew = false, forward = true, group = 1, standing = false, transf = transf.rotZYXTransl(transf.degToRad(-180, 0, 0), vec3.new(07.90, 0.62, 1.08)), },
+				{ animation = "sitting", crew = false, forward = true, group = 1, standing = false, transf = transf.rotZYXTransl(transf.degToRad(-180, 0, 0), vec3.new(06.25, 0.62, 1.08)), },
+				{ animation = "sitting", crew = false, forward = true, group = 1, standing = false, transf = transf.rotZYXTransl(transf.degToRad(-180, 0, 0), vec3.new(04.49, 0.62, 1.08)), },				
+				{ animation = "sitting", crew = false, forward = true, group = 1, standing = false, transf = transf.rotZYXTransl(transf.degToRad(-180, 0, 0), vec3.new(03.00, 0.62, 1.08)), },
+				{ animation = "sitting", crew = false, forward = true, group = 1, standing = false, transf = transf.rotZYXTransl(transf.degToRad(-180, 0, 0), vec3.new(01.32, 0.62, 1.08)), },
+				
+				-- rückwärts rechts gang				
+				
+				{ animation = "sitting", crew = false, forward = true, group = 1, standing = false, transf = transf.rotZYXTransl(transf.degToRad(-180, 0, 0), vec3.new(07.90, -0.50, 1.08)), },
+				{ animation = "sitting", crew = false, forward = true, group = 1, standing = false, transf = transf.rotZYXTransl(transf.degToRad(-180, 0, 0), vec3.new(06.25, -0.50, 1.08)), },
+				{ animation = "sitting", crew = false, forward = true, group = 1, standing = false, transf = transf.rotZYXTransl(transf.degToRad(-180, 0, 0), vec3.new(04.49, -0.50, 1.08)), },
+				{ animation = "sitting", crew = false, forward = true, group = 1, standing = false, transf = transf.rotZYXTransl(transf.degToRad(-180, 0, 0), vec3.new(03.00, -0.50, 1.08)), },
+				{ animation = "sitting", crew = false, forward = true, group = 1, standing = false, transf = transf.rotZYXTransl(transf.degToRad(-180, 0, 0), vec3.new(01.32, -0.50, 1.08)), },
+								
+				-- rückwärts rechts
+				
+				{ animation = "sitting", crew = false, forward = true, group = 1, standing = false, transf = transf.rotZYXTransl(transf.degToRad(-194, 0, 0), vec3.new(07.90, -0.95, 1.08)), },	
+				{ animation = "sitting", crew = false, forward = true, group = 1, standing = false, transf = transf.rotZYXTransl(transf.degToRad(-194, 0, 0), vec3.new(06.25, -0.95, 1.08)), },
+				{ animation = "sitting", crew = false, forward = true, group = 1, standing = false, transf = transf.rotZYXTransl(transf.degToRad(-194, 0, 0), vec3.new(04.49, -0.95, 1.08)), },
+				{ animation = "sitting", crew = false, forward = true, group = 1, standing = false, transf = transf.rotZYXTransl(transf.degToRad(-194, 0, 0), vec3.new(03.00, -0.95, 1.08)), },
+				{ animation = "sitting", crew = false, forward = true, group = 1, standing = false, transf = transf.rotZYXTransl(transf.degToRad(-194, 0, 0), vec3.new(01.32, -0.95, 1.08)), },
+				
+				-- plattform
+				
+				{ animation = "sitting", crew = false, forward = true, group = 1, standing = false, transf = transf.rotZYXTransl(transf.degToRad(16, 0, 0), vec3.new(10.17, -0.77, 1.2)), },
+			},
+		},
+		transportVehicle = {
+			carrier = "RAIL",
+			compartmentsList = {
+				{
+					loadConfigs = {
+						{
+							cargoEntries = {
+								{
+									capacity = 40,
+									type = "PASSENGERS",
+								},
+							},
+						},
+					},
+				},
+			},
+			loadSpeed = 1,
+			multipleUnitOnly = false,
+			reversible = true,
+			groupFileName = "vehicle/waggon/mark_86_ewi_group_sbb.mdl",
+		},
+	},
+	version = 1,
+}
+end

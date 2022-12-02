@@ -1,0 +1,99 @@
+function data()
+
+scale = (5.917 + .53) / 5.917
+
+return {
+	collider = {
+		params = {
+			
+		},
+		type = "MESH",
+		
+	},
+	lods = {
+		{
+			animations = {
+				
+			},
+			children = {
+				{
+					id = "railroad/lod_2_power_pole_2_rhb.msh",
+					transf = {
+						scale, 0, 0, 0, 0, scale, 0, 0, 0, 0, scale, 0, 0, 0, 0, 1, 
+					},
+					type = "MESH",
+					
+				}, 
+			},
+			events = {
+				
+			},
+			matConfigs = {
+				{
+					0, 
+				}, 
+			},
+			static = false,
+			visibleFrom = 500,
+			visibleTo = 1450,
+			
+		}, {
+			animations = {
+				
+			},
+			children = {
+				{
+					id = "railroad/lod_1_power_pole_2_rhb.msh",
+					transf = {
+						scale, 0, 0, 0, 0, scale, 0, 0, 0, 0, scale, 0, 0, 0, 0, 1, 
+					},
+					type = "MESH",
+					
+				}, 
+			},
+			events = {
+				
+			},
+			matConfigs = {
+				{
+					0, 
+				}, 
+			},
+			static = false,
+			visibleFrom = 100,
+			visibleTo = 500,
+			
+		}, {
+			animations = {
+				
+			},
+			children = {
+				{
+					id = "railroad/lod_0_power_pole_2_rhb.msh",
+					transf = {
+						scale, 0, 0, 0, 0, scale, 0, 0, 0, 0, scale, 0, 0, 0, 0, 1, 
+					},
+					type = "MESH",
+					
+				}, 
+			},
+			events = {
+				
+			},
+			matConfigs = {
+				{
+					0, 
+				}, 
+			},
+			static = false,
+			visibleFrom = 0,
+			visibleTo = 100,
+			
+		}, 
+	},
+	metadata = {
+		
+	},
+	
+}
+end

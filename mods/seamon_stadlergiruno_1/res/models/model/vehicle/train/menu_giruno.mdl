@@ -1,0 +1,221 @@
+local vec3 = require "vec3"
+local transf = require "transf"
+function data()
+return {
+	boundingInfo = {
+		bbMax = { 2, 1, 2, },
+		bbMin = { -2, -1, 0, },
+	},
+	collider = {
+		params = { },
+		transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+		type = "MESH",
+	},
+	lods = {
+		{
+			node = {
+				children = {
+					{
+						children = {
+							{
+								children = {
+									{
+										materials = { "vehicle/train/GirunoJakob.mtl", },
+										mesh = "vehicle/train/GirunoA/Giruno_B0_Drehgestell.msh",
+										name = "MSH_Giruno_B0_Drehgestell_3",
+										transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0.01, 0, 1, 1, },
+									},
+									{
+										materials = { "vehicle/train/GirunoJakob.mtl", },
+										mesh = "vehicle/train/GirunoA/Giruno_A0_Achse.msh",
+										name = "MSH_Giruno_A0_Achse_7",
+										transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 1.35, 0, 0.47, 1, },
+									},
+									{
+										materials = { "vehicle/train/GirunoJakob.mtl", },
+										mesh = "vehicle/train/GirunoA/Giruno_A0_Achse.msh",
+										name = "MSH_Giruno_A0_Achse_8",
+										transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -1.35, 0, 0.47, 1, },
+									},
+								},
+								name = "GRP_GirunoDrehgestell0_3",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+							},
+						},
+						name = "GRP_GirunoC0_1",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+				},
+				name = "RootNode",
+				transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+			},
+			static = false,
+			visibleFrom = 0,
+			visibleTo = 180,
+		},
+		{
+			node = {
+				children = {
+					{
+						children = {
+							{
+								children = {
+									{
+										materials = { "vehicle/train/GirunoJakob.mtl", },
+										mesh = "vehicle/train/GirunoA/Giruno_B1_Drehgestell.msh",
+										name = "MSH_Giruno_B1_Drehgestell_3",
+										transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0.01, 0, 1, 1, },
+									},
+									{
+										materials = { "vehicle/train/GirunoJakob.mtl", },
+										mesh = "vehicle/train/GirunoA/Giruno_A1_Achse.msh",
+										name = "MSH_Giruno_A1_Achse_7",
+										transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 1.35, 0, 0.47, 1, },
+									},
+									{
+										materials = { "vehicle/train/GirunoJakob.mtl", },
+										mesh = "vehicle/train/GirunoA/Giruno_A1_Achse.msh",
+										name = "MSH_Giruno_A1_Achse_8",
+										transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -1.35, 0, 0.47, 1, },
+									},
+								},
+								name = "GRP_GirunoDrehgestell1_3",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+							},
+						},
+						name = "GRP_GirunoC1_1",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+				},
+				name = "RootNode",
+				transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+			},
+			static = false,
+			visibleFrom = 180,
+			visibleTo = 400,
+		},
+		{
+			node = {
+				children = {
+					{
+						children = {
+							{
+								children = {
+									{
+										materials = { "vehicle/train/GirunoJakob.mtl", },
+										mesh = "vehicle/train/GirunoA/Giruno_B2_Drehgestell.msh",
+										name = "MSH_Giruno_B2_Drehgestell_3",
+										transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0.01, 0, 1, 1, },
+									},
+									{
+										materials = { "vehicle/train/GirunoJakob.mtl", },
+										mesh = "vehicle/train/GirunoA/Giruno_A2_Achse.msh",
+										name = "MSH_Giruno_A2_Achse_7",
+										transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 1.35, 0, 0.47, 1, },
+									},
+									{
+										materials = { "vehicle/train/GirunoJakob.mtl", },
+										mesh = "vehicle/train/GirunoA/Giruno_A2_Achse.msh",
+										name = "MSH_Giruno_A2_Achse_8",
+										transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -1.35, 0, 0.47, 1, },
+									},
+								},
+								name = "GRP_GirunoDrehgestell2_3",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+							},
+						},
+						name = "GRP_GirunoC2_1",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+				},
+				name = "RootNode",
+				transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+			},
+			static = false,
+			visibleFrom = 400,
+			visibleTo = 2500,
+		},
+	},
+	metadata = {
+		availability = {
+			yearFrom = 9998,
+			yearTo = 9999,
+		},
+		cost = {
+			price = -1,
+		},
+		emission = {
+			idleEmission = -1,
+			powerEmission = -1,
+			speedEmission = -1,
+		},
+		maintenance = {
+			lifespan = 36525,
+			runningCosts = -1,
+		},
+		railVehicle = {
+			configs = {
+				{
+					axles = { "vehicle/train/GirunoA/Giruno_A0_Achse.msh", },
+					backBackwardParts = { },
+					backForwardParts = { },
+					blinkingLights0 = { },
+					blinkingLights1 = { },
+					frontBackwardParts = { },
+					frontForwardParts = { },
+					innerBackwardParts = { },
+					innerForwardParts = { },
+				},
+				{
+					axles = { "vehicle/train/GirunoA/Giruno_A1_Achse.msh", },
+					backBackwardParts = { },
+					backForwardParts = { },
+					blinkingLights0 = { },
+					blinkingLights1 = { },
+					frontBackwardParts = { },
+					frontForwardParts = { },
+					innerBackwardParts = { },
+					innerForwardParts = { },
+				},
+				{
+					axles = { "vehicle/train/GirunoA/Giruno_A2_Achse.msh", },
+					backBackwardParts = { },
+					backForwardParts = { },
+					blinkingLights0 = { },
+					blinkingLights1 = { },
+					frontBackwardParts = { },
+					frontForwardParts = { },
+					innerBackwardParts = { },
+					innerForwardParts = { },
+				},
+			},
+			engines = {
+				{
+					power = 10,
+					tractiveEffort = 1,
+					type = "DIESEL",
+				},
+			},
+			soundSet = {
+				name = "StadlerJakob",
+			},
+			topSpeed = 69.444444444444,
+			weight = 33,
+		},
+		seatProvider = {
+			drivingLicense = "RAIL",
+		},
+		transportVehicle = {
+			carrier = "RAIL",
+			compartments = {
+				{
+					{ },
+				},
+			},
+			loadSpeed = 0,
+			multipleUnitOnly = true,
+		},
+	},
+	version = 1,
+}
+end

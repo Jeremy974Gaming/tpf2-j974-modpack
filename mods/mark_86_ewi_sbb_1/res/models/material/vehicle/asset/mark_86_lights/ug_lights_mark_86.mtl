@@ -1,0 +1,30 @@
+function data()
+return {
+	order = 0,
+	params = {
+		emissive_scale = {
+			emissiveScale = { 0.025,  0.00625,  0.00125, }, --vanilla { 0.2,  0.05,  0.01, },
+		},
+		fade_out_range = {
+			fadeOutEndDist = 20000,
+			fadeOutStartDist = 10000,
+		},
+		map_emissive = {
+			fileName = "models/vehicle/asset/lights.hdr",
+			type = "TWOD",
+			wrapS = "REPEAT",
+			wrapT = "REPEAT",
+		},
+		polygon_offset = {
+			factor = -1,
+			forceDepthWrite = false,
+			units = -1,
+		},
+		two_sided = {
+			flipNormal = false,
+			twoSided = false,
+		},
+	},
+	type = "EMISSIVE",
+}
+end

@@ -1,0 +1,54 @@
+function data()
+return {
+	matConfigs = {
+		{ 0, }, 
+	},
+	subMeshes = {
+		{
+			indices = {
+				normal = {
+					count = 72,
+					offset = 496,
+				},
+				position = {
+					count = 72,
+					offset = 568,
+				},
+				tangent = {
+					count = 72,
+					offset = 424,
+				},
+				uv0 = {
+					count = 72,
+					offset = 352,
+				},
+			},
+			materials = {
+				"vehicle/train/ws_rbde560ko_light_front.mtl", 
+			},
+		}, 
+	},
+	vertexAttr = {
+		normal = {
+			count = 48,
+			numComp = 3,
+			offset = 160,
+		},
+		position = {
+			count = 144,
+			numComp = 3,
+			offset = 208,
+		},
+		tangent = {
+			count = 64,
+			numComp = 4,
+			offset = 96,
+		},
+		uv0 = {
+			count = 96,
+			numComp = 2,
+			offset = 0,
+		},
+	},
+}
+end

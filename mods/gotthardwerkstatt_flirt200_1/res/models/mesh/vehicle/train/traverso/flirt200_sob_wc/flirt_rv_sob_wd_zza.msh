@@ -1,0 +1,54 @@
+function data()
+return {
+	matConfigs = {
+		{ 0, }, { 1, }, 
+	},
+	subMeshes = {
+		{
+			indices = {
+				normal = {
+					count = 864,
+					offset = 2312,
+				},
+				position = {
+					count = 864,
+					offset = 1448,
+				},
+				tangent = {
+					count = 864,
+					offset = 4040,
+				},
+				uv0 = {
+					count = 864,
+					offset = 3176,
+				},
+			},
+			materials = {
+				"vehicle/train/traverso/flirt200_sob_wc/flirt200_zza.mtl", "vehicle/share/flirt_rv_zza.mtl", 
+			},
+		}, 
+	},
+	vertexAttr = {
+		normal = {
+			count = 216,
+			numComp = 3,
+			offset = 480,
+		},
+		position = {
+			count = 480,
+			numComp = 3,
+			offset = 0,
+		},
+		tangent = {
+			count = 560,
+			numComp = 4,
+			offset = 888,
+		},
+		uv0 = {
+			count = 192,
+			numComp = 2,
+			offset = 696,
+		},
+	},
+}
+end

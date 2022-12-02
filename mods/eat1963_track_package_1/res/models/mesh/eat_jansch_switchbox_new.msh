@@ -1,0 +1,54 @@
+function data()
+return {
+	matConfigs = {
+		{ 0, }, { 0, }, 
+	},
+	subMeshes = {
+		{
+			indices = {
+				normal = {
+					count = 3600,
+					offset = 17964,
+				},
+				position = {
+					count = 3600,
+					offset = 10764,
+				},
+				tangent = {
+					count = 3600,
+					offset = 21564,
+				},
+				uv0 = {
+					count = 3600,
+					offset = 14364,
+				},
+			},
+			materials = {
+				"eat_jansch_switchbox_new.mtl", 
+			},
+		}, 
+	},
+	vertexAttr = {
+		normal = {
+			count = 2076,
+			numComp = 3,
+			offset = 5296,
+		},
+		position = {
+			count = 2112,
+			numComp = 3,
+			offset = 0,
+		},
+		tangent = {
+			count = 3392,
+			numComp = 4,
+			offset = 7372,
+		},
+		uv0 = {
+			count = 3184,
+			numComp = 2,
+			offset = 2112,
+		},
+	},
+}
+end

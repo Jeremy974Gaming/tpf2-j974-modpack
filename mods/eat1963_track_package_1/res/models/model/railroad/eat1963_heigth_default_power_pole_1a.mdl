@@ -1,0 +1,35 @@
+local global = require "eatglobal_v1_16"
+local modId = "eat1963_track_package"
+local function getConfig ()
+	if global.configs.existsConfig (modId) then
+		return global.configs.getConfig (modId)
+	else
+		return global.configs.createConfig(modId, defaultConfig)
+	end
+end
+
+function data()
+	local config = getConfig()
+	local ugScale = {1, 1, config.catenaryHeights["default"].zFactorUg}
+	local modScale = {1, 1, config.catenaryHeights["default"].zFactor}
+	local fileId = "res/models/model/railroad/power_pole_1a.mdl"
+	
+	return {
+		collider = {
+			params = {
+				
+			},
+			type = "MESH",
+			
+		},
+		lods = config.powerPoleHandling.getCatenaryLods{
+			fileId = fileId,
+			ugScale = ugScale,
+			modScale = modScale,
+		},
+		metadata = {
+			
+		},
+		
+	}
+end

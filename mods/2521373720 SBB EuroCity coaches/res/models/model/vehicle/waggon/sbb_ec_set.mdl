@@ -1,0 +1,83 @@
+function data()
+    return {
+        boundingInfo = {
+            bbMax = { 130.2, 1.4125, 4.03674, },
+            bbMin = { -130.2, -1.4125, 0, },
+        },
+        collider = {
+            params = {
+                halfExtents = { 13.2, 1.4125, 2.01837, },
+            },
+            transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+            type = "BOX",
+        },
+        lods = {
+            {
+                node = {
+                    children = {
+                        {
+                            _meshId = 1;
+                            materials = { "vehicle/waggon/sbb_ec/sbb_ec_eurocity_windows.mtl", },
+                            mesh = "vehicle/waggon/sbb_ec/sbb_ec_body_lod1.msh",
+                            name = "sbb_ec_body",
+                            transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+                        },
+                    },
+                    name = "RootNode",
+                    transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+                },
+                static = false,
+                visibleFrom = 0,
+                visibleTo = 1000,
+            },
+        },
+        metadata = {
+            availability = {
+                yearFrom = 9999,
+                yearTo = 9999,
+            },
+            cost = {
+                price = -1,
+                priceScale = 1,
+            },
+            description = {
+                description = _("hd_set_desc"),
+                name = _("sbb_ec_set_name"),
+            },
+            emission = {
+                idleEmission = -1,
+                powerEmission = -1,
+                speedEmission = -1,
+            },
+            maintenance = {
+                lifespan = 10,
+                runningCostScale = 1,
+                runningCosts = -1,
+            },
+            railVehicle = {
+                configs = {
+                    {                    },
+                },
+                engines = { },
+                soundSet = {
+                    name = "",
+                },
+                topSpeed = 10 / 3.6,
+                weight = 10000,
+            },
+            seatProvider = {
+                crewModels = { },
+                drivingLicense = "RAIL",
+                seats = {},
+            },
+            transportVehicle = {
+                carrier = "RAIL",
+                compartmentsList = {},
+                loadSpeed = 0,
+                multipleUnitOnly = false,
+                reversible = false,
+            },
+        },
+        version = 1,
+    }
+end

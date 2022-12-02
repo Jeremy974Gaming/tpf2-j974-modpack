@@ -1,0 +1,28 @@
+function data()
+return {
+	order = 0,
+	params = {
+		emissive_scale = {
+			emissiveScale = { 50, 0, 0.10000000149012, },
+		},
+		fade_out_range = {
+			fadeOutEndDist = 20000,
+			fadeOutStartDist = 10000,
+		},
+		map_emissive = {
+			fileName = "models/vehicle/waggon/sbb_ec/sbb_ec_light.dds",
+			type = "TWOD",
+		},
+		polygon_offset = {
+			factor = 0,
+			forceDepthWrite = false,
+			units = 0,
+		},
+		two_sided = {
+			flipNormal = true,
+			twoSided = false,
+		},
+	},
+	type = "EMISSIVE",
+}
+end

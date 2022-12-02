@@ -1,0 +1,99 @@
+local vec3 = require "vec3"
+local transf = require "transf"
+function data()
+return {
+	boundingInfo = {
+		bbMax = { 11.85, 1.42565, 3.87809, },
+		bbMin = { -11.85, -1.42565, -0.02772, },
+	},
+	collider = {
+		params = { },
+		transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+		type = "MESH",
+	},
+	lods = {
+		{
+			node = {
+				children = {
+					{
+						_meshId = 1,
+						_origMeshId = 1,
+						materials = { "vehicle/waggon/mark_86_ewi_a_028_sbb_material_noalpha.mtl", },
+						mesh = "vehicle/waggon/mark_86_ewi_a_028_sbb/mark_86_ewi_a_028_sbb_mesh_lod_3.msh",
+						name = "MSH_mark_86_ewi_a_028_sbb_mesh_lod_3_1_group",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+				},
+				name = "RootNode",
+				transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+			},
+			static = false,
+			visibleFrom = 0,
+			visibleTo = 2400,
+		},
+	},
+	metadata = {
+		availability = {
+			yearFrom = 0,
+			yearTo = 0,
+		},
+		cost = {
+			price = -1,
+		},
+		description = {
+			description = _("EW I Group. Kauf mich nicht!"),
+			name = _("Einheitswagen I SBB"),
+		},
+		emission = {
+			idleEmission = -1,
+			powerEmission = -1,
+			speedEmission = -1,
+		},
+		maintenance = {
+			lifespan = 29220,
+			runningCosts = -1,
+		},
+		railVehicle = {
+			configs = {
+				{
+					fakeBogies = {
+						{
+							group = 1,
+							offset = 0,
+							position = 8.8,
+						},
+						{
+							group = 1,
+							offset = 0,
+							position = -8.8,
+						},
+					},
+				},
+			},
+			engines = { },
+			topSpeed = 38.888888888889,
+			weight = 30,
+		},
+		transportVehicle = {
+			carrier = "RAIL",
+			compartmentsList = {
+				{
+					loadConfigs = {
+						{
+							cargoEntries = {
+								{
+									capacity = 80,
+									type = "PASSENGERS",
+								},
+							},
+						},
+					},
+				},
+			},
+			loadSpeed = 2,
+			multipleUnitOnly = true,
+		},
+	},
+	version = 1,
+}
+end

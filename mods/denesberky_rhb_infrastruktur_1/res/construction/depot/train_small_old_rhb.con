@@ -1,0 +1,60 @@
+local paramsutil = require "paramsutil"
+
+function data()
+	--[[local config = {
+		trackTypes = { "standard.lua", "high_speed.lua" }
+	}]]
+
+return { 
+	type = "RAIL_DEPOT",
+	description = {
+		name = _("RhB depot"),			
+		description = _("Depot der Rhätischen Bahn")
+	},
+	availability = {
+	
+	},
+	params = {
+		--paramsutil.makeTrackTypeParam(),
+		paramsutil.makeTrackCatenaryParam()
+	},
+	updateFn = function(params)
+		local result = { }
+
+		result.models = { 
+			{
+				id = "depot/train_small_old.mdl",
+				transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1 }
+			}
+		}
+
+		local height = params.state.track.railBase + params.state.track.railHeight
+
+		result.edgeLists = {
+			{
+				type = "TRACK",
+				params = {
+					--type = config.trackTypes[params.trackType + 1],
+					type = "rhb.lua",
+					catenary = params.catenary == 1
+				},
+				edges = {
+					{ { -19.1, .0, -height }, 		{ -20.0, .0, .0 } },
+					{ { -39.1, .0, -height }, 	{ -20.0, .0, .0 } },
+				},
+				snapNodes = { 1 }
+			}
+		}
+
+		result.groundFaces = { }
+		groundFace = {{28.0, -5}, { 28.0, 5}, { 13.0, 5}, { 13.0, 8}, { -7.0, 8}, { -7.0, 7.5}, { -15.0, 7.5}, { -15.0, 5}, {-28.0, 5 }, {-28.0, -5 } }
+		result.groundFaces[#result.groundFaces + 1] = { face = groundFace, modes = { { type = "FILL", key = "town_concrete" } } }
+		result.groundFaces[#result.groundFaces + 1] = { face = groundFace, modes = { { type = "STROKE_OUTER", key = "building_paving" } } }
+		
+		result.cost = 18000
+
+		return result
+	end
+}
+
+end

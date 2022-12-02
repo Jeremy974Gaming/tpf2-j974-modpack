@@ -1,0 +1,28 @@
+function data()
+return {
+	children = {
+		{
+			id = "vehicle/share/flirt200_jaxle.msh",
+			transf = {
+				1.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, -9.30161, 0.0, 0.3785, 1.0, 
+			},
+			type = "MESH",
+		}, {
+			id = "vehicle/share/flirt200_jaxle.msh",
+			transf = {
+				1.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, -12.0016, 0.0, 0.3785, 1.0, 
+			},
+			type = "MESH",
+		}, {
+			id = "vehicle/share/flirt200_jboogie_body.msh",
+			transf = {
+				1.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 1.0, 
+			},
+			type = "MESH",
+		}, 
+	},
+	matConfigs = {
+		{ 0, 0, 0, }, 
+	},
+}
+end

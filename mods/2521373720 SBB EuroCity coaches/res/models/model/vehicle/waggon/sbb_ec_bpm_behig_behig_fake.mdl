@@ -1,0 +1,429 @@
+local sig_h1_bogie = require "sig_h1_bogie";
+local sbb_ec_outsourcer = require "sbb_ec_outsourcer";
+
+local waggon_name = "sbb_ec_bpm_behig_behig";
+local waggon_material = "vehicle/waggon/sbb_ec/" .. waggon_name .. ".mtl";
+local waggon_interior_material = "vehicle/waggon/sbb_ec/sbb_ec_bpm_refit_behig_interior.mtl";
+local waggon_window_material = "vehicle/waggon/sbb_ec/sbb_ec_refit_windows.mtl";
+local waggon_window_interior_material = "vehicle/waggon/sbb_ec/sbb_ec_refit_interior_windows.mtl";
+local waggon_bike_window_material1, waggon_bike_window_material2 = "vehicle/waggon/sbb_ec/sbb_ec_bpm_refit_velo_windows.mtl", "vehicle/waggon/sbb_ec/sbb_ec_bpm_refit_velo_windows2.mtl";
+
+local wc_area_mesh = "vehicle/waggon/sbb_ec/sbb_ec_interior_refit_wc_behig_lod0.msh";
+local seats_area_mesh = "vehicle/waggon/sbb_ec/sbb_ec_interior_seats_bpm_behig_lod0.msh";
+
+local start_date, end_date = sbb_ec_outsourcer.getDatesForBehigBehig();
+
+function data()
+    local model = {
+        boundingInfo = {
+            bbMax = { 13.2, 1.4125, 4.03674, },
+            bbMin = { -13.2, -1.4125, 0, },
+        },
+        collider = {
+            params = {
+                halfExtents = { 13.2, 1.4125, 2.01837, },
+            },
+            transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+            type = "BOX",
+        },
+        lods = {
+            {
+                node = {
+                    children = {
+                        {
+                            _meshId = 1;
+                            materials = { waggon_material, waggon_window_material, },
+                            mesh = "vehicle/waggon/sbb_ec/sbb_ec_body_lod0.msh",
+                            name = "sbb_ec_body",
+                            transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+                        },
+                        {
+                            _meshId = 2;
+                            materials = { waggon_material, },
+                            mesh = "vehicle/waggon/sbb_ec/sbb_ec_details_lod0.msh",
+                            name = "sbb_ec_details",
+                            transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+                        },
+                        {
+                            _meshId = 3;
+                            materials = { waggon_interior_material, waggon_window_interior_material, },
+                            mesh = "vehicle/waggon/sbb_ec/sbb_ec_interior_body_lod0.msh",
+                            name = "sbb_ec_bpm_interior",
+                            transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+                        },
+                        {
+                            _meshId = 4;
+                            materials = { waggon_interior_material, waggon_window_interior_material, },
+                            mesh = wc_area_mesh,
+                            name = "sbb_ec_bpm_interior",
+                            transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+                        },
+                        {
+                            _meshId = 5;
+                            materials = { waggon_interior_material, waggon_window_interior_material, },
+                            mesh = seats_area_mesh,
+                            name = "sbb_ec_bpm_interior",
+                            transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+                        },
+                        {
+                            _meshId = 6;
+                            materials = { waggon_material, "vehicle/waggon/sbb_ec/sbb_ec_lights_off.mtl", },
+                            mesh = "vehicle/waggon/sbb_ec/sbb_ec_trittbrett_geschlossen_lod0.msh",
+                            name = "sbb_ec_ubergang_ende_backForwardParts",
+                            transf = { -1, 0, 0, 0, -0, -1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+                        },
+                        {
+                            _meshId = 8;
+                            children = {
+                                {
+                                    _meshId = 9;
+                                    materials = { waggon_material, waggon_bike_window_material1,  waggon_bike_window_material2, },
+                                    mesh = "vehicle/waggon/sbb_ec/sbb_ec_refit_door_turned_lod0.msh",
+                                    name = "sbb_ec_door_1",
+                                    transf = { 0.99786, 0.0654, 0, 0, 0.0654, 0.99786, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+                                },
+                            },
+                            name = "sbb_ec_door_grp_1",
+                            transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 12.12072, -1.36555, 1.95202, 1, },
+                        },
+                        {
+                            _meshId = 10;
+                            materials = { waggon_material, },
+                            mesh = "vehicle/waggon/sbb_ec/sbb_ec_trittbrett_lod0.msh",
+                            name = "sbb_ec_trittbrett_1",
+                            transf = { 0.99786, 0.0654, 0.0, 0.0, -0.06255, 0.95426, 0.29237, 0.0, 0.01912, -0.29175, 0.9563, 0, 12.16723, -1.30309, 0.60757, 1, },
+                        },
+                        {
+                            _meshId = 11;
+                            children = {
+                                {
+                                    _meshId = 12;
+                                    materials = { waggon_material, waggon_bike_window_material1, waggon_bike_window_material2, },
+                                    mesh = "vehicle/waggon/sbb_ec/sbb_ec_refit_door_lod0.msh",
+                                    name = "sbb_ec_door_2",
+                                    transf = { -0.99786, -0.0654, 0, 0, -0.0654, 0.99786, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+                                },
+                            },
+                            name = "sbb_ec_door_grp_2",
+                            transf = { 1, 0, 0, 0, 0, -1, 0, 0, 0, 0, 1, 0, 12.12072, 1.3672, 1.95202, 1, },
+                        },
+                        {
+                            _meshId = 13;
+                            materials = { waggon_material, },
+                            mesh = "vehicle/waggon/sbb_ec/sbb_ec_trittbrett_lod0.msh",
+                            name = "sbb_ec_trittbrett_2",
+                            transf = { 0.99786, -0.0654, 0.0, 0.0, -0.06255, -0.95426, 0.29237, 0.0, 0.01912, 0.29175, 0.9563, 0, 12.16723, 1.30309, 0.60757, 1, },
+                        },
+                        {
+                            _meshId = 14;
+                            children = {
+                                {
+                                    _meshId = 15;
+                                    materials = { waggon_material, waggon_window_material, },
+                                    mesh = "vehicle/waggon/sbb_ec/sbb_ec_door_turned_lod0.msh",
+                                    name = "sbb_ec_door_3",
+                                    transf = { 0.99786, 0.0654, 0, 0, 0.0654, 0.99786, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+                                },
+                            },
+                            name = "sbb_ec_door_grp_3",
+                            transf = { -1, 0, 0, 0, -0, -1, 0, 0, 0, 0, 1, 0, -12.12072, 1.3672, 1.95202, 1, },
+                        },
+                        {
+                            _meshId = 16;
+                            materials = { waggon_material, },
+                            mesh = "vehicle/waggon/sbb_ec/sbb_ec_trittbrett_lod0.msh",
+                            name = "sbb_ec_trittbrett_3",
+                            transf = { -0.99786, -0.0654, 0.0, 0.0, 0.06255, -0.95426, 0.29237, 0.0, -0.01912, 0.29175, 0.9563, 0, -12.16723, 1.30309, 0.60757, 1.0 },
+                        },
+                        {
+                            _meshId = 17;
+                            children = {
+                                {
+                                    _meshId = 18;
+                                    materials = { waggon_material, waggon_window_material, },
+                                    mesh = "vehicle/waggon/sbb_ec/sbb_ec_door_lod0.msh",
+                                    name = "sbb_ec_door_4",
+                                    transf = { -0.99786, -0.0654, 0, 0, -0.0654, 0.99786, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+                                },
+                            },
+                            name = "sbb_ec_door_grp_4",
+                            transf = { -1, 0, 0, 0, -0, 1, 0, 0, 0, 0, 1, 0, -12.12072, -1.3672, 1.95202, 1, },
+                        },
+                        {
+                            _meshId = 19;
+                            materials = { waggon_material, },
+                            mesh = "vehicle/waggon/sbb_ec/sbb_ec_trittbrett_lod0.msh",
+                            name = "sbb_ec_trittbrett_4",
+                            transf = { -0.99786, 0.0654, -0.0, 0.0, 0.06255, 0.95426, 0.29237, 0.0, -0.01912, -0.29175, 0.9563, 0, -12.16723, -1.30309, 0.60757, 1, },
+                        },
+                        {
+                            _meshId = 20;
+                            materials = { waggon_material, },
+                            mesh = "vehicle/waggon/sbb_ec/sbb_ec_wcsystem_lod0.msh",
+                            name = "sbb_ec_toiletten",
+                            transf = { -1, 0, 0, 0, -0, -1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+                        },
+                        {
+                            _meshId = 22;
+                            materials = { waggon_material, },
+                            mesh = "vehicle/waggon/sbb_ec/sbb_ec_digitalanzeige_lod0.msh",
+                            name = "sbb_ec_digitalanzeige",
+                            transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+                        },
+                        {
+                            _meshId = 25;
+                            mesh = "vehicle/waggon/sbb_ec/sbb_ec_interior_digitalanzeige_lod0.msh",
+                            materials = { waggon_interior_material, },
+                            name = "sbb_ec_digitalanzeige",
+                            transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+                        },
+                    },
+                    name = "RootNode",
+                    transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+                },
+                static = false,
+                visibleFrom = 0,
+                visibleTo = 75,
+            },
+            {
+                node = {
+                    children = {
+                        {
+                            _meshId = 1;
+                            materials = { waggon_material, },
+                            mesh = "vehicle/waggon/sbb_ec/sbb_ec_body_lod1.msh",
+                            name = "sbb_ec_body",
+                            transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+                        },
+                        {
+                            _meshId = 2;
+                            materials = { waggon_material, },
+                            mesh = "vehicle/waggon/sbb_ec/sbb_ec_details_lod1.msh",
+                            name = "sbb_ec_details",
+                            transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+                        },
+                        {
+                            _meshId = 6;
+                            materials = { waggon_material, "vehicle/waggon/sbb_ec/sbb_ec_lights_off.mtl", },
+                            mesh = "vehicle/waggon/sbb_ec/sbb_ec_trittbrett_geschlossen_lod0.msh",
+                            name = "sbb_ec_ubergang_ende_backForwardParts",
+                            transf = { -1, 0, 0, 0, -0, -1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+                        },
+                        {
+                            _meshId = 7;
+                            children = {
+                                {
+                                    _meshId = 8;
+                                    materials = { waggon_material, },
+                                    mesh = "vehicle/waggon/sbb_ec/sbb_ec_door_lod1.msh",
+                                    name = "sbb_ec_door_1",
+                                    transf = { 0.99786, 0.0654, 0, 0, 0.0654, 0.99786, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+                                },
+                            },
+                            name = "sbb_ec_door_grp_1",
+                            transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 12.12072, -1.36555, 1.95202, 1, },
+                        },
+                        {
+                            _meshId = 9;
+                            children = {
+                                {
+                                    _meshId = 10;
+                                    materials = { waggon_material },
+                                    mesh = "vehicle/waggon/sbb_ec/sbb_ec_door_lod1.msh",
+                                    name = "sbb_ec_door_2",
+                                    transf = { -0.99786, -0.0654, 0, 0, -0.0654, 0.99786, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+                                },
+                            },
+                            name = "sbb_ec_door_grp_2",
+                            transf = { 1, 0, 0, 0, 0, -1, 0, 0, 0, 0, 1, 0, 12.12072, 1.3672, 1.95202, 1, },
+                        },
+                        {
+                            _meshId = 11;
+                            children = {
+                                {
+                                    _meshId = 12;
+                                    materials = { waggon_material, },
+                                    mesh = "vehicle/waggon/sbb_ec/sbb_ec_door_lod1.msh",
+                                    name = "sbb_ec_door_3",
+                                    transf = { 0.99786, 0.0654, 0, 0, 0.0654, 0.99786, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+                                },
+                            },
+                            name = "sbb_ec_door_grp_3",
+                            transf = { -1, 0, 0, 0, -0, -1, 0, 0, 0, 0, 1, 0, -12.12072, 1.3672, 1.95202, 1, },
+                        },
+                        {
+                            _meshId = 13;
+                            children = {
+                                {
+                                    _meshId = 14;
+                                    materials = { waggon_material, },
+                                    mesh = "vehicle/waggon/sbb_ec/sbb_ec_door_lod1.msh",
+                                    name = "sbb_ec_door_4",
+                                    transf = { -0.99786, -0.0654, 0, 0, -0.0654, 0.99786, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+                                },
+                            },
+                            name = "sbb_ec_door_grp_4",
+                            transf = { -1, 0, 0, 0, -0, 1, 0, 0, 0, 0, 1, 0, -12.12072, -1.3672, 1.95202, 1, },
+                        },
+                    },
+                    name = "RootNode",
+                    transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+                },
+                static = false,
+                visibleFrom = 75,
+                visibleTo = 200,
+            },
+            {
+                node = {
+                    children = {
+                        {
+                            _meshId = 1;
+                            materials = { waggon_material, },
+                            mesh = "vehicle/waggon/sbb_ec/sbb_ec_body_lod1.msh",
+                            name = "sbb_ec_body",
+                            transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+                        },
+                        {
+                            _meshId = 2;
+                            children = {
+                                {
+                                    _meshId = 3;
+                                    materials = { waggon_material, },
+                                    mesh = "vehicle/waggon/sbb_ec/sbb_ec_door_lod1.msh",
+                                    name = "sbb_ec_door_1",
+                                    transf = { 0.99786, 0.0654, 0, 0, 0.0654, 0.99786, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+                                },
+                            },
+                            name = "sbb_ec_door_grp_1",
+                            transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 12.12072, -1.36555, 1.95202, 1, },
+                        },
+                        {
+                            _meshId = 4;
+                            children = {
+                                {
+                                    _meshId = 5;
+                                    materials = { waggon_material },
+                                    mesh = "vehicle/waggon/sbb_ec/sbb_ec_door_lod1.msh",
+                                    name = "sbb_ec_door_2",
+                                    transf = { -0.99786, -0.0654, 0, 0, -0.0654, 0.99786, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+                                },
+                            },
+                            name = "sbb_ec_door_grp_2",
+                            transf = { 1, 0, 0, 0, 0, -1, 0, 0, 0, 0, 1, 0, 12.12072, 1.3672, 1.95202, 1, },
+                        },
+                        {
+                            _meshId = 6;
+                            children = {
+                                {
+                                    _meshId = 7;
+                                    materials = { waggon_material, },
+                                    mesh = "vehicle/waggon/sbb_ec/sbb_ec_door_lod1.msh",
+                                    name = "sbb_ec_door_3",
+                                    transf = { 0.99786, 0.0654, 0, 0, 0.0654, 0.99786, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+                                },
+                            },
+                            name = "sbb_ec_door_grp_3",
+                            transf = { -1, 0, 0, 0, -0, -1, 0, 0, 0, 0, 1, 0, -12.12072, 1.3672, 1.95202, 1, },
+                        },
+                        {
+                            _meshId = 8;
+                            children = {
+                                {
+                                    _meshId = 9;
+                                    materials = { waggon_material, },
+                                    mesh = "vehicle/waggon/sbb_ec/sbb_ec_door_lod1.msh",
+                                    name = "sbb_ec_door_4",
+                                    transf = { -0.99786, -0.0654, 0, 0, -0.0654, 0.99786, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+                                },
+                            },
+                            name = "sbb_ec_door_grp_4",
+                            transf = { -1, 0, 0, 0, -0, 1, 0, 0, 0, 0, 1, 0, -12.12072, -1.3672, 1.95202, 1, },
+                        },
+                    },
+                    name = "RootNode",
+                    transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+                },
+                static = false,
+                visibleFrom = 200,
+                visibleTo = 800,
+            },
+        },
+        metadata = {
+            availability = {
+                yearFrom = start_date,
+                yearTo = end_date,
+            },
+            cameraConfig = {},
+            labelList = {            },
+            cost = {
+                price = 0,
+                priceScale = -1,
+            },
+            description = {
+                description = _(waggon_name .. "_desc"),
+                name = _(waggon_name .. "_name"),
+            },
+            emission = {
+                idleEmission = -1,
+                powerEmission = -1,
+                speedEmission = -1,
+            },
+            maintenance = {
+                lifespan = 29220,
+                runningCostScale = 1,
+                runningCosts = -1,
+            },
+            railVehicle = {
+                configs = {
+                    {
+                        axles = {},
+                    },
+                    {
+                        axles = {},
+                    },
+                    {},
+                },
+                engines = { },
+                soundSet = sbb_ec_outsourcer.getSound(),
+                topSpeed = 200 / 3.6,
+                weight = 43,
+            },
+            seatProvider = {
+                crewModels = { },
+                drivingLicense = "RAIL",
+                seats = {},
+            },
+            seatProvider = {
+                crewModels = { },
+                drivingLicense = "RAIL",
+                seats = {},
+            },
+            transportVehicle = {
+                carrier = "RAIL",
+                compartmentsList = {
+                    {
+                        loadConfigs = {
+                            {
+                                cargoEntries = {
+                                    {
+                                        capacity = 0,
+                                        seats = { },
+                                        type = "PASSENGERS",
+                                    },
+                                },
+                                toHide = { },
+                            },
+                        },
+                    },
+                },
+                groupFileName = "vehicle/waggon/sbb_ec_fake_set.mdl",
+                loadSpeed = 0,
+                multipleUnitOnly = false,
+                reversible = false,
+            },
+        },
+        version = 1,
+    }
+    sig_h1_bogie.addBogiesToModel(model, { -1, 0, 0, 0, -0, -1, 0, 0, 0, 0, 1, 0, -9.5, 0, 0, 1, }, { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 9.5, 0, 0, 1, })
+    return model
+end

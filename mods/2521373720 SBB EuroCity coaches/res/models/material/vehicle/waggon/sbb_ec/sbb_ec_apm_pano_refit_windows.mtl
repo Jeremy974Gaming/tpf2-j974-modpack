@@ -1,0 +1,5 @@
+local sbb_ec_base_mats = require "sbb_ec_base_mats"
+
+function data()
+    return sbb_ec_base_mats.exterior_glass_mat("sbb_ec_apm_pano_refit", "sbb_ec_apm_pano_refit")
+end

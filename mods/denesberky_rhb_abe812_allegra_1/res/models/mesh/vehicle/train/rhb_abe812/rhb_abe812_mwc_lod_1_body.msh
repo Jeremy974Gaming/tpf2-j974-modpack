@@ -1,0 +1,63 @@
+function data()
+return {
+	matConfigs = {
+		{ 0, }, 
+	},
+	subMeshes = {
+		{
+			indices = {
+				normal = {
+					count = 9192,
+					offset = 32144,
+				},
+				position = {
+					count = 9192,
+					offset = 50528,
+				},
+				tangent = {
+					count = 9192,
+					offset = 13760,
+				},
+				uv0 = {
+					count = 9192,
+					offset = 22952,
+				},
+				uv1 = {
+					count = 9192,
+					offset = 41336,
+				},
+			},
+			materials = {
+				"vehicle/train/rhb_abe812_mwc.mtl", 
+			},
+		}, 
+	},
+	vertexAttr = {
+		normal = {
+			count = 792,
+			numComp = 3,
+			offset = 8016,
+		},
+		position = {
+			count = 4944,
+			numComp = 3,
+			offset = 8816,
+		},
+		tangent = {
+			count = 3984,
+			numComp = 4,
+			offset = 0,
+		},
+		uv0 = {
+			count = 4032,
+			numComp = 2,
+			offset = 3984,
+		},
+		uv1 = {
+			count = 8,
+			numComp = 2,
+			offset = 8808,
+		},
+	},
+}
+end

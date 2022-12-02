@@ -1,0 +1,28 @@
+function data()
+return {
+	children = {
+		{
+			id = "vehicle/train/rhb_abe812/rhb_abe812_axle.msh",
+			transf = {
+				1.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.99086, -0.0, 0.40844, 1.0, 
+			},
+			type = "MESH",
+		}, {
+			id = "vehicle/train/rhb_abe812/rhb_abe812_axle.msh",
+			transf = {
+				1.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, -0.98914, -0.0, 0.40844, 1.0, 
+			},
+			type = "MESH",
+		}, {
+			id = "vehicle/train/rhb_abe812/rhb_abe812_bogie2.msh",
+			transf = {
+				1.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 1.0, 
+			},
+			type = "MESH",
+		}, 
+	},
+	matConfigs = {
+		{ 0, 0, 0, }, 
+	},
+}
+end

@@ -1,0 +1,54 @@
+function data()
+return {
+	matConfigs = {
+		{ 0, }, 
+	},
+	subMeshes = {
+		{
+			indices = {
+				normal = {
+					count = 840,
+					offset = 3812,
+				},
+				position = {
+					count = 840,
+					offset = 2972,
+				},
+				tangent = {
+					count = 840,
+					offset = 4652,
+				},
+				uv0 = {
+					count = 840,
+					offset = 2132,
+				},
+			},
+			materials = {
+				"railroad/power_pole.mtl", 
+			},
+		}, 
+	},
+	vertexAttr = {
+		normal = {
+			count = 324,
+			numComp = 3,
+			offset = 1376,
+		},
+		position = {
+			count = 768,
+			numComp = 3,
+			offset = 608,
+		},
+		tangent = {
+			count = 432,
+			numComp = 4,
+			offset = 1700,
+		},
+		uv0 = {
+			count = 608,
+			numComp = 2,
+			offset = 0,
+		},
+	},
+}
+end

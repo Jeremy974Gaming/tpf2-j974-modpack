@@ -1,0 +1,260 @@
+function data()
+return {
+	boundingInfo = {
+		bbMax = { 8.13311, 1.325, 5.48, },
+		bbMin = { -8.13492, -1.325, -0.00592, },
+	},
+	collider = {
+		params = {
+			
+		},
+		type = "MESH",
+	},
+	lods = {
+		{
+			children = {
+				{
+					id = "vehicle/train/rhb_abe812/rhb_abe812_door3.msh",
+					transf = {
+						1.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 1.04458, -1.31, 1.56645, 1.0, 
+					},
+					type = "MESH",
+				},
+				{
+					id = "vehicle/train/rhb_abe812/rhb_abe812_door3.msh",
+					transf = {
+						-1.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 1.78803, -1.31, 1.56645, 1.0, 
+					},
+					type = "MESH",
+				},
+				{
+					id = "vehicle/train/rhb_abe812/rhb_abe812_door3.msh",
+					transf = {
+						1.0, 0.0, 0.0, 0.0, 0.0, -1.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 1.04458, 1.31, 1.56645, 1.0, 
+					},
+					type = "MESH",
+				},
+				{
+					id = "vehicle/train/rhb_abe812/rhb_abe812_door3.msh",
+					transf = {
+						-1.0, 0.0, 0.0, 0.0, 0.0, -1.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 1.78803, 1.31, 1.56645, 1.0, 
+					},
+					type = "MESH",
+				},
+				{
+					id = "vehicle/train/rhb_abe812_mwc_bogie1.grp",
+					transf = {
+						1.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 5.4, -0.0, 0.0, 1.0, 
+					},
+					type = "GROUP",
+				},
+				{
+					id = "vehicle/train/rhb_abe812_mwc_bogie2.grp",
+					transf = {
+						1.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, -5.4, 0.0, 0.0, 1.0, 
+					},
+					type = "GROUP",
+				},
+				{
+					id = "vehicle/train/rhb_abe812/rhb_abe812_mwc_lod_0_body.msh",
+					transf = {
+						1.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 1.0, 
+					},
+					type = "MESH",
+				},
+				{
+					id = "vehicle/train/rhb_abe812/rhb_abe812_panto_oben.msh",
+					transf = {
+						1.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 1.0, 
+					},
+					type = "MESH",
+				}, 
+				{
+					id = "vehicle/train/rhb_abe812/rhb_abe812_mwc_inside.msh",
+					transf = {
+						1.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 1.0, 
+					},
+					type = "MESH",
+				},
+			},
+			events = {				
+				open_doors_right = {
+					[1] = { name = "open", forward = true },
+					[2] = { name = "open", forward = true },
+				},
+				close_doors_right = {
+					[1] = { name = "open", forward = false },
+					[2] = { name = "open", forward = false },
+				},
+				open_doors_left = {
+					[3] = { name = "open", forward = true },
+					[4] = { name = "open", forward = true },
+				},
+				close_doors_left = {
+					[3] = { name = "open", forward = false },
+					[4] = { name = "open", forward = false },
+				},
+			},
+			matConfigs = {
+				{
+					0, 0, 0, 0, 0, 0, 0, 0, 
+				}, 
+			},
+			static = false,
+			visibleFrom = 0,
+			visibleTo = 100,
+		}, 
+		{
+			children = {
+				{
+					id = "vehicle/train/rhb_abe812/rhb_abe812_door3.msh",
+					transf = {
+						1.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 1.04458, -1.31, 1.56645, 1.0, 
+					},
+					type = "MESH",
+				},
+				{
+					id = "vehicle/train/rhb_abe812/rhb_abe812_door3.msh",
+					transf = {
+						-1.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 1.78803, -1.31, 1.56645, 1.0, 
+					},
+					type = "MESH",
+				},
+				{
+					id = "vehicle/train/rhb_abe812/rhb_abe812_door3.msh",
+					transf = {
+						1.0, 0.0, 0.0, 0.0, 0.0, -1.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 1.04458, 1.31, 1.56645, 1.0, 
+					},
+					type = "MESH",
+				},
+				{
+					id = "vehicle/train/rhb_abe812/rhb_abe812_door3.msh",
+					transf = {
+						-1.0, 0.0, 0.0, 0.0, 0.0, -1.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 1.78803, 1.31, 1.56645, 1.0, 
+					},
+					type = "MESH",
+				},
+				{
+					id = "vehicle/train/rhb_abe812_mwc_bogie1.grp",
+					transf = {
+						1.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 5.4, -0.0, 0.0, 1.0, 
+					},
+					type = "GROUP",
+				},
+				{
+					id = "vehicle/train/rhb_abe812_mwc_bogie2.grp",
+					transf = {
+						1.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, -5.4, 0.0, 0.0, 1.0, 
+					},
+					type = "GROUP",
+				},
+				{
+					id = "vehicle/train/rhb_abe812/rhb_abe812_mwc_lod_1_body.msh",
+					transf = {
+						1.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 1.0, 
+					},
+					type = "MESH",
+				},
+				{
+					id = "vehicle/train/rhb_abe812/rhb_abe812_panto_oben.msh",
+					transf = {
+						1.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 1.0, 
+					},
+					type = "MESH",
+				}, 
+				{
+					id = "vehicle/train/rhb_abe812/rhb_abe812_mwc_inside.msh",
+					transf = {
+						1.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 1.0, 
+					},
+					type = "MESH",
+				},
+			},
+			events = {				
+				open_doors_right = {
+					[1] = { name = "open", forward = true },
+					[2] = { name = "open", forward = true },
+				},
+				close_doors_right = {
+					[1] = { name = "open", forward = false },
+					[2] = { name = "open", forward = false },
+				},
+				open_doors_left = {
+					[3] = { name = "open", forward = true },
+					[4] = { name = "open", forward = true },
+				},
+				close_doors_left = {
+					[3] = { name = "open", forward = false },
+					[4] = { name = "open", forward = false },
+				},
+			},
+			matConfigs = {
+				{
+					0, 0, 0, 0, 0, 0, 0, 0, 
+				}, 
+			},
+			static = false,
+			visibleFrom = 100,
+			visibleTo = 400,
+		}, 
+		{
+			children = {
+				{
+					id = "vehicle/train/rhb_abe812/rhb_abe812_mwc_lod_2_body.msh",
+					transf = {
+						1.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 1.66468, 1.0, 
+					},
+					type = "MESH",
+				},
+			},
+			matConfigs = {
+				{
+					0, 0, 0, 0, 0, 0, 0, 
+				}, 
+			},
+			static = false,
+			visibleFrom = 400,
+			visibleTo = 2500,
+		}, 
+	},
+	metadata = {
+		availability = {
+			yearFrom = 2009,
+			yearTo = 0,
+		},
+		cost = {
+			price = -1,
+		},
+		description = {
+			description = _("Rhätische Bahn Elektrotriebwagen Type 8/12 Mittelwagen C"),
+			name = _("RhB ABe 8/12 MWC"),
+		},
+		maintenance = {
+			lifespan = 50,
+			runningCosts = -1,
+		},
+		railVehicle = {
+			configs = {
+				{
+					axles = {
+						"vehicle/train/rhb_abe812/rhb_abe812_axle.msh", 
+					},
+				}, 
+			},
+			topSpeed = 100.0,
+			weight = 41.0,
+		},
+		transportVehicle = {
+			capacities = {
+				{
+					capacity = 38,
+					type = "PASSENGERS",
+				}, 
+			},
+			carrier = "RAIL",
+			loadSpeed = 2.0,
+			multipleUnitOnly = true,
+		},
+	},
+}
+end

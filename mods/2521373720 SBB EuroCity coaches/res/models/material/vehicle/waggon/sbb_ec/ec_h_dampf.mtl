@@ -1,0 +1,5 @@
+local sbb_ec_base_mats = require "sbb_ec_base_mats"
+
+function data()
+	return sbb_ec_base_mats.routentafel("ec_h_dampf")
+end

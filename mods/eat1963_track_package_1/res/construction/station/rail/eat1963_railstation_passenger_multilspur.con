@@ -1,0 +1,226 @@
+local global = require "eatglobal_v1_16"
+local utils = global.utils
+
+local logFn
+if eat1963_track_package_1_debug then
+	logFn = utils.createLogFn ("[eat1963_railstation_cargo_multispur.con]")
+else
+	logFn = function(...) end
+end
+
+local constructionutil = require "constructionutil"
+local constructionutil_curved = utils.pRequire("constructionutil_curved")
+local paramsutil = require "paramsutil"
+local railstationconfigutil = require "railstationconfigutil"
+
+local modConfig = utils.readData(utils.getModPath().."mod_config.lua")
+
+local	trackTypes = {
+		"standard.lua",
+		"high_speed.lua",
+	}
+
+local trackSelector = nil
+local function getParams()
+	local result = {}
+	
+	result[#result + 1] =
+		{
+			key = "eat1963_station_year",
+			name = _("Erscheinungsjahr der Station"),
+			values = { "1850", "1920" },
+			yearFrom = 1920,
+			yearTo = 1990,
+		}
+	
+	result[#result + 1] =
+		{
+			key = "eat1963_station_year",
+			name = _("Erscheinungsjahr des Bahnhofes"),
+			values = { "1850", "1920", "1990" },
+			yearFrom = 1990,
+			yearTo = 0,
+		}
+	
+	result[#result + 1] =
+		{
+			key = "eat1963_station_style",
+			name = _("Art des Bahnhofes"),
+			values = { _("Kopfbahnhof"), _("Durchgangsbahnhof") },
+			defaultIndex = 1,
+		}
+		
+	result[#result + 1] =
+		{
+			key = "eat1963_station_building",
+			name = _("Größe des Gebäudes"),
+			values = { _("Automatisch") , _("Level 1"), _("Level 2"), _("Level 3"), _("Level 4"), _("Level 5") },
+			defaultIndex = 0,
+		}
+		
+	result[#result + 1] =
+		{
+			key = "numTracksIndex",
+			name = _("Number of tracks"),
+			values = {  },		
+			defaultIndex = 1,
+		}
+	for i = 1, modConfig.maxTracks do
+		table.insert(result[#result].values, tostring(i))
+	end
+	
+	result[#result + 1] =
+		{
+			key = "sizeIndex",
+			name = _("Platform length"),
+			defaultIndex = 2,
+			values = { _("80m"), _("160m"), _("240m"), _("320m") },
+		}
+
+	if (constructionutil_curved ~= nil) then
+		result[#result + 1] =
+			{
+				key = "eat1963_station_radius_negiert",
+				name = _("Radius"),
+				values = {"+", "-"},
+			}
+		
+		result[#result + 1] =
+			{
+				key = "eat1963_station_radius",
+				name = "",
+				values = {},
+			}
+			for i = 1, #modConfig.radien do
+				if (i == 1) then
+					result[#result].values[i] = "∞"
+				else
+					result[#result].values[i] = tostring(math.round(modConfig.radien[i] * 1000)).." m"
+				end
+			end
+	end
+	
+	result[#result + 1] =
+		{
+			key = "trackType",
+			name = _("Track type"),
+			values = { _("Standard"), _("High-speed") },
+			yearFrom = 1925,
+			yearTo = 0,
+		}
+
+	result[#result + 1] =
+		{
+			key = "catenary",
+			name = _("Catenary"),
+			values = { _("No"), _("Yes") },
+			defaultIndex = 0,
+			yearFrom = 1910,
+			yearTo = 0,
+		}
+
+	result[#result + 1] =
+		{
+			key = "streetSecondConnection",
+			name = _("Second street connection"),
+			values = { _("No"), _("Yes") }
+		}
+		
+	if (type(eat1963_track_api) == "table") then
+		trackSelector = eat1963_track_api.modifyTrackCatenaryEx(result)
+	end
+	
+	return result
+end
+
+local function calcRadius(params)
+	local negiert = ((params.eat1963_station_radius_negiert or 0) == 0) and 1 or -1
+	return math.round(modConfig.radien[(params.eat1963_station_radius or 0) + 1] * 1000) * negiert
+end
+
+local function getStationConfig(params)
+	local years = {"1850", "1920", "1990"}
+	local styles = {"head", "through"}
+	local streetTypes = {
+		["1850"] = "station_old_small",
+		["1920"] = "station_old_small",
+		["1990"] = "station_new_small",
+	}
+	
+	local year = years[(params.eat1963_station_year or 0) + 1]
+	local style = styles[(params.eat1963_station_style or 0) + 1]
+	local nameExtension = ""
+	if (constructionutil_curved ~= nil) then
+		nameExtension = "_curved"
+	end
+	
+	local buildingWidths = modConfig.trackConfigsPassenger[year][style].buildingWidths
+
+	local result = {
+		type = "passenger",
+		name = year..nameExtension,
+		stationType = style,
+		segmentLength = 20,
+		platformDistance = 9.0,
+		streetType = streetTypes[year],
+		stairs = "station/train/passenger/${year}/platform_stairs.mdl" % { year = year},
+		stairsPlatform = "station/train/passenger/${year}/platform_single_stairs_second.mdl" % { year = year},
+		tracksConfig = utils.copyTable(modConfig.trackConfigsPassenger[year][style].tracksConfig),
+		trackTypes = trackTypes,
+	}
+	
+	local numTracks = (params.numTracksIndex or 0) + 1
+	for i = 1, (numTracks - 8) do
+		table.insert(result.tracksConfig, { num = 8 + i, buildingSizeIndex = 5, buildingWidth = buildingWidths[5] })
+	end
+	
+	ixBuilding = params.eat1963_station_building or 0
+	if (ixBuilding > 0) then
+		for i = 1, #result.tracksConfig do
+			result.tracksConfig[i].buildingSizeIndex = ixBuilding
+			result.tracksConfig[i].buildingWidth = buildingWidths[ixBuilding]
+		end
+	end
+	
+	logFn("getStationConfig | result = ", result)
+	return result
+end
+
+function data()
+	logFn("data()")
+	return {
+			type = "RAIL_STATION",
+			description = {
+				name = _("name_passenger_train_station"),
+				description = _("desc_passenger_train_station")
+			},
+			availability = {
+				yearFrom = 1850
+			},
+			order = utils.getOrder(19275, 1, 2),
+			soundConfig = {
+				--soundSet = { name = "station_passenger_new" },
+				soundSet = { name = "station_passenger_old" },
+			},
+			params = getParams(),
+			
+			updateFn = function(params)
+				if (trackSelector ~= nil) then
+					trackTypes = trackSelector.getTrackTypes(params)
+				end
+				
+				local stationConfig = getStationConfig(params)
+				local stationBuilding = railstationconfigutil.makeStationBuilding(stationConfig)
+				local platformConfig = railstationconfigutil.makePlatformConfig(stationConfig)
+				local config = railstationconfigutil.makeTrainStationConfig(params, stationConfig, stationBuilding, platformConfig)
+				if (constructionutil_curved ~= nil) then
+					config.startRadius = calcRadius(params)
+					config.specialStraightTrackLen = 5
+					return constructionutil_curved.makeTrainStationNew(config)
+				else
+					return constructionutil.makeTrainStationNew(config)
+				end
+			end
+		}
+end
+

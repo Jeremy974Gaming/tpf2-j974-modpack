@@ -1,0 +1,54 @@
+function data()
+return {
+	matConfigs = {
+		{ 0, }, 
+	},
+	subMeshes = {
+		{
+			indices = {
+				normal = {
+					count = 192,
+					offset = 1548,
+				},
+				position = {
+					count = 192,
+					offset = 1356,
+				},
+				tangent = {
+					count = 192,
+					offset = 1164,
+				},
+				uv0 = {
+					count = 192,
+					offset = 972,
+				},
+			},
+			materials = {
+				"vehicle/share/flirt200_licht.mtl", 
+			},
+		}, 
+	},
+	vertexAttr = {
+		normal = {
+			count = 228,
+			numComp = 3,
+			offset = 744,
+		},
+		position = {
+			count = 264,
+			numComp = 3,
+			offset = 480,
+		},
+		tangent = {
+			count = 304,
+			numComp = 4,
+			offset = 176,
+		},
+		uv0 = {
+			count = 176,
+			numComp = 2,
+			offset = 0,
+		},
+	},
+}
+end

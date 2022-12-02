@@ -1,0 +1,845 @@
+local vec3 = require "vec3"
+local transf = require "transf"
+function data()
+return {
+	boundingInfo = {
+		bbMax = { 8.71, 1.51, 5.9, },
+		bbMin = { -8.85, -1.51, -0.041, },
+	},
+	collider = {
+		params = { },
+		transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+		type = "MESH",
+	},
+	lods = {
+		{
+			node = {
+				children = {
+					{
+						children = {
+							{
+								materials = { "vehicle/train/Giruno2_int.mtl", },
+								mesh = "vehicle/train/GirunoD/Giruno_D0_Interior.msh",
+								name = "MSH_Giruno_D0_Interior_1",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+							},
+							{
+								animations = {
+									close_doors_right = {
+										params = {
+											id = "Giruno/Blinker1.ani",
+										},
+										type = "FILE_REF",
+									},
+								},
+								materials = { "vehicle/train/Giruno2_int.mtl", },
+								mesh = "vehicle/train/GirunoA/Giruno_Warnblinker.msh",
+								name = "MSH_Giruno_Warnblinker_13",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 5.14, 0.02, 0.02, 1, },
+							},
+							{
+								animations = {
+									close_doors_left = {
+										params = {
+											id = "Giruno/Blinker1.ani",
+										},
+										type = "FILE_REF",
+									},
+								},
+								materials = { "vehicle/train/Giruno2_int.mtl", },
+								mesh = "vehicle/train/GirunoA/Giruno_Warnblinker.msh",
+								name = "MSH_Giruno_Warnblinker_14",
+								transf = { -1, 0, 0, 0, 0, -1, 0, 0, 0, 0, 1, 0, -1.7, -0.02, 0.02, 1, },
+							},
+							{
+								animations = {
+									close_doors_right = {
+										params = {
+											id = "Giruno/closeplusminus.ani",
+										},
+										type = "FILE_REF",
+									},
+									open_doors_right = {
+										params = {
+											id = "Giruno/openplusminus.ani",
+										},
+										type = "FILE_REF",
+									},
+								},
+								materials = { "vehicle/train/Giruno2.mtl", "vehicle/train/Giruno2_int.mtl", },
+								mesh = "vehicle/train/GirunoD/Giruno_D0_Tuere.msh",
+								name = "MSH_Giruno_D0_Tuere_1",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 2.27, -1.4, 1.7, 1, },
+							},
+							{
+								animations = {
+									close_doors_right = {
+										params = {
+											id = "Giruno/closetrittoben.ani",
+										},
+										type = "FILE_REF",
+									},
+									open_doors_right = {
+										params = {
+											id = "Giruno/opentrittoben.ani",
+										},
+										type = "FILE_REF",
+									},
+								},
+								materials = { "vehicle/train/Giruno2.mtl", },
+								mesh = "vehicle/train/GirunoA/Giruno_Trittoben.msh",
+								name = "MSH_Giruno_Trittoben_13",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 1.67, -1, 0.75, 1, },
+							},
+							{
+								animations = {
+									close_doors_right = {
+										params = {
+											id = "Giruno/closetrittunten.ani",
+										},
+										type = "FILE_REF",
+									},
+									open_doors_right = {
+										params = {
+											id = "Giruno/opentrittunten.ani",
+										},
+										type = "FILE_REF",
+									},
+								},
+								materials = { "vehicle/train/Giruno2.mtl", },
+								mesh = "vehicle/train/GirunoA/Giruno_Trittunten.msh",
+								name = "MSH_Giruno_Trittunten_13",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 1.67, -1, 0.75, 1, },
+							},
+							{
+								animations = {
+									close_doors_left = {
+										params = {
+											id = "Giruno/closeplusplus.ani",
+										},
+										type = "FILE_REF",
+									},
+									open_doors_left = {
+										params = {
+											id = "Giruno/openplusplus.ani",
+										},
+										type = "FILE_REF",
+									},
+								},
+								materials = { "vehicle/train/Giruno2.mtl", "vehicle/train/Giruno2_int.mtl", },
+								mesh = "vehicle/train/GirunoD/Giruno_D0_Tuere2.msh",
+								name = "MSH_Giruno_D0_Tuere2_1",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 2.27, 1.4, 1.7, 1, },
+							},
+							{
+								animations = {
+									close_doors_left = {
+										params = {
+											id = "Giruno/closetrittoben.ani",
+										},
+										type = "FILE_REF",
+									},
+									open_doors_left = {
+										params = {
+											id = "Giruno/opentrittoben.ani",
+										},
+										type = "FILE_REF",
+									},
+								},
+								materials = { "vehicle/train/Giruno2.mtl", },
+								mesh = "vehicle/train/GirunoA/Giruno_Trittoben.msh",
+								name = "MSH_Giruno_Trittoben_14",
+								transf = { 1, 0, 0, 0, 0, -1, 0, 0, 0, 0, 1, 0, 1.67, 1, 0.75, 1, },
+							},
+							{
+								animations = {
+									close_doors_left = {
+										params = {
+											id = "Giruno/closetrittunten.ani",
+										},
+										type = "FILE_REF",
+									},
+									open_doors_left = {
+										params = {
+											id = "Giruno/opentrittunten.ani",
+										},
+										type = "FILE_REF",
+									},
+								},
+								materials = { "vehicle/train/Giruno2.mtl", },
+								mesh = "vehicle/train/GirunoA/Giruno_Trittunten.msh",
+								name = "MSH_Giruno_Trittunten_14",
+								transf = { 1, 0, 0, 0, 0, -1, 0, 0, 0, 0, 1, 0, 1.67, 1, 0.75, 1, },
+							},
+							{
+								materials = { "vehicle/train/Giruno2.mtl", },
+								mesh = "vehicle/train/GirunoD/Giruno_D0_Koerper.msh",
+								name = "MSH_Giruno_D0_Koerper_1",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+							},
+							{
+								materials = { "vehicle/train/Giruno2_glass.mtl", },
+								mesh = "vehicle/train/GirunoD/Giruno_D0_Glas.msh",
+								name = "MSH_Giruno_D0_Glas_1",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 5.18, 0, 0, 1, },
+							},
+							{
+								animations = {
+									forever = {
+										params = {
+											id = "Giruno/Buegel3.ani",
+										},
+										type = "FILE_REF",
+									},
+								},
+								materials = { "vehicle/train/Giruno2.mtl", },
+								mesh = "vehicle/train/GirunoB/Giruno_SA_Buegel.msh",
+								name = "MSH_Giruno_SA_Buegel_2",
+								transf = { 1, -0, 0, 0, 0, 1.1, 0, 0, 0, 0, 1, 0, -8.34, 0, 5.75, 1, },
+							},
+							{
+								animations = {
+									forever = {
+										params = {
+											id = "Giruno/Mittler3.ani",
+										},
+										type = "FILE_REF",
+									},
+								},
+								materials = { "vehicle/train/Giruno2.mtl", },
+								mesh = "vehicle/train/GirunoB/Giruno_SA_Mittelstange.msh",
+								name = "MSH_Giruno_SA_Mittelstange_2",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -8.14, 0, 4.05, 1, },
+							},
+							{
+								animations = {
+									forever = {
+										params = {
+											id = "Giruno/Ober3.ani",
+										},
+										type = "FILE_REF",
+									},
+								},
+								materials = { "vehicle/train/Giruno2.mtl", },
+								mesh = "vehicle/train/GirunoB/Giruno_SA_Oberstange.msh",
+								name = "MSH_Giruno_SA_Oberstange_2",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -6.7765, 0, 4.74, 1, },
+							},
+							{
+								animations = {
+									forever = {
+										params = {
+											id = "Giruno/Unter3.ani",
+										},
+										type = "FILE_REF",
+									},
+								},
+								materials = { "vehicle/train/Giruno2.mtl", },
+								mesh = "vehicle/train/GirunoB/Giruno_SA_Unterstange.msh",
+								name = "MSH_Giruno_SA_Unterstange_2",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -7.18, 0, 3.98, 1, },
+							},
+							{
+								children = {
+									{
+										materials = { "vehicle/train/GirunoJakob.mtl", },
+										mesh = "vehicle/train/GirunoA/Giruno_B0_Drehgestell.msh",
+										name = "MSH_Giruno_B0_Drehgestell_4",
+										transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0.01, 0, 1, 1, },
+									},
+									{
+										materials = { "vehicle/train/GirunoJakob.mtl", },
+										mesh = "vehicle/train/GirunoA/Giruno_A0_Achse.msh",
+										name = "MSH_Giruno_A0_Achse_9",
+										transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 1.35, 0, 0.47, 1, },
+									},
+									{
+										materials = { "vehicle/train/GirunoJakob.mtl", },
+										mesh = "vehicle/train/GirunoA/Giruno_A0_Achse.msh",
+										name = "MSH_Giruno_A0_Achse_10",
+										transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -1.35, 0, 0.47, 1, },
+									},
+								},
+								name = "GRP_GirunoDrehgestell0_4",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 8.71, 0, 0, 1, },
+							},
+						},
+						name = "GRP_GirunoD0_1",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+				},
+				name = "RootNode",
+				transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+			},
+			static = false,
+			visibleFrom = 0,
+			visibleTo = 180,
+		},
+		{
+			node = {
+				children = {
+					{
+						children = {
+							{
+								materials = { "vehicle/train/Giruno2_int.mtl", },
+								mesh = "vehicle/train/GirunoD/Giruno_D1_Interior.msh",
+								name = "MSH_Giruno_D1_Interior_1",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+							},
+							{
+								animations = {
+									close_doors_right = {
+										params = {
+											id = "Giruno/Blinker1.ani",
+										},
+										type = "FILE_REF",
+									},
+								},
+								materials = { "vehicle/train/Giruno2_int.mtl", },
+								mesh = "vehicle/train/GirunoA/Giruno_Warnblinker.msh",
+								name = "MSH_Giruno_Warnblinker_15",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 5.14, 0.02, 0.02, 1, },
+							},
+							{
+								animations = {
+									close_doors_left = {
+										params = {
+											id = "Giruno/Blinker1.ani",
+										},
+										type = "FILE_REF",
+									},
+								},
+								materials = { "vehicle/train/Giruno2_int.mtl", },
+								mesh = "vehicle/train/GirunoA/Giruno_Warnblinker.msh",
+								name = "MSH_Giruno_Warnblinker_16",
+								transf = { -1, 0, 0, 0, 0, -1, 0, 0, 0, 0, 1, 0, -1.7, -0.02, 0.02, 1, },
+							},
+							{
+								animations = {
+									close_doors_right = {
+										params = {
+											id = "Giruno/closeplusminus.ani",
+										},
+										type = "FILE_REF",
+									},
+									open_doors_right = {
+										params = {
+											id = "Giruno/openplusminus.ani",
+										},
+										type = "FILE_REF",
+									},
+								},
+								materials = { "vehicle/train/Giruno2.mtl", "vehicle/train/Giruno2_int.mtl", },
+								mesh = "vehicle/train/GirunoD/Giruno_D0_Tuere.msh",
+								name = "MSH_Giruno_D0_Tuere_2",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 2.27, -1.4, 1.7, 1, },
+							},
+							{
+								animations = {
+									close_doors_right = {
+										params = {
+											id = "Giruno/closetrittoben.ani",
+										},
+										type = "FILE_REF",
+									},
+									open_doors_right = {
+										params = {
+											id = "Giruno/opentrittoben.ani",
+										},
+										type = "FILE_REF",
+									},
+								},
+								materials = { "vehicle/train/Giruno2.mtl", },
+								mesh = "vehicle/train/GirunoA/Giruno_Trittoben.msh",
+								name = "MSH_Giruno_Trittoben_15",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 1.67, -1, 0.75, 1, },
+							},
+							{
+								animations = {
+									close_doors_right = {
+										params = {
+											id = "Giruno/closetrittunten.ani",
+										},
+										type = "FILE_REF",
+									},
+									open_doors_right = {
+										params = {
+											id = "Giruno/opentrittunten.ani",
+										},
+										type = "FILE_REF",
+									},
+								},
+								materials = { "vehicle/train/Giruno2.mtl", },
+								mesh = "vehicle/train/GirunoA/Giruno_Trittunten.msh",
+								name = "MSH_Giruno_Trittunten_15",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 1.67, -1, 0.75, 1, },
+							},
+							{
+								animations = {
+									close_doors_left = {
+										params = {
+											id = "Giruno/closeplusplus.ani",
+										},
+										type = "FILE_REF",
+									},
+									open_doors_left = {
+										params = {
+											id = "Giruno/openplusplus.ani",
+										},
+										type = "FILE_REF",
+									},
+								},
+								materials = { "vehicle/train/Giruno2.mtl", "vehicle/train/Giruno2_int.mtl", },
+								mesh = "vehicle/train/GirunoD/Giruno_D0_Tuere2.msh",
+								name = "MSH_Giruno_D0_Tuere2_2",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 2.27, 1.4, 1.7, 1, },
+							},
+							{
+								animations = {
+									close_doors_left = {
+										params = {
+											id = "Giruno/closetrittoben.ani",
+										},
+										type = "FILE_REF",
+									},
+									open_doors_left = {
+										params = {
+											id = "Giruno/opentrittoben.ani",
+										},
+										type = "FILE_REF",
+									},
+								},
+								materials = { "vehicle/train/Giruno2.mtl", },
+								mesh = "vehicle/train/GirunoA/Giruno_Trittoben.msh",
+								name = "MSH_Giruno_Trittoben_16",
+								transf = { 1, 0, 0, 0, 0, -1, 0, 0, 0, 0, 1, 0, 1.67, 1, 0.75, 1, },
+							},
+							{
+								animations = {
+									close_doors_left = {
+										params = {
+											id = "Giruno/closetrittunten.ani",
+										},
+										type = "FILE_REF",
+									},
+									open_doors_left = {
+										params = {
+											id = "Giruno/opentrittunten.ani",
+										},
+										type = "FILE_REF",
+									},
+								},
+								materials = { "vehicle/train/Giruno2.mtl", },
+								mesh = "vehicle/train/GirunoA/Giruno_Trittunten.msh",
+								name = "MSH_Giruno_Trittunten_16",
+								transf = { 1, 0, 0, 0, 0, -1, 0, 0, 0, 0, 1, 0, 1.67, 1, 0.75, 1, },
+							},
+							{
+								materials = { "vehicle/train/Giruno2.mtl", },
+								mesh = "vehicle/train/GirunoD/Giruno_D1_Koerper.msh",
+								name = "MSH_Giruno_D1_Koerper_1",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+							},
+							{
+								materials = { "vehicle/train/Giruno2_glass.mtl", },
+								mesh = "vehicle/train/GirunoD/Giruno_D1_Glas.msh",
+								name = "MSH_Giruno_D1_Glas_1",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 5.18, 0, 0, 1, },
+							},
+							{
+								animations = {
+									forever = {
+										params = {
+											id = "Giruno/Buegel3.ani",
+										},
+										type = "FILE_REF",
+									},
+								},
+								materials = { "vehicle/train/Giruno2.mtl", },
+								mesh = "vehicle/train/GirunoB/Giruno_SB_Buegel.msh",
+								name = "MSH_Giruno_SB_Buegel_2",
+								transf = { 1, -0, 0, 0, 0, 1.1, 0, 0, 0, 0, 1, 0, -8.34, 0, 5.75, 1, },
+							},
+							{
+								animations = {
+									forever = {
+										params = {
+											id = "Giruno/Mittler3.ani",
+										},
+										type = "FILE_REF",
+									},
+								},
+								materials = { "vehicle/train/Giruno2.mtl", },
+								mesh = "vehicle/train/GirunoB/Giruno_SB_Mittelstange.msh",
+								name = "MSH_Giruno_SB_Mittelstange_2",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -8.14, 0, 4.05, 1, },
+							},
+							{
+								animations = {
+									forever = {
+										params = {
+											id = "Giruno/Ober3.ani",
+										},
+										type = "FILE_REF",
+									},
+								},
+								materials = { "vehicle/train/Giruno2.mtl", },
+								mesh = "vehicle/train/GirunoB/Giruno_SB_Oberstange.msh",
+								name = "MSH_Giruno_SB_Oberstange_2",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -6.7765, 0, 4.74, 1, },
+							},
+							{
+								children = {
+									{
+										materials = { "vehicle/train/GirunoJakob.mtl", },
+										mesh = "vehicle/train/GirunoA/Giruno_B1_Drehgestell.msh",
+										name = "MSH_Giruno_B1_Drehgestell_4",
+										transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0.01, 0, 1, 1, },
+									},
+									{
+										materials = { "vehicle/train/GirunoJakob.mtl", },
+										mesh = "vehicle/train/GirunoA/Giruno_A1_Achse.msh",
+										name = "MSH_Giruno_A1_Achse_9",
+										transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 1.35, 0, 0.47, 1, },
+									},
+									{
+										materials = { "vehicle/train/GirunoJakob.mtl", },
+										mesh = "vehicle/train/GirunoA/Giruno_A1_Achse.msh",
+										name = "MSH_Giruno_A1_Achse_10",
+										transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -1.35, 0, 0.47, 1, },
+									},
+								},
+								name = "GRP_GirunoDrehgestell1_4",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 8.71, 0, 0, 1, },
+							},
+						},
+						name = "GRP_GirunoD1_1",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+				},
+				name = "RootNode",
+				transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+			},
+			static = false,
+			visibleFrom = 180,
+			visibleTo = 400,
+		},
+		{
+			node = {
+				children = {
+					{
+						children = {
+							{
+								materials = { "vehicle/train/Giruno2.mtl", },
+								mesh = "vehicle/train/GirunoD/Giruno_D2_Koerper.msh",
+								name = "MSH_Giruno_D2_Koerper_1",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+							},
+							{
+								animations = {
+									forever = {
+										params = {
+											id = "Giruno/Buegel3.ani",
+										},
+										type = "FILE_REF",
+									},
+								},
+								materials = { "vehicle/train/Giruno2.mtl", },
+								mesh = "vehicle/train/GirunoB/Giruno_SC_Buegel.msh",
+								name = "MSH_Giruno_SC_Buegel_2",
+								transf = { 1, -0, 0, 0, 0, 1.1, 0, 0, 0, 0, 1, 0, -8.34, 0, 5.75, 1, },
+							},
+							{
+								animations = {
+									forever = {
+										params = {
+											id = "Giruno/Mittler3.ani",
+										},
+										type = "FILE_REF",
+									},
+								},
+								materials = { "vehicle/train/Giruno2.mtl", },
+								mesh = "vehicle/train/GirunoB/Giruno_SC_Mittelstange.msh",
+								name = "MSH_Giruno_SC_Mittelstange_2",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -8.14, 0, 4.05, 1, },
+							},
+							{
+								animations = {
+									forever = {
+										params = {
+											id = "Giruno/Ober3.ani",
+										},
+										type = "FILE_REF",
+									},
+								},
+								materials = { "vehicle/train/Giruno2.mtl", },
+								mesh = "vehicle/train/GirunoB/Giruno_SC_Oberstange.msh",
+								name = "MSH_Giruno_SC_Oberstange_2",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -6.7765, 0, 4.74, 1, },
+							},
+							{
+								children = {
+									{
+										materials = { "vehicle/train/GirunoJakob.mtl", },
+										mesh = "vehicle/train/GirunoA/Giruno_B2_Drehgestell.msh",
+										name = "MSH_Giruno_B2_Drehgestell_4",
+										transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0.01, 0, 1, 1, },
+									},
+									{
+										materials = { "vehicle/train/GirunoJakob.mtl", },
+										mesh = "vehicle/train/GirunoA/Giruno_A2_Achse.msh",
+										name = "MSH_Giruno_A2_Achse_9",
+										transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 1.35, 0, 0.47, 1, },
+									},
+									{
+										materials = { "vehicle/train/GirunoJakob.mtl", },
+										mesh = "vehicle/train/GirunoA/Giruno_A2_Achse.msh",
+										name = "MSH_Giruno_A2_Achse_10",
+										transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -1.35, 0, 0.47, 1, },
+									},
+								},
+								name = "GRP_GirunoDrehgestell2_4",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 8.71, 0, 0, 1, },
+							},
+						},
+						name = "GRP_GirunoD2_1",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+				},
+				name = "RootNode",
+				transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+			},
+			static = false,
+			visibleFrom = 400,
+			visibleTo = 2500,
+		},
+	},
+	metadata = {
+		availability = {
+			yearFrom = 2019,
+			yearTo = 0,
+		},
+		cost = {
+			price = -1,
+		},
+		emission = {
+			idleEmission = -1,
+			powerEmission = -1,
+			speedEmission = -1,
+		},
+		labelList = {
+			labels = {
+			--Anzeige links
+				{
+					childId = "MSH_Giruno_D0_Tuere2_1",
+					color = { 0.215686, 0.254902, 0.529412, 1, },
+					fitting = "CUT",
+					verticalAlignment = "CENTER",
+					alignment = "CENTER",
+					size = { 0.60, 0.10, },
+					transf = { -1, 0, 0, 0, 0, 0, 1, 0, 0, -1, 0, 0, -0.27, 0.06, 0.30, 1, },
+					type = "LINE_NAME",
+					renderMode = "STD",
+				},
+				{
+					childId = "MSH_Giruno_D0_Tuere2_1",
+					color = { 0, 0, 0, 1, },
+					fitting = "SCALE",
+					verticalAlignment = "CENTER",
+					alignment = "CENTER",
+					size = { 0.60, 0.09, },
+					transf = { -1, 0, 0, 0, 0, 0, 1, 0, 0, -1, 0, 0, -0.27, 0.06, 0.15 , 1, },
+					type = "NEXT_STOP",
+					renderMode = "STD",
+				},
+			--Anzeige rechts
+				{
+					childId = "MSH_Giruno_D0_Tuere_1",
+					color = { 0.215686, 0.254902, 0.529412, 1, },
+					fitting = "CUT",
+					verticalAlignment = "CENTER",
+					alignment = "CENTER",
+					size = { 0.6, 0.10, },
+					transf = { 1, 0, 0, 0, 0, 0, 1, 0, 0, -1, 0, 0, -0.87, -0.06, 0.30, 1},
+					type = "LINE_NAME",
+					renderMode = "STD",
+				},
+				{
+					childId = "MSH_Giruno_D0_Tuere_1",
+					color = { 0, 0, 0, 1, },
+					fitting = "SCALE",
+					verticalAlignment = "CENTER",
+					alignment = "CENTER",
+					size = { 0.6, 0.09, },
+					transf = { 1, 0, 0, 0, 0, 0, 1, 0, 0, -1, 0, 0, -0.87, -0.06, 0.15, 1},
+					type = "NEXT_STOP",
+					renderMode = "STD",
+				},
+			},
+		},
+		maintenance = {
+			lifespan = 36525,
+			runningCosts = -1,
+		},
+		railVehicle = {
+			configs = {
+				{
+					axles = { "vehicle/train/GirunoA/Giruno_A0_Achse.msh", },
+					backBackwardParts = { },
+					backForwardParts = { },
+					blinkingLights0 = { },
+					blinkingLights1 = { },
+					frontBackwardParts = { },
+					frontForwardParts = { },
+					innerBackwardParts = { },
+					innerForwardParts = { },
+					fakeBogies = {
+						{
+							group = 1,
+							offset = 0,
+							position = 8.71,
+						},
+						{
+							group = 1,
+							offset = 0,
+							position = -8.85,
+						},
+					},
+				},
+				{
+					axles = { "vehicle/train/GirunoA/Giruno_A1_Achse.msh", },
+					backBackwardParts = { },
+					backForwardParts = { },
+					blinkingLights0 = { },
+					blinkingLights1 = { },
+					frontBackwardParts = { },
+					frontForwardParts = { },
+					innerBackwardParts = { },
+					innerForwardParts = { },
+					fakeBogies = {
+						{
+							group = 1,
+							offset = 0,
+							position = 8.71,
+						},
+						{
+							group = 1,
+							offset = 0,
+							position = -8.85,
+						},
+					},
+				},
+				{
+					axles = { "vehicle/train/GirunoA/Giruno_A2_Achse.msh", },
+					backBackwardParts = { },
+					backForwardParts = { },
+					blinkingLights0 = { },
+					blinkingLights1 = { },
+					frontBackwardParts = { },
+					frontForwardParts = { },
+					innerBackwardParts = { },
+					innerForwardParts = { },
+					fakeBogies = {
+						{
+							group = 1,
+							offset = 0,
+							position = 8.71,
+						},
+						{
+							group = 1,
+							offset = 0,
+							position = -8.85,
+						},
+					},
+				},
+			},
+			engines = { },
+			soundSet = {
+				name = "StadlerJakob",
+			},
+			topSpeed = 69.444444444444,
+			weight = 33,
+		},
+		seatProvider = {
+			drivingLicense = "RAIL",
+			seats = {
+				{ animation = "driving_upright", crew = true, forward = true, group = 1, standing = false, transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 7.58, 0.97, 1.05, 1, }, },
+				{ animation = "driving_upright", crew = true, forward = false, group = 1, standing = false, transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 7.58, 0.97, 1.05, 1, }, },
+				{ animation = "driving_upright", crew = true, forward = true, group = 1, standing = false, transf = { 0, 1, 0, 0, -1, 0, 0, 0, 0, 0, 1, 0, 7.4, -1.07, 1.05, 1, }, },
+				{ animation = "driving_upright", crew = true, forward = false, group = 1, standing = false, transf = { 0, 1, 0, 0, -1, 0, 0, 0, 0, 0, 1, 0, 7.4, -1.07, 1.05, 1, }, },
+				{ animation = "sitting", crew = false, forward = true, group = 1, standing = false, transf = { -0.985, -0.174, 0, 0, 0.174, -0.985, 0, 0, 0, 0, 1, 0, 5.91, 1.07, 0.96, 1, }, },
+				{ animation = "sitting", crew = false, forward = true, group = 1, standing = false, transf = { -1, 0, 0, 0, 0, -1, 0, 0, 0, 0, 1, 0, 5.91, 0.53, 0.96, 1, }, },
+				{ animation = "sitting", crew = false, forward = true, group = 1, standing = false, transf = { -1, 0, 0, 0, 0, -1, 0, 0, 0, 0, 1, 0, 5.91, -0.53, 0.96, 1, }, },
+				{ animation = "sitting", crew = false, forward = true, group = 1, standing = false, transf = { -0.985, 0.174, 0, 0, -0.174, -0.985, 0, 0, 0, 0, 1, 0, 5.91, -1.07, 0.96, 1, }, },
+				{ animation = "sitting", crew = false, forward = true, group = 1, standing = false, transf = { 0.985, -0.174, 0, 0, 0.174, 0.985, 0, 0, 0, 0, 1, 0, 4.79, 1.07, 0.96, 1, }, },
+				{ animation = "sitting", crew = false, forward = true, group = 1, standing = false, transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 4.79, 0.53, 0.96, 1, }, },
+				{ animation = "sitting", crew = false, forward = true, group = 1, standing = false, transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 4.79, -0.53, 0.96, 1, }, },
+				{ animation = "sitting", crew = false, forward = true, group = 1, standing = false, transf = { 0.985, 0.174, 0, 0, -0.174, 0.985, 0, 0, 0, 0, 1, 0, 4.79, -1.07, 0.96, 1, }, },
+				{ animation = "sitting", crew = false, forward = true, group = 1, standing = false, transf = { -0.985, -0.174, 0, 0, 0.174, -0.985, 0, 0, 0, 0, 1, 0, 4.06, 1.07, 0.96, 1, }, },
+				{ animation = "sitting", crew = false, forward = true, group = 1, standing = false, transf = { -1, 0, 0, 0, 0, -1, 0, 0, 0, 0, 1, 0, 4.06, 0.53, 0.96, 1, }, },
+				{ animation = "sitting", crew = false, forward = true, group = 1, standing = false, transf = { -1, 0, 0, 0, 0, -1, 0, 0, 0, 0, 1, 0, 4.06, -0.53, 0.96, 1, }, },
+				{ animation = "sitting", crew = false, forward = true, group = 1, standing = false, transf = { -0.985, 0.174, 0, 0, -0.174, -0.985, 0, 0, 0, 0, 1, 0, 4.06, -1.07, 0.96, 1, }, },
+				{ animation = "sitting", crew = false, forward = true, group = 1, standing = false, transf = { 0.985, -0.174, 0, 0, 0.174, 0.985, 0, 0, 0, 0, 1, 0, 2.88, 1.07, 0.96, 1, }, },
+				{ animation = "sitting", crew = false, forward = true, group = 1, standing = false, transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 2.88, 0.53, 0.96, 1, }, },
+				{ animation = "sitting", crew = false, forward = true, group = 1, standing = false, transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 2.88, -0.53, 0.96, 1, }, },
+				{ animation = "sitting", crew = false, forward = true, group = 1, standing = false, transf = { 0.985, 0.174, 0, 0, -0.174, 0.985, 0, 0, 0, 0, 1, 0, 2.88, -1.07, 0.96, 1, }, },
+				{ animation = "sitting", crew = false, forward = true, group = 1, standing = false, transf = { -1, 0, 0, 0, 0, -1, 0, 0, 0, 0, 1, 0, 0.62, -0.53, 0.96, 1, }, },
+				{ animation = "sitting", crew = false, forward = true, group = 1, standing = false, transf = { -0.985, 0.174, 0, 0, -0.174, -0.985, 0, 0, 0, 0, 1, 0, 0.62, -1.07, 0.96, 1, }, },
+				{ animation = "sitting", crew = false, forward = true, group = 1, standing = false, transf = { -0.985, -0.174, 0, 0, 0.174, -0.985, 0, 0, 0, 0, 1, 0, -0.32, 1.07, 0.96, 1, }, },
+				{ animation = "sitting", crew = false, forward = true, group = 1, standing = false, transf = { -1, 0, 0, 0, 0, -1, 0, 0, 0, 0, 1, 0, -0.32, 0.53, 0.96, 1, }, },
+				{ animation = "sitting", crew = false, forward = true, group = 1, standing = false, transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -0.99, -0.53, 0.96, 1, }, },
+				{ animation = "sitting", crew = false, forward = true, group = 1, standing = false, transf = { 0.985, 0.174, 0, 0, -0.174, 0.985, 0, 0, 0, 0, 1, 0, -0.99, -1.07, 0.96, 1, }, },
+				{ animation = "sitting", crew = false, forward = true, group = 1, standing = false, transf = { -0.985, -0.174, 0, 0, 0.174, -0.985, 0, 0, 0, 0, 1, 0, -1.20, 1.07, 0.96, 1, }, },
+				{ animation = "sitting", crew = false, forward = true, group = 1, standing = false, transf = { -1, 0, 0, 0, 0, -1, 0, 0, 0, 0, 1, 0, -1.20, 0.53, 0.96, 1, }, },
+				{ animation = "sitting", crew = false, forward = true, group = 1, standing = false, transf = { -0.985, -0.174, 0, 0, 0.174, -0.985, 0, 0, 0, 0, 1, 0, -2.04, 1.07, 0.96, 1, }, },
+				{ animation = "sitting", crew = false, forward = true, group = 1, standing = false, transf = { -1, 0, 0, 0, 0, -1, 0, 0, 0, 0, 1, 0, -2.04, 0.53, 0.96, 1, }, },
+				{ animation = "sitting", crew = false, forward = true, group = 1, standing = false, transf = { -1, 0, 0, 0, 0, -1, 0, 0, 0, 0, 1, 0, -2.04, -0.53, 0.96, 1, }, },
+				{ animation = "sitting", crew = false, forward = true, group = 1, standing = false, transf = { -0.985, 0.174, 0, 0, -0.174, -0.985, 0, 0, 0, 0, 1, 0, -2.04, -1.07, 0.96, 1, }, },
+				{ animation = "sitting", crew = false, forward = true, group = 1, standing = false, transf = { 0.985, -0.174, 0, 0, 0.174, 0.985, 0, 0, 0, 0, 1, 0, -3.14, 1.07, 0.96, 1, }, },
+				{ animation = "sitting", crew = false, forward = true, group = 1, standing = false, transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -3.14, 0.53, 0.96, 1, }, },
+				{ animation = "sitting", crew = false, forward = true, group = 1, standing = false, transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -3.14, -0.53, 0.96, 1, }, },
+				{ animation = "sitting", crew = false, forward = true, group = 1, standing = false, transf = { 0.985, 0.174, 0, 0, -0.174, 0.985, 0, 0, 0, 0, 1, 0, -3.14, -1.07, 0.96, 1, }, },
+				{ animation = "sitting", crew = false, forward = true, group = 1, standing = false, transf = { -0.985, -0.174, 0, 0, 0.174, -0.985, 0, 0, 0, 0, 1, 0, -3.92, 1.07, 0.96, 1, }, },
+				{ animation = "sitting", crew = false, forward = true, group = 1, standing = false, transf = { -1, 0, 0, 0, 0, -1, 0, 0, 0, 0, 1, 0, -3.92, 0.53, 0.96, 1, }, },
+				{ animation = "sitting", crew = false, forward = true, group = 1, standing = false, transf = { -1, 0, 0, 0, 0, -1, 0, 0, 0, 0, 1, 0, -3.92, -0.53, 0.96, 1, }, },
+				{ animation = "sitting", crew = false, forward = true, group = 1, standing = false, transf = { -0.985, 0.174, 0, 0, -0.174, -0.985, 0, 0, 0, 0, 1, 0, -3.92, -1.07, 0.96, 1, }, },
+				{ animation = "sitting", crew = false, forward = true, group = 1, standing = false, transf = { 0.985, -0.174, 0, 0, 0.174, 0.985, 0, 0, 0, 0, 1, 0, -5.00, 1.07, 0.96, 1, }, },
+				{ animation = "sitting", crew = false, forward = true, group = 1, standing = false, transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -5.00, 0.53, 0.96, 1, }, },
+				{ animation = "sitting", crew = false, forward = true, group = 1, standing = false, transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -5.00, -0.53, 0.96, 1, }, },
+				{ animation = "sitting", crew = false, forward = true, group = 1, standing = false, transf = { 0.985, 0.174, 0, 0, -0.174, 0.985, 0, 0, 0, 0, 1, 0, -5.00, -1.07, 0.96, 1, }, },
+			},
+		},
+		cameraConfig = {
+			positions = {
+				{
+					fov = 35, group = 2, transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -9.0, 0.0, 2.5, 1, },
+				}, {
+					fov = 35, group = 2, transf = { -1, 0, 0, 0, 0, -1, 0, 0, 0, 0, 1, 0, 9.0, 0.0, 2.5, 1, },
+				}, 
+			},
+		},
+		transportVehicle = {
+			carrier = "RAIL",
+			compartmentsList = {
+				{
+					loadConfigs = {
+						{
+							cargoEntries = {
+								{
+									capacity = 52,
+									seats = { },
+									type = "PASSENGERS",
+								},
+							},
+							toHide = { },
+						},
+					},
+				},
+			},
+			multipleUnitOnly = true,
+			reversible = false,
+		},
+	},
+	version = 1,
+}
+end

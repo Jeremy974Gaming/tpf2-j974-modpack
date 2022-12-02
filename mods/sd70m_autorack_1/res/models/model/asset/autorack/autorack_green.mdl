@@ -1,0 +1,241 @@
+function data()
+return {
+	availability = {
+		yearFrom = 1977,
+		yearTo = 0,
+	},
+	boundingInfo = {
+		bbMax = { 13.73653, 1.53028, 5.55955, },
+		bbMin = { -13.73653, -1.53028, -0.03473, },
+	},
+	collider = {
+		params = { },
+		transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+		type = "MESH",
+	},
+	cost = {
+		price = 0,
+	},
+	lods = {
+		{
+			node = {
+				children = {
+					{
+						_meshId = 1,
+						_origMeshId = 1,
+						materials = { "vehicle/waggon/autorack/roof.mtl", "vehicle/waggon/autorack/sides.mtl", "asset/autorack/main_green.mtl", },
+						mesh = "vehicle/waggon/autorack/lod_2_autorack_main.msh",
+						name = "MSH_lod_2_autorack_main_5",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+															{
+						children = {
+							{
+								materials = { "vehicle/waggon/freight_shared_2.mtl", },
+								mesh = "vehicle/waggon/boxcar_1945/lod_1_b1.msh",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+							},
+							{
+								materials = { "vehicle/waggon/freight_shared_2.mtl", },
+								mesh = "vehicle/waggon/boxcar_1945/lod_1_w1.msh",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0.86449998617172, 0, 0.42669999599457, 1, },
+							},
+							{
+								materials = { "vehicle/waggon/freight_shared_2.mtl", },
+								mesh = "vehicle/waggon/boxcar_1945/lod_1_w1.msh",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -0.86449998617172, 0, 0.42669999599457, 1, },
+							},
+						},
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 13.73653, 0, 0, 1, },
+					},
+					{
+						children = {
+							{
+								materials = { "vehicle/waggon/freight_shared_2.mtl", },
+								mesh = "vehicle/waggon/boxcar_1945/lod_1_b1.msh",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+							},
+							{
+								materials = { "vehicle/waggon/freight_shared_2.mtl", },
+								mesh = "vehicle/waggon/boxcar_1945/lod_1_w1.msh",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0.86449998617172, 0, 0.42669999599457, 1, },
+							},
+							{
+								materials = { "vehicle/waggon/freight_shared_2.mtl", },
+								mesh = "vehicle/waggon/boxcar_1945/lod_1_w1.msh",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -0.86449998617172, 0, 0.42669999599457, 1, },
+							},
+						},
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -13.73653, 0, 0, 1, },
+					},
+				},
+				name = "RootNode",
+				transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+			},
+			static = false,
+			visibleFrom = 350,
+			visibleTo = 1860,
+		},
+		{
+			node = {
+				children = {
+					{
+						_meshId = 1,
+						_origMeshId = 1,
+						materials = { "vehicle/waggon/autorack/roof.mtl", "vehicle/waggon/autorack/sides.mtl", "asset/autorack/main_green.mtl", "vehicle/waggon/freight_shared_2.mtl", },
+						mesh = "vehicle/waggon/autorack/lod_1_autorack_main.msh",
+						name = "MSH_lod_1_autorack_main_5",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+										{
+						children = {
+							{
+								materials = { "vehicle/waggon/freight_shared_2.mtl", },
+								mesh = "vehicle/waggon/boxcar_1945/lod_1_b1.msh",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+							},
+							{
+								materials = { "vehicle/waggon/freight_shared_2.mtl", },
+								mesh = "vehicle/waggon/boxcar_1945/lod_1_w1.msh",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0.86449998617172, 0, 0.42669999599457, 1, },
+							},
+							{
+								materials = { "vehicle/waggon/freight_shared_2.mtl", },
+								mesh = "vehicle/waggon/boxcar_1945/lod_1_w1.msh",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -0.86449998617172, 0, 0.42669999599457, 1, },
+							},
+						},
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 13.73653, 0, 0, 1, },
+					},
+					{
+						children = {
+							{
+								materials = { "vehicle/waggon/freight_shared_2.mtl", },
+								mesh = "vehicle/waggon/boxcar_1945/lod_1_b1.msh",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+							},
+							{
+								materials = { "vehicle/waggon/freight_shared_2.mtl", },
+								mesh = "vehicle/waggon/boxcar_1945/lod_1_w1.msh",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0.86449998617172, 0, 0.42669999599457, 1, },
+							},
+							{
+								materials = { "vehicle/waggon/freight_shared_2.mtl", },
+								mesh = "vehicle/waggon/boxcar_1945/lod_1_w1.msh",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -0.86449998617172, 0, 0.42669999599457, 1, },
+							},
+						},
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -13.73653, 0, 0, 1, },
+					},
+				},
+				name = "RootNode",
+				transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+			},
+			static = false,
+			visibleFrom = 110,
+			visibleTo = 350,
+		},
+		{
+			node = {
+				children = {
+					{
+						_meshId = 1,
+						_origMeshId = 1,
+						materials = { "vehicle/waggon/autorack/roof.mtl", "vehicle/waggon/autorack/sides.mtl", "asset/autorack/main_green.mtl", },
+						mesh = "vehicle/waggon/autorack/lod_0_autorack_main.msh",
+						name = "MSH_autorack_main_5",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						animations = { },
+						children = {
+							{
+								_meshId = 3,
+								_origMeshId = 3,
+								materials = { "vehicle/waggon/aar_freight_trucks.mtl", },
+								mesh = "vehicle/waggon/aar_freight_trucks/aar_freight_trucks_lod_0_bogie.msh",
+								name = "MSH_aar_freight_trucks_lod_0_bogie_9",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0.5103, 1, },
+							},
+							{
+								_meshId = 4,
+								_origMeshId = 4,
+								materials = { "vehicle/waggon/aar_freight_trucks.mtl", },
+								mesh = "vehicle/waggon/aar_freight_trucks/aar_freight_trucks_lod_0_rad.msh",
+								name = "MSH_aar_freight_trucks_lod_0_rad_17",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0.85, 0, 0.41375, 1, },
+							},
+							{
+								_meshId = 5,
+								_origMeshId = 5,
+								materials = { "vehicle/waggon/aar_freight_trucks.mtl", },
+								mesh = "vehicle/waggon/aar_freight_trucks/aar_freight_trucks_lod_0_rad.msh",
+								name = "MSH_aar_freight_trucks_lod_0_rad_18",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -0.85, 0, 0.41375, 1, },
+							},
+						},
+						name = "GRP_aar_freight_trucks_lod_0_bogie_9",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 9.77798, 0, 0, 1, },
+					},
+					{
+						animations = { },
+						children = {
+							{
+								_meshId = 7,
+								_origMeshId = 7,
+								materials = { "vehicle/waggon/aar_freight_trucks.mtl", },
+								mesh = "vehicle/waggon/aar_freight_trucks/aar_freight_trucks_lod_0_bogie.msh",
+								name = "MSH_aar_freight_trucks_lod_0_bogie_10",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0.5103, 1, },
+							},
+							{
+								_meshId = 8,
+								_origMeshId = 8,
+								materials = { "vehicle/waggon/aar_freight_trucks.mtl", },
+								mesh = "vehicle/waggon/aar_freight_trucks/aar_freight_trucks_lod_0_rad.msh",
+								name = "MSH_aar_freight_trucks_lod_0_rad_19",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0.85, 0, 0.41375, 1, },
+							},
+							{
+								_meshId = 9,
+								_origMeshId = 9,
+								materials = { "vehicle/waggon/aar_freight_trucks.mtl", },
+								mesh = "vehicle/waggon/aar_freight_trucks/aar_freight_trucks_lod_0_rad.msh",
+								name = "MSH_aar_freight_trucks_lod_0_rad_20",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -0.85, 0, 0.41375, 1, },
+							},
+						},
+						name = "GRP_aar_freight_trucks_lod_0_bogie_10",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -9.77798, 0, 0, 1, },
+					},
+					{
+						materials = { "vehicle/sd70m_aar_coupler.mtl", },
+						mesh = "vehicle/sd70m_aar_coupler/lod_0_aar_coupler_waggon.msh",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 13.73653, 0, 0, 1, },
+					},
+					{
+						materials = { "vehicle/sd70m_aar_coupler.mtl", },
+						mesh = "vehicle/sd70m_aar_coupler/lod_0_aar_coupler_waggon.msh",
+						transf = { -1, 0, 0, 0, 0, -1, 0, 0, 0, 0, 1, 0, -13.73653, 0, 0, 1, },
+					},
+				},
+				name = "RootNode",
+				transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+			},
+			static = false,
+			visibleFrom = 0,
+			visibleTo = 110,
+		},
+	},
+	metadata = {
+		cost = {
+			price = -1,
+		},
+		description = {
+			name = _("Bi-Level Autorack"),
+			description = _("desc_autorack"),
+		},
+	},
+	version = 1,
+}
+end

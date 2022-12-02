@@ -1,0 +1,16 @@
+Version 1.2:
+ - Erstveröffentlichung
+
+Version 1.3:
+ - Added: Auswahl verschiedener Oberleitungshöhen (via TPFMM bzw. settings.lua) für Schmalspurgleise hinzugefügt.
+ 
+Version 1.4
+ - Added: Auswahl Spartanisches Gleispaket hinzugefügt.
+ - Changed: Gleisabstand und Schotterbettbreite 750 und 760 mm auf 5 m (Standardwerte) erhöht.
+ - Changed: Sind Bahnhöfe und Depots des Mods aktiviert, so können UG Bahnhöfe und Depots deaktiviert werden.
+ - Changed: Beim Bahnhof und Depot Oberleitungsauswahl Standard auf "Nein".
+ - Fixed: Höhe Oberleitungswerk angepasst.
+ - Fixed: Gleis-Auswahlmenü bei Verwendung der CommonAPI fehlerhaft (falsche Gleisgeschwindigkeit).
+
+Version 1.5
+ - Added: Auswahl, alle Gleise, welche nicht zum Mod gehören und deren Spurweite im Mod aktiv ist auszublenden, hinzugefügt.

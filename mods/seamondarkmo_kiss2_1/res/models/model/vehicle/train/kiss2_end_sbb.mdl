@@ -1,0 +1,2006 @@
+function data()
+return {
+	boundingInfo = {
+		bbMax = { 13.282549858093, 1.4400000572205, 5.8966999053955, },
+		bbMin = { -12.800000190735, -1.4400000572205, -0.033500000834465, },
+	},
+	collider = {
+		params = {
+			halfExtents = { 13.041275024414, 1.4400000572205, 2.9651000499725, },
+		},
+		transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0.2412748336792, 0, 2.931599855423, 1, },
+		type = "BOX",
+	},
+	lods = {
+		{
+			node = {
+				children = {
+					{
+						materials = { "vehicle/train/kiss2_sbb.mtl", },
+						mesh = "vehicle/train/kiss2/kiss2_lod0_body_interieur.msh",
+						name = "MSH_kiss2_lod0_body_interieur_1",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						materials = { "vehicle/train/kiss2_light_sbb.mtl", },
+						mesh = "vehicle/train/kiss2/kiss2_lod0_lights.msh",
+						name = "MSH_kiss2_lod0_lights_4",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 12.427639961243, 0, 0.02170000039041, 1, },
+					},
+					{
+						animations = {
+							close_doors_left = {
+								params = {
+									id = "SeamonKiss2/closedoorleftback.ani",
+								},
+								type = "FILE_REF",
+							},
+							open_doors_left = {
+								params = {
+									id = "SeamonKiss2/opendoorleftback.ani",
+								},
+								type = "FILE_REF",
+							},
+						},
+						materials = { "vehicle/train/kiss2_sbb.mtl", "vehicle/train/kiss2_glass_sbb.mtl", },
+						mesh = "vehicle/train/kiss2/kiss2_lod0_doors_left_back.msh",
+						name = "MSH_kiss2_lod0_doors_left_back_4",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						animations = {
+							close_doors_left = {
+								params = {
+									id = "SeamonKiss2/closedoorleftfront.ani",
+								},
+								type = "FILE_REF",
+							},
+							open_doors_left = {
+								params = {
+									id = "SeamonKiss2/opendoorleftfront.ani",
+								},
+								type = "FILE_REF",
+							},
+						},
+						materials = { "vehicle/train/kiss2_sbb.mtl", "vehicle/train/kiss2_glass_sbb.mtl", },
+						mesh = "vehicle/train/kiss2/kiss2_lod0_doors_left_front.msh",
+						name = "MSH_kiss2_lod0_doors_left_front_4",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						animations = {
+							close_doors_right = {
+								params = {
+									id = "SeamonKiss2/closedoorrightback.ani",
+								},
+								type = "FILE_REF",
+							},
+							open_doors_right = {
+								params = {
+									id = "SeamonKiss2/opendoorrightback.ani",
+								},
+								type = "FILE_REF",
+							},
+						},
+						materials = { "vehicle/train/kiss2_sbb.mtl", "vehicle/train/kiss2_glass_sbb.mtl", },
+						mesh = "vehicle/train/kiss2/kiss2_lod0_doors_right_back.msh",
+						name = "MSH_kiss2_lod0_doors_right_back_4",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						animations = {
+							close_doors_right = {
+								params = {
+									id = "SeamonKiss2/closedoorrightfront.ani",
+								},
+								type = "FILE_REF",
+							},
+							open_doors_right = {
+								params = {
+									id = "SeamonKiss2/opendoorrightfront.ani",
+								},
+								type = "FILE_REF",
+							},
+						},
+						materials = { "vehicle/train/kiss2_sbb.mtl", "vehicle/train/kiss2_glass_sbb.mtl", },
+						mesh = "vehicle/train/kiss2/kiss2_lod0_doors_right_front.msh",
+						name = "MSH_kiss2_lod0_doors_right_front_4",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						animations = {
+							close_doors_left = {
+								params = {
+									id = "SeamonKiss2/closeramp.ani",
+								},
+								type = "FILE_REF",
+							},
+							open_doors_left = {
+								params = {
+									id = "SeamonKiss2/openramp.ani",
+								},
+								type = "FILE_REF",
+							},
+						},
+						materials = { "vehicle/train/kiss2_sbb.mtl", },
+						mesh = "vehicle/train/kiss2/kiss2_lod0_asset_ramp.msh",
+						name = "MSH_kiss2_lod0_asset_ramp_13",
+						transf = { -1, 0, 0, 0, 0, -1, 0, 0, 0, 0, 1, 0, 4.061270236969, 0, 0, 1, },
+					},
+					{
+						animations = {
+							close_doors_left = {
+								params = {
+									id = "SeamonKiss2/closeramp.ani",
+								},
+								type = "FILE_REF",
+							},
+							open_doors_left = {
+								params = {
+									id = "SeamonKiss2/openramp.ani",
+								},
+								type = "FILE_REF",
+							},
+						},
+						materials = { "vehicle/train/kiss2_sbb.mtl", },
+						mesh = "vehicle/train/kiss2/kiss2_lod0_asset_ramp.msh",
+						name = "MSH_kiss2_lod0_asset_ramp_14",
+						transf = { -1, 0, 0, 0, 0, -1, 0, 0, 0, 0, 1, 0, -5.6647901535034, 0, 0, 1, },
+					},
+					{
+						animations = {
+							close_doors_right = {
+								params = {
+									id = "SeamonKiss2/closeramp.ani",
+								},
+								type = "FILE_REF",
+							},
+							open_doors_right = {
+								params = {
+									id = "SeamonKiss2/openramp.ani",
+								},
+								type = "FILE_REF",
+							},
+						},
+						materials = { "vehicle/train/kiss2_sbb.mtl", },
+						mesh = "vehicle/train/kiss2/kiss2_lod0_asset_ramp.msh",
+						name = "MSH_kiss2_lod0_asset_ramp_15",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 4.061270236969, 0, 0, 1, },
+					},
+					{
+						animations = {
+							close_doors_right = {
+								params = {
+									id = "SeamonKiss2/closeramp.ani",
+								},
+								type = "FILE_REF",
+							},
+							open_doors_right = {
+								params = {
+									id = "SeamonKiss2/openramp.ani",
+								},
+								type = "FILE_REF",
+							},
+						},
+						materials = { "vehicle/train/kiss2_sbb.mtl", },
+						mesh = "vehicle/train/kiss2/kiss2_lod0_asset_ramp.msh",
+						name = "MSH_kiss2_lod0_asset_ramp_16",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -5.6647901535034, 0, 0, 1, },
+					},
+					{
+						materials = { "vehicle/train/kiss2_glass_sbb.mtl", },
+						mesh = "vehicle/train/kiss2/kiss2_lod0_asset_glass.msh",
+						name = "MSH_kiss2_lod0_asset_glass_2",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -0.79765999317169, 0, 1, 1, },
+					},
+					{
+						materials = { "vehicle/train/kiss2_sbb.mtl", },
+						mesh = "vehicle/train/kiss2/kiss2_lod0_body.msh",
+						name = "MSH_kiss2_lod0_body_3",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						materials = { "vehicle/train/kiss2_glass_sbb.mtl", },
+						mesh = "vehicle/train/kiss2/kiss2_lod0_body_glass.msh",
+						name = "MSH_kiss2_lod0_body_glass_4",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						materials = { "vehicle/train/kiss2_glass_light.mtl", },
+						mesh = "vehicle/train/kiss2/kiss2_lod0_glass.msh",
+						name = "MSH_kiss2_lod0_glass_4",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						animations = {
+							close_doors_right = {
+								params = {
+									id = "SeamonKiss2/closemirrorleft.ani",
+								},
+								type = "FILE_REF",
+							},
+							open_doors_right = {
+								params = {
+									id = "SeamonKiss2/openmirrorleft.ani",
+								},
+								type = "FILE_REF",
+							},
+						},
+						materials = { "vehicle/train/kiss2_sbb.mtl", },
+						mesh = "vehicle/train/kiss2/kiss2_lod0_mirror_left.msh",
+						name = "MSH_kiss2_lod0_mirror_left_3",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 11.249400138855, -1.3591099977493, 2.8440499305725, 1, },
+					},
+					{
+						animations = {
+							close_doors_left = {
+								params = {
+									id = "SeamonKiss2/closemirrorright.ani",
+								},
+								type = "FILE_REF",
+							},
+							open_doors_left = {
+								params = {
+									id = "SeamonKiss2/openmirrorright.ani",
+								},
+								type = "FILE_REF",
+							},
+						},
+						materials = { "vehicle/train/kiss2_sbb.mtl", },
+						mesh = "vehicle/train/kiss2/kiss2_lod0_mirror_right.msh",
+						name = "MSH_kiss2_lod0_mirror_right_3",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 11.249400138855, 1.3591099977493, 2.8440499305725, 1, },
+					},
+					{
+						animations = {
+							forever = {
+								params = {
+									id = "SeamonKiss2/ventilate.ani",
+								},
+								type = "FILE_REF",
+							},
+						},
+						materials = { "vehicle/train/kiss2_box.mtl", },
+						mesh = "vehicle/train/kiss2/kiss2_lod0_asset_ventilator.msh",
+						name = "MSH_kiss2_lod0_asset_ventilator_5",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -9.1330995559692, 0, 4.5751800537109, 1, },
+					},
+					{
+						animations = {
+							forever = {
+								params = {
+									id = "SeamonKiss2/ventilate.ani",
+								},
+								type = "FILE_REF",
+							},
+						},
+						materials = { "vehicle/train/kiss2_box.mtl", },
+						mesh = "vehicle/train/kiss2/kiss2_lod0_asset_ventilator.msh",
+						name = "MSH_kiss2_lod0_asset_ventilator_6",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 7.5254898071289, 0, 4.5751800537109, 1, },
+					},
+					{
+						materials = { "vehicle/train/kiss2_sbb.mtl", },
+						mesh = "vehicle/train/kiss2/kiss2_lod0_pantho_up.msh",
+						name = "MSH_kiss2_lod0_pantho_up_1",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -10.599140167236, 0, 4.0459499359131, 1, },
+					},
+					{
+						materials = { "vehicle/train/kiss2_sbb.mtl", },
+						mesh = "vehicle/train/kiss2/kiss2_lod0_pantho_up.msh",
+						name = "MSH_kiss2_lod0_pantho_up_2",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -10.599140167236, 0, 4.0459499359131, 1, },
+					},
+					{
+						materials = { "vehicle/train/kiss2_sbb.mtl", },
+						mesh = "vehicle/train/kiss2/kiss2_lod0_pantho_down.msh",
+						name = "MSH_kiss2_lod0_pantho_down_1",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -10.599140167236, 0, 4.0459499359131, 1, },
+					},
+					{
+						materials = { "vehicle/train/kiss2_sbb.mtl", },
+						mesh = "vehicle/train/kiss2/kiss2_lod0_pantho_down.msh",
+						name = "MSH_kiss2_lod0_pantho_down_2",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -10.599140167236, 0, 4.0459499359131, 1, },
+					},
+					{
+						materials = { "vehicle/train/kiss2_sbb.mtl", },
+						mesh = "vehicle/train/kiss2/kiss2_lod0_coupler_schwab.msh",
+						name = "MSH_kiss2_lod0_coupler_schwab_1",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 13.282549858093, 0, 1.1803300380707, 1, },
+					},
+					{
+						materials = { "vehicle/train/kiss2_box.mtl", },
+						mesh = "vehicle/train/kiss2/kiss2_lod0_box.msh",
+						name = "MSH_kiss2_lod0_box_3",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						children = {
+							{
+								materials = { "vehicle/train/kiss2_bogie.mtl", },
+								mesh = "vehicle/train/kiss2/kiss2_lod0_bogie.msh",
+								name = "MSH_kiss2_lod0_bogie_5",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, -0.038400001823902, 1, },
+							},
+							{
+								materials = { "vehicle/train/kiss2_bogie.mtl", },
+								mesh = "vehicle/train/kiss2/kiss2_lod0_traction_wheel.msh",
+								name = "MSH_kiss2_lod0_traction_wheel_9",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 1.2520400285721, 0, 0.42649999260902, 1, },
+							},
+							{
+								materials = { "vehicle/train/kiss2_bogie.mtl", },
+								mesh = "vehicle/train/kiss2/kiss2_lod0_traction_wheel.msh",
+								name = "MSH_kiss2_lod0_traction_wheel_10",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -1.2520400285721, 0, 0.42649999260902, 1, },
+							},
+						},
+						name = "GRP_kiss2_lod0_bogie_5",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 7.9004597663879, 0, 0, 1, },
+					},
+					{
+						children = {
+							{
+								materials = { "vehicle/train/kiss2_bogie.mtl", },
+								mesh = "vehicle/train/kiss2/kiss2_lod0_bogie.msh",
+								name = "MSH_kiss2_lod0_bogie_6",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, -0.038400001823902, 1, },
+							},
+							{
+								materials = { "vehicle/train/kiss2_bogie.mtl", },
+								mesh = "vehicle/train/kiss2/kiss2_lod0_traction_wheel.msh",
+								name = "MSH_kiss2_lod0_traction_wheel_11",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 1.2520400285721, 0, 0.42649999260902, 1, },
+							},
+							{
+								materials = { "vehicle/train/kiss2_bogie.mtl", },
+								mesh = "vehicle/train/kiss2/kiss2_lod0_traction_wheel.msh",
+								name = "MSH_kiss2_lod0_traction_wheel_12",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -1.2520400285721, 0, 0.42649999260902, 1, },
+							},
+						},
+						name = "GRP_kiss2_lod0_bogie_6",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -9.7495403289795, 0, 0, 1, },
+					},
+					{
+						materials = { "vehicle/asset/2000_lights.mtl", },
+						mesh = "vehicle/asset/lod_0_light_kiss_white.msh",
+						name = "MSH_lod_0_light_kiss_white_3",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						materials = { "vehicle/asset/2000_lights.mtl", },
+						mesh = "vehicle/asset/lod_0_light_kiss_red.msh",
+						name = "MSH_lod_0_light_kiss_red_3",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+				},
+				name = "RootNode",
+				transf = { -1, -8.7422776573476e-08, 0, 0, 8.7422776573476e-08, -1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+			},
+			static = false,
+			visibleFrom = 0,
+			visibleTo = 40,
+		},
+		{
+			node = {
+				children = {
+					{
+						materials = { "vehicle/train/kiss2_sbb.mtl", },
+						mesh = "vehicle/train/kiss2/kiss2_lod1_body_interieur.msh",
+						name = "MSH_kiss2_lod1_body_interieur_1",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						materials = { "vehicle/train/kiss2_light_sbb.mtl", },
+						mesh = "vehicle/train/kiss2/kiss2_lod0_lights.msh",
+						name = "MSH_kiss2_lod0_lights_5",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 12.427639961243, 0, 0.02170000039041, 1, },
+					},
+					{
+						animations = {
+							close_doors_left = {
+								params = {
+									id = "SeamonKiss2/closedoorleftback.ani",
+								},
+								type = "FILE_REF",
+							},
+							open_doors_left = {
+								params = {
+									id = "SeamonKiss2/opendoorleftback.ani",
+								},
+								type = "FILE_REF",
+							},
+						},
+						materials = { "vehicle/train/kiss2_sbb.mtl", "vehicle/train/kiss2_glass_sbb.mtl", },
+						mesh = "vehicle/train/kiss2/kiss2_lod0_doors_left_back.msh",
+						name = "MSH_kiss2_lod0_doors_left_back_5",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						animations = {
+							close_doors_left = {
+								params = {
+									id = "SeamonKiss2/closedoorleftfront.ani",
+								},
+								type = "FILE_REF",
+							},
+							open_doors_left = {
+								params = {
+									id = "SeamonKiss2/opendoorleftfront.ani",
+								},
+								type = "FILE_REF",
+							},
+						},
+						materials = { "vehicle/train/kiss2_sbb.mtl", "vehicle/train/kiss2_glass_sbb.mtl", },
+						mesh = "vehicle/train/kiss2/kiss2_lod0_doors_left_front.msh",
+						name = "MSH_kiss2_lod0_doors_left_front_5",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						animations = {
+							close_doors_right = {
+								params = {
+									id = "SeamonKiss2/closedoorrightback.ani",
+								},
+								type = "FILE_REF",
+							},
+							open_doors_right = {
+								params = {
+									id = "SeamonKiss2/opendoorrightback.ani",
+								},
+								type = "FILE_REF",
+							},
+						},
+						materials = { "vehicle/train/kiss2_sbb.mtl", "vehicle/train/kiss2_glass_sbb.mtl", },
+						mesh = "vehicle/train/kiss2/kiss2_lod0_doors_right_back.msh",
+						name = "MSH_kiss2_lod0_doors_right_back_5",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						animations = {
+							close_doors_right = {
+								params = {
+									id = "SeamonKiss2/closedoorrightfront.ani",
+								},
+								type = "FILE_REF",
+							},
+							open_doors_right = {
+								params = {
+									id = "SeamonKiss2/opendoorrightfront.ani",
+								},
+								type = "FILE_REF",
+							},
+						},
+						materials = { "vehicle/train/kiss2_sbb.mtl", "vehicle/train/kiss2_glass_sbb.mtl", },
+						mesh = "vehicle/train/kiss2/kiss2_lod0_doors_right_front.msh",
+						name = "MSH_kiss2_lod0_doors_right_front_5",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						animations = {
+							close_doors_left = {
+								params = {
+									id = "SeamonKiss2/closeramp.ani",
+								},
+								type = "FILE_REF",
+							},
+							open_doors_left = {
+								params = {
+									id = "SeamonKiss2/openramp.ani",
+								},
+								type = "FILE_REF",
+							},
+						},
+						materials = { "vehicle/train/kiss2_sbb.mtl", },
+						mesh = "vehicle/train/kiss2/kiss2_lod0_asset_ramp.msh",
+						name = "MSH_kiss2_lod0_asset_ramp_17",
+						transf = { -1, 0, 0, 0, 0, -1, 0, 0, 0, 0, 1, 0, 4.061270236969, 0, 0, 1, },
+					},
+					{
+						animations = {
+							close_doors_left = {
+								params = {
+									id = "SeamonKiss2/closeramp.ani",
+								},
+								type = "FILE_REF",
+							},
+							open_doors_left = {
+								params = {
+									id = "SeamonKiss2/openramp.ani",
+								},
+								type = "FILE_REF",
+							},
+						},
+						materials = { "vehicle/train/kiss2_sbb.mtl", },
+						mesh = "vehicle/train/kiss2/kiss2_lod0_asset_ramp.msh",
+						name = "MSH_kiss2_lod0_asset_ramp_18",
+						transf = { -1, 0, 0, 0, 0, -1, 0, 0, 0, 0, 1, 0, -5.6647901535034, 0, 0, 1, },
+					},
+					{
+						animations = {
+							close_doors_right = {
+								params = {
+									id = "SeamonKiss2/closeramp.ani",
+								},
+								type = "FILE_REF",
+							},
+							open_doors_right = {
+								params = {
+									id = "SeamonKiss2/openramp.ani",
+								},
+								type = "FILE_REF",
+							},
+						},
+						materials = { "vehicle/train/kiss2_sbb.mtl", },
+						mesh = "vehicle/train/kiss2/kiss2_lod0_asset_ramp.msh",
+						name = "MSH_kiss2_lod0_asset_ramp_19",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 4.061270236969, 0, 0, 1, },
+					},
+					{
+						animations = {
+							close_doors_right = {
+								params = {
+									id = "SeamonKiss2/closeramp.ani",
+								},
+								type = "FILE_REF",
+							},
+							open_doors_right = {
+								params = {
+									id = "SeamonKiss2/openramp.ani",
+								},
+								type = "FILE_REF",
+							},
+						},
+						materials = { "vehicle/train/kiss2_sbb.mtl", },
+						mesh = "vehicle/train/kiss2/kiss2_lod0_asset_ramp.msh",
+						name = "MSH_kiss2_lod0_asset_ramp_20",
+						transf = { -1, -8.7422776573476e-08, 0, 0, 8.7422776573476e-08, -1, 0, 0, 0, 0, 1, 0, -5.6647901535034, 0, 0, 1, },
+					},
+					{
+						materials = { "vehicle/train/kiss2_sbb.mtl", },
+						mesh = "vehicle/train/kiss2/kiss2_lod0_body.msh",
+						name = "MSH_kiss2_lod0_body_4",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						materials = { "vehicle/train/kiss2_glass_sbb.mtl", },
+						mesh = "vehicle/train/kiss2/kiss2_lod0_body_glass.msh",
+						name = "MSH_kiss2_lod0_body_glass_5",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						materials = { "vehicle/train/kiss2_glass_light.mtl", },
+						mesh = "vehicle/train/kiss2/kiss2_lod0_glass.msh",
+						name = "MSH_kiss2_lod0_glass_5",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						animations = {
+							close_doors_right = {
+								params = {
+									id = "SeamonKiss2/closemirrorleft.ani",
+								},
+								type = "FILE_REF",
+							},
+							open_doors_right = {
+								params = {
+									id = "SeamonKiss2/openmirrorleft.ani",
+								},
+								type = "FILE_REF",
+							},
+						},
+						materials = { "vehicle/train/kiss2_sbb.mtl", },
+						mesh = "vehicle/train/kiss2/kiss2_lod0_mirror_left.msh",
+						name = "MSH_kiss2_lod0_mirror_left_4",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 11.249400138855, -1.3591099977493, 2.8440499305725, 1, },
+					},
+					{
+						animations = {
+							close_doors_left = {
+								params = {
+									id = "SeamonKiss2/closemirrorright.ani",
+								},
+								type = "FILE_REF",
+							},
+							open_doors_left = {
+								params = {
+									id = "SeamonKiss2/openmirrorright.ani",
+								},
+								type = "FILE_REF",
+							},
+						},
+						materials = { "vehicle/train/kiss2_sbb.mtl", },
+						mesh = "vehicle/train/kiss2/kiss2_lod0_mirror_right.msh",
+						name = "MSH_kiss2_lod0_mirror_right_4",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 11.249400138855, 1.3591099977493, 2.8440499305725, 1, },
+					},
+					{
+						animations = {
+							forever = {
+								params = {
+									id = "SeamonKiss2/ventilate.ani",
+								},
+								type = "FILE_REF",
+							},
+						},
+						materials = { "vehicle/train/kiss2_box.mtl", },
+						mesh = "vehicle/train/kiss2/kiss2_lod0_asset_ventilator.msh",
+						name = "MSH_kiss2_lod0_asset_ventilator_7",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -9.1330995559692, 0, 4.5751800537109, 1, },
+					},
+					{
+						animations = {
+							forever = {
+								params = {
+									id = "SeamonKiss2/ventilate.ani",
+								},
+								type = "FILE_REF",
+							},
+						},
+						materials = { "vehicle/train/kiss2_box.mtl", },
+						mesh = "vehicle/train/kiss2/kiss2_lod0_asset_ventilator.msh",
+						name = "MSH_kiss2_lod0_asset_ventilator_8",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 7.5254898071289, 0, 4.5751800537109, 1, },
+					},
+					{
+						materials = { "vehicle/train/kiss2_sbb.mtl", },
+						mesh = "vehicle/train/kiss2/kiss2_lod0_pantho_up.msh",
+						name = "MSH_kiss2_lod0_pantho_up_3",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -10.599140167236, 0, 4.0459499359131, 1, },
+					},
+					{
+						materials = { "vehicle/train/kiss2_sbb.mtl", },
+						mesh = "vehicle/train/kiss2/kiss2_lod0_pantho_up.msh",
+						name = "MSH_kiss2_lod0_pantho_up_4",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -10.599140167236, 0, 4.0459499359131, 1, },
+					},
+					{
+						materials = { "vehicle/train/kiss2_sbb.mtl", },
+						mesh = "vehicle/train/kiss2/kiss2_lod0_pantho_down.msh",
+						name = "MSH_kiss2_lod0_pantho_down_3",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -10.599140167236, 0, 4.0459499359131, 1, },
+					},
+					{
+						materials = { "vehicle/train/kiss2_sbb.mtl", },
+						mesh = "vehicle/train/kiss2/kiss2_lod0_pantho_down.msh",
+						name = "MSH_kiss2_lod0_pantho_down_4",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -10.599140167236, 0, 4.0459499359131, 1, },
+					},
+					{
+						materials = { "vehicle/train/kiss2_sbb.mtl", },
+						mesh = "vehicle/train/kiss2/kiss2_lod0_coupler_schwab.msh",
+						name = "MSH_kiss2_lod0_coupler_schwab_2",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 13.282549858093, 0, 1.1803300380707, 1, },
+					},
+					{
+						materials = { "vehicle/train/kiss2_box.mtl", },
+						mesh = "vehicle/train/kiss2/kiss2_lod0_box.msh",
+						name = "MSH_kiss2_lod0_box_4",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						children = {
+							{
+								materials = { "vehicle/train/kiss2_bogie.mtl", },
+								mesh = "vehicle/train/kiss2/kiss2_lod0_bogie.msh",
+								name = "MSH_kiss2_lod0_bogie_7",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, -0.038400001823902, 1, },
+							},
+							{
+								materials = { "vehicle/train/kiss2_bogie.mtl", },
+								mesh = "vehicle/train/kiss2/kiss2_lod0_traction_wheel.msh",
+								name = "MSH_kiss2_lod0_traction_wheel_13",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 1.2520400285721, 0, 0.42649999260902, 1, },
+							},
+							{
+								materials = { "vehicle/train/kiss2_bogie.mtl", },
+								mesh = "vehicle/train/kiss2/kiss2_lod0_traction_wheel.msh",
+								name = "MSH_kiss2_lod0_traction_wheel_14",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -1.2520400285721, 0, 0.42649999260902, 1, },
+							},
+						},
+						name = "GRP_kiss2_lod0_bogie_7",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 7.9004597663879, 0, 0, 1, },
+					},
+					{
+						children = {
+							{
+								materials = { "vehicle/train/kiss2_bogie.mtl", },
+								mesh = "vehicle/train/kiss2/kiss2_lod0_bogie.msh",
+								name = "MSH_kiss2_lod0_bogie_8",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, -0.038400001823902, 1, },
+							},
+							{
+								materials = { "vehicle/train/kiss2_bogie.mtl", },
+								mesh = "vehicle/train/kiss2/kiss2_lod0_traction_wheel.msh",
+								name = "MSH_kiss2_lod0_traction_wheel_15",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 1.2520400285721, 0, 0.42649999260902, 1, },
+							},
+							{
+								materials = { "vehicle/train/kiss2_bogie.mtl", },
+								mesh = "vehicle/train/kiss2/kiss2_lod0_traction_wheel.msh",
+								name = "MSH_kiss2_lod0_traction_wheel_16",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -1.2520400285721, 0, 0.42649999260902, 1, },
+							},
+						},
+						name = "GRP_kiss2_lod0_bogie_8",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -9.7495403289795, 0, 0, 1, },
+					},
+					{
+						materials = { "vehicle/asset/2000_lights.mtl", },
+						mesh = "vehicle/asset/lod_0_light_kiss_white.msh",
+						name = "MSH_lod_0_light_kiss_white_4",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						materials = { "vehicle/asset/2000_lights.mtl", },
+						mesh = "vehicle/asset/lod_0_light_kiss_red.msh",
+						name = "MSH_lod_0_light_kiss_red_4",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+				},
+				name = "RootNode",
+				transf = { -1, -8.7422776573476e-08, 0, 0, 8.7422776573476e-08, -1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+			},
+			static = false,
+			visibleFrom = 40,
+			visibleTo = 125,
+		},
+		{
+			node = {
+				children = {
+					{
+						materials = { "vehicle/train/kiss2_sbb.mtl", },
+						mesh = "vehicle/train/kiss2/kiss2_lod2_body_interieur.msh",
+						name = "MSH_kiss2_lod2_body_interieur_2",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						materials = { "vehicle/train/kiss2_light_sbb.mtl", },
+						mesh = "vehicle/train/kiss2/kiss2_lod0_lights.msh",
+						name = "MSH_kiss2_lod0_lights_6",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 12.427639961243, 0, 0.02170000039041, 1, },
+					},
+					{
+						animations = {
+							close_doors_left = {
+								params = {
+									id = "SeamonKiss2/closedoorleftback.ani",
+								},
+								type = "FILE_REF",
+							},
+							open_doors_left = {
+								params = {
+									id = "SeamonKiss2/opendoorleftback.ani",
+								},
+								type = "FILE_REF",
+							},
+						},
+						materials = { "vehicle/train/kiss2_sbb.mtl", "vehicle/train/kiss2_glass_sbb.mtl", },
+						mesh = "vehicle/train/kiss2/kiss2_lod0_doors_left_back.msh",
+						name = "MSH_kiss2_lod0_doors_left_back_6",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						animations = {
+							close_doors_left = {
+								params = {
+									id = "SeamonKiss2/closedoorleftfront.ani",
+								},
+								type = "FILE_REF",
+							},
+							open_doors_left = {
+								params = {
+									id = "SeamonKiss2/opendoorleftfront.ani",
+								},
+								type = "FILE_REF",
+							},
+						},
+						materials = { "vehicle/train/kiss2_sbb.mtl", "vehicle/train/kiss2_glass_sbb.mtl", },
+						mesh = "vehicle/train/kiss2/kiss2_lod0_doors_left_front.msh",
+						name = "MSH_kiss2_lod0_doors_left_front_6",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						animations = {
+							close_doors_right = {
+								params = {
+									id = "SeamonKiss2/closedoorrightback.ani",
+								},
+								type = "FILE_REF",
+							},
+							open_doors_right = {
+								params = {
+									id = "SeamonKiss2/opendoorrightback.ani",
+								},
+								type = "FILE_REF",
+							},
+						},
+						materials = { "vehicle/train/kiss2_sbb.mtl", "vehicle/train/kiss2_glass_sbb.mtl", },
+						mesh = "vehicle/train/kiss2/kiss2_lod0_doors_right_back.msh",
+						name = "MSH_kiss2_lod0_doors_right_back_6",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						animations = {
+							close_doors_right = {
+								params = {
+									id = "SeamonKiss2/closedoorrightfront.ani",
+								},
+								type = "FILE_REF",
+							},
+							open_doors_right = {
+								params = {
+									id = "SeamonKiss2/opendoorrightfront.ani",
+								},
+								type = "FILE_REF",
+							},
+						},
+						materials = { "vehicle/train/kiss2_sbb.mtl", "vehicle/train/kiss2_glass_sbb.mtl", },
+						mesh = "vehicle/train/kiss2/kiss2_lod0_doors_right_front.msh",
+						name = "MSH_kiss2_lod0_doors_right_front_6",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						animations = {
+							close_doors_left = {
+								params = {
+									id = "SeamonKiss2/closeramp.ani",
+								},
+								type = "FILE_REF",
+							},
+							open_doors_left = {
+								params = {
+									id = "SeamonKiss2/openramp.ani",
+								},
+								type = "FILE_REF",
+							},
+						},
+						materials = { "vehicle/train/kiss2_sbb.mtl", },
+						mesh = "vehicle/train/kiss2/kiss2_lod0_asset_ramp.msh",
+						name = "MSH_kiss2_lod0_asset_ramp_21",
+						transf = { -1, 0, 0, 0, 0, -1, 0, 0, 0, 0, 1, 0, 4.061270236969, 0, 0, 1, },
+					},
+					{
+						animations = {
+							close_doors_left = {
+								params = {
+									id = "SeamonKiss2/closeramp.ani",
+								},
+								type = "FILE_REF",
+							},
+							open_doors_left = {
+								params = {
+									id = "SeamonKiss2/openramp.ani",
+								},
+								type = "FILE_REF",
+							},
+						},
+						materials = { "vehicle/train/kiss2_sbb.mtl", },
+						mesh = "vehicle/train/kiss2/kiss2_lod0_asset_ramp.msh",
+						name = "MSH_kiss2_lod0_asset_ramp_22",
+						transf = { -1, 0, 0, 0, 0, -1, 0, 0, 0, 0, 1, 0, -5.6647901535034, 0, 0, 1, },
+					},
+					{
+						animations = {
+							close_doors_right = {
+								params = {
+									id = "SeamonKiss2/closeramp.ani",
+								},
+								type = "FILE_REF",
+							},
+							open_doors_right = {
+								params = {
+									id = "SeamonKiss2/openramp.ani",
+								},
+								type = "FILE_REF",
+							},
+						},
+						materials = { "vehicle/train/kiss2_sbb.mtl", },
+						mesh = "vehicle/train/kiss2/kiss2_lod0_asset_ramp.msh",
+						name = "MSH_kiss2_lod0_asset_ramp_23",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 4.061270236969, 0, 0, 1, },
+					},
+					{
+						animations = {
+							close_doors_right = {
+								params = {
+									id = "SeamonKiss2/closeramp.ani",
+								},
+								type = "FILE_REF",
+							},
+							open_doors_right = {
+								params = {
+									id = "SeamonKiss2/openramp.ani",
+								},
+								type = "FILE_REF",
+							},
+						},
+						materials = { "vehicle/train/kiss2_sbb.mtl", },
+						mesh = "vehicle/train/kiss2/kiss2_lod0_asset_ramp.msh",
+						name = "MSH_kiss2_lod0_asset_ramp_24",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -5.6647901535034, 0, 0, 1, },
+					},
+					{
+						materials = { "vehicle/train/kiss2_sbb.mtl", },
+						mesh = "vehicle/train/kiss2/kiss2_lod2_body.msh",
+						name = "MSH_kiss2_lod2_body_3",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						materials = { "vehicle/train/kiss2_glass_sbb.mtl", },
+						mesh = "vehicle/train/kiss2/kiss2_lod0_body_glass.msh",
+						name = "MSH_kiss2_lod0_body_glass_6",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						materials = { "vehicle/train/kiss2_sbb.mtl", },
+						mesh = "vehicle/train/kiss2/kiss2_lod2_pantho_up.msh",
+						name = "MSH_kiss2_lod2_pantho_up_1",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -10.599140167236, 0, 4.0459499359131, 1, },
+					},
+					{
+						materials = { "vehicle/train/kiss2_sbb.mtl", },
+						mesh = "vehicle/train/kiss2/kiss2_lod2_pantho_up.msh",
+						name = "MSH_kiss2_lod2_pantho_up_2",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -10.599140167236, 0, 4.0459499359131, 1, },
+					},
+					{
+						materials = { "vehicle/train/kiss2_sbb.mtl", },
+						mesh = "vehicle/train/kiss2/kiss2_lod2_pantho_down.msh",
+						name = "MSH_kiss2_lod2_pantho_down_1",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -10.599140167236, 0, 4.0459499359131, 1, },
+					},
+					{
+						materials = { "vehicle/train/kiss2_sbb.mtl", },
+						mesh = "vehicle/train/kiss2/kiss2_lod2_pantho_down.msh",
+						name = "MSH_kiss2_lod2_pantho_down_2",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -10.599140167236, 0, 4.0459499359131, 1, },
+					},
+					{
+						materials = { "vehicle/train/kiss2_sbb.mtl", },
+						mesh = "vehicle/train/kiss2/kiss2_lod0_coupler_schwab.msh",
+						name = "MSH_kiss2_lod0_coupler_schwab_3",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 13.282549858093, 0, 1.1803300380707, 1, },
+					},
+					{
+						children = {
+							{
+								materials = { "vehicle/train/kiss2_bogie.mtl", },
+								mesh = "vehicle/train/kiss2/kiss2_lod1_bogie.msh",
+								name = "MSH_kiss2_lod1_bogie_3",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0.4363499879837, 1, },
+							},
+							{
+								materials = { "vehicle/train/kiss2_bogie.mtl", },
+								mesh = "vehicle/train/kiss2/kiss2_lod1_wheel.msh",
+								name = "MSH_kiss2_lod1_wheel_5",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 1.2522699832916, 0, 0.42555999755859, 1, },
+							},
+							{
+								materials = { "vehicle/train/kiss2_bogie.mtl", },
+								mesh = "vehicle/train/kiss2/kiss2_lod1_wheel.msh",
+								name = "MSH_kiss2_lod1_wheel_6",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -1.2522699832916, 0, 0.42555999755859, 1, },
+							},
+						},
+						name = "GRP_kiss2_lod1_bogie_3",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 7.9004597663879, 0, 0, 1, },
+					},
+					{
+						children = {
+							{
+								materials = { "vehicle/train/kiss2_bogie.mtl", },
+								mesh = "vehicle/train/kiss2/kiss2_lod1_bogie.msh",
+								name = "MSH_kiss2_lod1_bogie_4",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0.4363499879837, 1, },
+							},
+							{
+								materials = { "vehicle/train/kiss2_bogie.mtl", },
+								mesh = "vehicle/train/kiss2/kiss2_lod1_wheel.msh",
+								name = "MSH_kiss2_lod1_wheel_7",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 1.2522699832916, 0, 0.42555999755859, 1, },
+							},
+							{
+								materials = { "vehicle/train/kiss2_bogie.mtl", },
+								mesh = "vehicle/train/kiss2/kiss2_lod1_wheel.msh",
+								name = "MSH_kiss2_lod1_wheel_8",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -1.2522699832916, 0, 0.42555999755859, 1, },
+							},
+						},
+						name = "GRP_kiss2_lod1_bogie_4",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -9.7495403289795, 0, 0, 1, },
+					},
+				},
+				name = "RootNode",
+				transf = { -1, -8.7422776573476e-08, 0, 0, 8.7422776573476e-08, -1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+			},
+			static = false,
+			visibleFrom = 125,
+			visibleTo = 250,
+		},
+		{
+			node = {
+				children = {
+					{
+						materials = { "vehicle/train/kiss2_sbb.mtl", },
+						mesh = "vehicle/train/kiss2/kiss2_lod2_body.msh",
+						name = "MSH_kiss2_lod2_body_4",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						children = {
+							{
+								materials = { "vehicle/train/kiss2_bogie.mtl", },
+								mesh = "vehicle/train/kiss2/kiss2_lod3_bogie.msh",
+								name = "MSH_kiss2_lod3_bogie_3",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0.4363499879837, 1, },
+							},
+							{
+								materials = { "vehicle/train/kiss2_bogie.mtl", },
+								mesh = "vehicle/train/kiss2/kiss2_lod3_wheel.msh",
+								name = "MSH_kiss2_lod3_wheel_5",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 1.2522699832916, 0, 0.42555999755859, 1, },
+							},
+							{
+								materials = { "vehicle/train/kiss2_bogie.mtl", },
+								mesh = "vehicle/train/kiss2/kiss2_lod3_wheel.msh",
+								name = "MSH_kiss2_lod3_wheel_6",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -1.2522699832916, 0, 0.42555999755859, 1, },
+							},
+						},
+						name = "GRP_kiss2_lod2_bogie_3",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 7.9004597663879, 0, 0, 1, },
+					},
+					{
+						children = {
+							{
+								materials = { "vehicle/train/kiss2_bogie.mtl", },
+								mesh = "vehicle/train/kiss2/kiss2_lod3_bogie.msh",
+								name = "MSH_kiss2_lod3_bogie_4",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0.4363499879837, 1, },
+							},
+							{
+								materials = { "vehicle/train/kiss2_bogie.mtl", },
+								mesh = "vehicle/train/kiss2/kiss2_lod3_wheel.msh",
+								name = "MSH_kiss2_lod3_wheel_7",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 1.2522699832916, 0, 0.42555999755859, 1, },
+							},
+							{
+								materials = { "vehicle/train/kiss2_bogie.mtl", },
+								mesh = "vehicle/train/kiss2/kiss2_lod3_wheel.msh",
+								name = "MSH_kiss2_lod3_wheel_8",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -1.2522699832916, 0, 0.42555999755859, 1, },
+							},
+						},
+						name = "GRP_kiss2_lod2_bogie_4",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -9.7495403289795, 0, 0, 1, },
+					},
+				},
+				name = "RootNode",
+				transf = { -1, -8.7422776573476e-08, 0, 0, 8.7422776573476e-08, -1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+			},
+			static = false,
+			visibleFrom = 250,
+			visibleTo = 2500,
+		},
+	},
+	metadata = {
+		availability = {
+			yearFrom = 2023,
+			yearTo = 0,
+		},
+		cameraConfig = {
+			positions = {
+				{
+					fov = 45,
+					group = 1,
+					noTransf = false,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 10.300000190735, 0, 3.0799999237061, 1, },
+				},
+				{
+					fov = 35,
+					group = 1,
+					noTransf = false,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -2.5, 0, 5.25, 1, },
+				},
+				{
+					fov = 18,
+					group = 1,
+					noTransf = false,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 2, 2.0999999046326, 2.5, 1, },
+				},
+				{
+					fov = 18,
+					group = 1,
+					noTransf = false,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 2, -2.0999999046326, 2.5, 1, },
+				},
+				{
+					fov = 50,
+					group = 1,
+					noTransf = false,
+					transf = { -1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 20, 0, 2.5, 1, },
+				},
+				{
+					fov = 50,
+					group = 1,
+					noTransf = false,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -11.25, 0, 2.75, 1, },
+				},
+			},
+		},
+		cost = {
+			price = -1,
+			priceScale = 1,
+		},
+		description = {
+			description = _("KISS2"),
+			name = _("Stadler KISS2 SBB End"),
+		},
+		emission = {
+			idleEmission = -1,
+			powerEmission = -1,
+			speedEmission = -1,
+		},
+		labelList = {
+			labels = {
+				{
+					alignment = "LEFT",
+					alpha = 1,
+					alphaMode = "CUTOUT",
+					childId = "MSH_kiss2_lod0_body_3",
+					color = { 1, 0.7764710187912, 0.50980401039124, },
+					filter = "NONE",
+					fitting = "SCALE",
+					nLines = 1,
+					params = { },
+					renderMode = "EMISSIVE",
+					size = { 1.3500000238419, 0.23999999463558, },
+					transf = { 0, 1, 0, 0, 0, 0, 1, 0, 1, 0, 0, 0, 11.369999885559, -0.75, 3.5699999332428, 1, },
+					type = "LINE_NAME",
+					verticalAlignment = "CENTER",
+				},
+				{
+					alignment = "CENTER",
+					alpha = 1,
+					alphaMode = "CUTOUT",
+					childId = "MSH_kiss2_lod0_body_3",
+					color = { 1, 0.7764710187912, 0.50980401039124, },
+					filter = "NONE",
+					fitting = "SCALE",
+					nLines = 1,
+					params = { },
+					renderMode = "EMISSIVE",
+					size = { 0.89999997615814, 0.125, },
+					transf = { -1, 0, 0, 0, 0, 0, 1, 0, 0, -1, 0, 0, 2.4400000572205, 1.4400000572205, 2.1199998855591, 1, },
+					type = "LINE_NAME",
+					verticalAlignment = "CENTER",
+				},
+				{
+					alignment = "CENTER",
+					alpha = 1,
+					alphaMode = "CUTOUT",
+					childId = "MSH_kiss2_lod0_body_3",
+					color = { 1, 0.7764710187912, 0.50980401039124, },
+					filter = "NONE",
+					fitting = "SCALE",
+					nLines = 1,
+					params = { },
+					renderMode = "EMISSIVE",
+					size = { 0.89999997615814, 0.125, },
+					transf = { -1, 0, 0, 0, 0, 0, 1, 0, 0, -1, 0, 0, -3.2200000286102, 1.4400000572205, 2.1199998855591, 1, },
+					type = "NEXT_STOP",
+					verticalAlignment = "CENTER",
+				},
+				{
+					alignment = "CENTER",
+					alpha = 1,
+					alphaMode = "CUTOUT",
+					childId = "MSH_kiss2_lod0_body_3",
+					color = { 1, 0.7764710187912, 0.50980401039124, },
+					filter = "NONE",
+					fitting = "SCALE",
+					nLines = 1,
+					params = { },
+					renderMode = "EMISSIVE",
+					size = { 0.89999997615814, 0.125, },
+					transf = { 1, 0, 0, 0, 0, 0, 1, 0, 0, -1, 0, 0, 1.5199999809265, -1.4400000572205, 2.1199998855591, 1, },
+					type = "NEXT_STOP",
+					verticalAlignment = "CENTER",
+				},
+				{
+					alignment = "CENTER",
+					alpha = 1,
+					alphaMode = "CUTOUT",
+					childId = "MSH_kiss2_lod0_body_3",
+					color = { 1, 0.7764710187912, 0.50980401039124, },
+					filter = "NONE",
+					fitting = "SCALE",
+					nLines = 1,
+					params = { },
+					renderMode = "EMISSIVE",
+					size = { 0.89999997615814, 0.125, },
+					transf = { 1, 0, 0, 0, 0, 0, 1, 0, 0, -1, 0, 0, -4.1199998855591, -1.4400000572205, 2.1199998855591, 1, },
+					type = "LINE_NAME",
+					verticalAlignment = "CENTER",
+				},
+			},
+		},
+		maintenance = {
+			lifespan = 36525,
+			runningCostScale = 1,
+			runningCosts = -1,
+		},
+		railVehicle = {
+			blinkInterval = 500,
+			configs = {
+				{
+					axles = { "vehicle/train/kiss2/kiss2_lod0_traction_wheel.msh", },
+					backBackwardParts = { 19, 34, },
+					backForwardParts = { },
+					blinkLightsLeft0 = { },
+					blinkLightsLeft1 = { },
+					blinkLightsRight0 = { },
+					blinkLightsRight1 = { },
+					blinkingLights0 = { },
+					blinkingLights1 = { },
+					brakeLights = { },
+					fakeBogies = { },
+					frontBackwardParts = { },
+					frontForwardParts = { 21, 33, },
+					innerBackwardParts = { 20, },
+					innerForwardParts = { 22, },
+				},
+				{
+					axles = { "vehicle/train/kiss2/kiss2_lod0_traction_wheel.msh", },
+					backBackwardParts = { 18, 33, },
+					backForwardParts = { },
+					blinkLightsLeft0 = { },
+					blinkLightsLeft1 = { },
+					blinkLightsRight0 = { },
+					blinkLightsRight1 = { },
+					blinkingLights0 = { },
+					blinkingLights1 = { },
+					brakeLights = { },
+					fakeBogies = { },
+					frontBackwardParts = { },
+					frontForwardParts = { 20, 32, },
+					innerBackwardParts = { 19, },
+					innerForwardParts = { 21, },
+				},
+				{
+					axles = { "vehicle/train/kiss2/kiss2_lod1_wheel.msh", },
+					backBackwardParts = { 13, },
+					backForwardParts = { },
+					blinkLightsLeft0 = { },
+					blinkLightsLeft1 = { },
+					blinkLightsRight0 = { },
+					blinkLightsRight1 = { },
+					blinkingLights0 = { },
+					blinkingLights1 = { },
+					brakeLights = { },
+					fakeBogies = { },
+					frontBackwardParts = { },
+					frontForwardParts = { 15, },
+					innerBackwardParts = { 14, },
+					innerForwardParts = { 16, },
+				},
+				{
+					axles = { "vehicle/train/kiss2/kiss2_lod3_wheel.msh", },
+					backBackwardParts = { },
+					backForwardParts = { },
+					blinkLightsLeft0 = { },
+					blinkLightsLeft1 = { },
+					blinkLightsRight0 = { },
+					blinkLightsRight1 = { },
+					blinkingLights0 = { },
+					blinkingLights1 = { },
+					brakeLights = { },
+					fakeBogies = { },
+					frontBackwardParts = { },
+					frontForwardParts = { },
+					innerBackwardParts = { },
+					innerForwardParts = { },
+				},
+			},
+			engines = {
+				{
+					power = 3000,
+					tractiveEffort = 200,
+					type = "ELECTRIC",
+				},
+			},
+			soundSet = {
+				horn = "vehicle/StadlerKiss/horn.wav",
+				name = "StadlerKiss",
+			},
+			topSpeed = 44.444442749023,
+			weight = 72,
+		},
+		seatProvider = {
+			crewModels = { },
+			drivingLicense = "RAIL",
+			seats = {
+				{
+					animation = "driving_upright",
+					crew = true,
+					forward = true,
+					group = 33,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 10.619999885559, 0.079999998211861, 1.5199999809265, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 1,
+					transf = { -0.93999999761581, 0.34200000762939, 0, 0, -0.34200000762939, -0.93999999761581, 0, 0, 0, 0, 1, 0, 1.7200000286102, -1.0249999761581, 0.55000001192093, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 1,
+					transf = { -1, 0, 0, 0, 0, -1, 0, 0, 0, 0, 1, 0, 1.7200000286102, -0.52499997615814, 0.55000001192093, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 1,
+					transf = { -1, 0, 0, 0, 0, -1, 0, 0, 0, 0, 1, 0, 1.7200000286102, 0.52499997615814, 0.55000001192093, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 1,
+					transf = { -0.93999999761581, -0.34200000762939, 0, 0, 0.34200000762939, -0.93999999761581, 0, 0, 0, 0, 1, 0, 1.7200000286102, 1.0249999761581, 0.55000001192093, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 1,
+					transf = { 0.93999999761581, 0.34200000762939, 0, 0, -0.34200000762939, 0.93999999761581, 0, 0, 0, 0, 1, 0, 0.81999999284744, -1.0249999761581, 0.55000001192093, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 1,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0.81999999284744, -0.52499997615814, 0.55000001192093, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 1,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0.81999999284744, 0.52499997615814, 0.55000001192093, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 1,
+					transf = { 0.93999999761581, -0.34200000762939, 0, 0, 0.34200000762939, 0.93999999761581, 0, 0, 0, 0, 1, 0, 0.81999999284744, 1.0249999761581, 0.55000001192093, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 1,
+					transf = { -0.93999999761581, 0.34200000762939, 0, 0, -0.34200000762939, -0.93999999761581, 0, 0, 0, 0, 1, 0, 0.11999999731779, -1.0249999761581, 0.55000001192093, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 1,
+					transf = { -1, 0, 0, 0, 0, -1, 0, 0, 0, 0, 1, 0, 0.11999999731779, -0.52499997615814, 0.55000001192093, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 1,
+					transf = { -1, 0, 0, 0, 0, -1, 0, 0, 0, 0, 1, 0, 0.11999999731779, 0.52499997615814, 0.55000001192093, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 1,
+					transf = { -0.93999999761581, -0.34200000762939, 0, 0, 0.34200000762939, -0.93999999761581, 0, 0, 0, 0, 1, 0, 0.11999999731779, 1.0249999761581, 0.55000001192093, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 1,
+					transf = { 0.93999999761581, 0.34200000762939, 0, 0, -0.34200000762939, 0.93999999761581, 0, 0, 0, 0, 1, 0, -0.77999997138977, -1.0249999761581, 0.55000001192093, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 1,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -0.77999997138977, -0.52499997615814, 0.55000001192093, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 1,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -0.77999997138977, 0.52499997615814, 0.55000001192093, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 1,
+					transf = { 0.93999999761581, -0.34200000762939, 0, 0, 0.34200000762939, 0.93999999761581, 0, 0, 0, 0, 1, 0, -0.77999997138977, 1.0249999761581, 0.55000001192093, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 1,
+					transf = { -0.93999999761581, 0.34200000762939, 0, 0, -0.34200000762939, -0.93999999761581, 0, 0, 0, 0, 1, 0, -1.4800000190735, -1.0249999761581, 0.55000001192093, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 1,
+					transf = { -1, 0, 0, 0, 0, -1, 0, 0, 0, 0, 1, 0, -1.4800000190735, -0.52499997615814, 0.55000001192093, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 1,
+					transf = { -1, 0, 0, 0, 0, -1, 0, 0, 0, 0, 1, 0, -1.4800000190735, 0.52499997615814, 0.55000001192093, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 1,
+					transf = { -0.93999999761581, -0.34200000762939, 0, 0, 0.34200000762939, -0.93999999761581, 0, 0, 0, 0, 1, 0, -1.4800000190735, 1.0249999761581, 0.55000001192093, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 1,
+					transf = { 0.93999999761581, 0.34200000762939, 0, 0, -0.34200000762939, 0.93999999761581, 0, 0, 0, 0, 1, 0, -2.3800001144409, -1.0249999761581, 0.55000001192093, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 1,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -2.3800001144409, -0.52499997615814, 0.55000001192093, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 1,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -2.3800001144409, 0.52499997615814, 0.55000001192093, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 1,
+					transf = { 0.93999999761581, -0.34200000762939, 0, 0, 0.34200000762939, 0.93999999761581, 0, 0, 0, 0, 1, 0, -2.3800001144409, 1.0249999761581, 0.55000001192093, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 1,
+					transf = { 0.93999999761581, 0.34200000762939, 0, 0, -0.34200000762939, 0.93999999761581, 0, 0, 0, 0, 1, 0, -3.3699998855591, -1.0249999761581, 0.55000001192093, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 1,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -3.3699998855591, -0.52499997615814, 0.55000001192093, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 1,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -3.3699998855591, 0.52499997615814, 0.55000001192093, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 1,
+					transf = { 0.93999999761581, -0.34200000762939, 0, 0, 0.34200000762939, 0.93999999761581, 0, 0, 0, 0, 1, 0, -3.3699998855591, 1.0249999761581, 0.55000001192093, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 1,
+					transf = { 0, 1, 0, 0, -1, 0, 0, 0, 0, 0, 1, 0, 3.4200000762939, -0.9200000166893, 2.5499999523163, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 1,
+					transf = { 0, 1, 0, 0, -1, 0, 0, 0, 0, 0, 1, 0, 3.9700000286102, -0.9200000166893, 2.5499999523163, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 1,
+					transf = { 0, -1, 0, 0, 1, 0, 0, 0, 0, 0, 1, 0, 3.460000038147, 0.9200000166893, 2.5499999523163, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 1,
+					transf = { 0, -1, 0, 0, 1, 0, 0, 0, 0, 0, 1, 0, 4.0100002288818, 0.9200000166893, 2.5499999523163, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 1,
+					transf = { 0, -1, 0, 0, 1, 0, 0, 0, 0, 0, 1, 0, 4.5900001525879, 0.9200000166893, 2.5499999523163, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 1,
+					transf = { -0.93999999761581, 0.34200000762939, 0, 0, -0.34200000762939, -0.93999999761581, 0, 0, 0, 0, 1, 0, 2.6400001049042, -1.0249999761581, 2.5499999523163, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 1,
+					transf = { -1, 0, 0, 0, 0, -1, 0, 0, 0, 0, 1, 0, 2.6400001049042, -0.52499997615814, 2.5499999523163, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 1,
+					transf = { -1, 0, 0, 0, 0, -1, 0, 0, 0, 0, 1, 0, 2.6400001049042, 0.52499997615814, 2.5499999523163, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 1,
+					transf = { -0.93999999761581, -0.34200000762939, 0, 0, 0.34200000762939, -0.93999999761581, 0, 0, 0, 0, 1, 0, 2.6400001049042, 1.0249999761581, 2.5499999523163, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 1,
+					transf = { 0.93999999761581, 0.34200000762939, 0, 0, -0.34200000762939, 0.93999999761581, 0, 0, 0, 0, 1, 0, 1.6799999475479, -1.0249999761581, 2.5499999523163, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 1,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 1.6799999475479, -0.52499997615814, 2.5499999523163, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 1,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 1.6799999475479, 0.52499997615814, 2.5499999523163, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 1,
+					transf = { 0.93999999761581, -0.34200000762939, 0, 0, 0.34200000762939, 0.93999999761581, 0, 0, 0, 0, 1, 0, 1.6799999475479, 1.0249999761581, 2.5499999523163, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 1,
+					transf = { -0.93999999761581, 0.34200000762939, 0, 0, -0.34200000762939, -0.93999999761581, 0, 0, 0, 0, 1, 0, 1.039999961853, -1.0249999761581, 2.5499999523163, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 1,
+					transf = { -1, 0, 0, 0, 0, -1, 0, 0, 0, 0, 1, 0, 1.039999961853, -0.52499997615814, 2.5499999523163, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 1,
+					transf = { -1, 0, 0, 0, 0, -1, 0, 0, 0, 0, 1, 0, 1.039999961853, 0.52499997615814, 2.5499999523163, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 1,
+					transf = { -0.93999999761581, -0.34200000762939, 0, 0, 0.34200000762939, -0.93999999761581, 0, 0, 0, 0, 1, 0, 1.039999961853, 1.0249999761581, 2.5499999523163, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 1,
+					transf = { 0.93999999761581, 0.34200000762939, 0, 0, -0.34200000762939, 0.93999999761581, 0, 0, 0, 0, 1, 0, 0.079999998211861, -1.0249999761581, 2.5499999523163, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 1,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0.079999998211861, -0.52499997615814, 2.5499999523163, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 1,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0.079999998211861, 0.52499997615814, 2.5499999523163, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 1,
+					transf = { 0.93999999761581, -0.34200000762939, 0, 0, 0.34200000762939, 0.93999999761581, 0, 0, 0, 0, 1, 0, 0.079999998211861, 1.0249999761581, 2.5499999523163, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 1,
+					transf = { 0.93999999761581, 0.34200000762939, 0, 0, -0.34200000762939, 0.93999999761581, 0, 0, 0, 0, 1, 0, -1.0099999904633, -1.0249999761581, 2.5499999523163, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 1,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -1.0099999904633, -0.52499997615814, 2.5499999523163, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 1,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -1.0099999904633, 0.52499997615814, 2.5499999523163, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 1,
+					transf = { 0.93999999761581, -0.34200000762939, 0, 0, 0.34200000762939, 0.93999999761581, 0, 0, 0, 0, 1, 0, -1.0099999904633, 1.0249999761581, 2.5499999523163, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 1,
+					transf = { -0.93999999761581, 0.34200000762939, 0, 0, -0.34200000762939, -0.93999999761581, 0, 0, 0, 0, 1, 0, -1.6799999475479, -1.0249999761581, 2.5499999523163, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 1,
+					transf = { -1, 0, 0, 0, 0, -1, 0, 0, 0, 0, 1, 0, -1.6799999475479, -0.52499997615814, 2.5499999523163, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 1,
+					transf = { -1, 0, 0, 0, 0, -1, 0, 0, 0, 0, 1, 0, -1.6799999475479, 0.52499997615814, 2.5499999523163, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 1,
+					transf = { -0.93999999761581, -0.34200000762939, 0, 0, 0.34200000762939, -0.93999999761581, 0, 0, 0, 0, 1, 0, -1.6799999475479, 1.0249999761581, 2.5499999523163, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 1,
+					transf = { 0.93999999761581, 0.34200000762939, 0, 0, -0.34200000762939, 0.93999999761581, 0, 0, 0, 0, 1, 0, -2.6099998950958, -1.0249999761581, 2.5499999523163, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 1,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -2.6099998950958, -0.52499997615814, 2.5499999523163, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 1,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -2.6099998950958, 0.52499997615814, 2.5499999523163, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 1,
+					transf = { 0.93999999761581, -0.34200000762939, 0, 0, 0.34200000762939, 0.93999999761581, 0, 0, 0, 0, 1, 0, -2.6099998950958, 1.0249999761581, 2.5499999523163, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 1,
+					transf = { -0.93999999761581, 0.34200000762939, 0, 0, -0.34200000762939, -0.93999999761581, 0, 0, 0, 0, 1, 0, -3.2799999713898, -1.0249999761581, 2.5499999523163, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 1,
+					transf = { -1, 0, 0, 0, 0, -1, 0, 0, 0, 0, 1, 0, -3.2799999713898, -0.52499997615814, 2.5499999523163, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 1,
+					transf = { -1, 0, 0, 0, 0, -1, 0, 0, 0, 0, 1, 0, -3.2799999713898, 0.52499997615814, 2.5499999523163, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 1,
+					transf = { -0.93999999761581, -0.34200000762939, 0, 0, 0.34200000762939, -0.93999999761581, 0, 0, 0, 0, 1, 0, -3.2799999713898, 1.0249999761581, 2.5499999523163, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 1,
+					transf = { 0.93999999761581, 0.34200000762939, 0, 0, -0.34200000762939, 0.93999999761581, 0, 0, 0, 0, 1, 0, -4.210000038147, -1.0249999761581, 2.5499999523163, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 1,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -4.210000038147, -0.52499997615814, 2.5499999523163, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 1,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -4.210000038147, 0.52499997615814, 2.5499999523163, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 1,
+					transf = { 0.93999999761581, -0.34200000762939, 0, 0, 0.34200000762939, 0.93999999761581, 0, 0, 0, 0, 1, 0, -4.210000038147, 1.0249999761581, 2.5499999523163, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 1,
+					transf = { 0, 1, 0, 0, -1, 0, 0, 0, 0, 0, 1, 0, -5, -0.9200000166893, 2.5499999523163, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 1,
+					transf = { 0, 1, 0, 0, -1, 0, 0, 0, 0, 0, 1, 0, -5.5999999046326, -0.9200000166893, 2.5499999523163, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 1,
+					transf = { 0, 1, 0, 0, -1, 0, 0, 0, 0, 0, 1, 0, -6.1999998092651, -0.9200000166893, 2.5499999523163, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 1,
+					transf = { 0, -1, 0, 0, 1, 0, 0, 0, 0, 0, 1, 0, -4.9699997901917, 0.9200000166893, 2.5499999523163, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 1,
+					transf = { 0, -1, 0, 0, 1, 0, 0, 0, 0, 0, 1, 0, -5.6199998855591, 0.9200000166893, 2.5499999523163, 1, },
+				},
+				{
+					animation = "idle",
+					crew = false,
+					forward = true,
+					group = 1,
+					transf = { 0.25900000333786, -0.966000020504, 0, 0, 0.966000020504, 0.25900000333786, 0, 0, 0, 0, 1, 0, 4.4200000762939, -0.85000002384186, 0.55000001192093, 1, },
+				},
+				{
+					animation = "idle",
+					crew = false,
+					forward = true,
+					group = 1,
+					transf = { 0.5, -0.86599999666214, 0, 0, 0.86599999666214, 0.5, 0, 0, 0, 0, 1, 0, 3.5799999237061, -0.60000002384186, 0.55000001192093, 1, },
+				},
+				{
+					animation = "idle",
+					crew = false,
+					forward = true,
+					group = 1,
+					transf = { 0.17399999499321, 0.98500001430511, 0, 0, -0.98500001430511, 0.17399999499321, 0, 0, 0, 0, 1, 0, 4.3800001144409, 0.94999998807907, 0.55000001192093, 1, },
+				},
+				{
+					animation = "idle",
+					crew = false,
+					forward = true,
+					group = 1,
+					transf = { 0.57400000095367, 0.81900000572205, 0, 0, -0.81900000572205, 0.57400000095367, 0, 0, 0, 0, 1, 0, 3.5999999046326, 0.75, 0.55000001192093, 1, },
+				},
+				{
+					animation = "idle",
+					crew = false,
+					forward = true,
+					group = 1,
+					transf = { -0.17399999499321, 0.98500001430511, 0, 0, -0.98500001430511, -0.17399999499321, 0, 0, 0, 0, 1, 0, 2.5599999427795, 0.91000002622604, 0.55000001192093, 1, },
+				},
+				{
+					animation = "idle",
+					crew = false,
+					forward = true,
+					group = 1,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 2.7000000476837, 0.10000000149012, 0.55000001192093, 1, },
+				},
+				{
+					animation = "idle",
+					crew = false,
+					forward = true,
+					group = 1,
+					transf = { 0.25900000333786, -0.966000020504, 0, 0, 0.966000020504, 0.25900000333786, 0, 0, 0, 0, 1, 0, 2.5499999523163, -0.89999997615814, 0.55000001192093, 1, },
+				},
+				{
+					animation = "idle",
+					crew = false,
+					forward = true,
+					group = 1,
+					transf = { 0.17399999499321, 0.98500001430511, 0, 0, -0.98500001430511, 0.17399999499321, 0, 0, 0, 0, 1, 0, -4.1799998283386, 0.80000001192093, 0.55000001192093, 1, },
+				},
+				{
+					animation = "idle",
+					crew = false,
+					forward = true,
+					group = 1,
+					transf = { -1, 0, 0, 0, 0, -1, 0, 0, 0, 0, 1, 0, -4.25, -0.050000000745058, 0.55000001192093, 1, },
+				},
+				{
+					animation = "idle",
+					crew = false,
+					forward = true,
+					group = 1,
+					transf = { 0.25900000333786, -0.966000020504, 0, 0, 0.966000020504, 0.25900000333786, 0, 0, 0, 0, 1, 0, -4.1500000953674, -0.80000001192093, 0.55000001192093, 1, },
+				},
+				{
+					animation = "idle",
+					crew = false,
+					forward = true,
+					group = 1,
+					transf = { 0.25900000333786, -0.966000020504, 0, 0, 0.966000020504, 0.25900000333786, 0, 0, 0, 0, 1, 0, -6.0199999809265, -0.85000002384186, 0.55000001192093, 1, },
+				},
+				{
+					animation = "idle",
+					crew = false,
+					forward = true,
+					group = 1,
+					transf = { 0.5, -0.86599999666214, 0, 0, 0.86599999666214, 0.5, 0, 0, 0, 0, 1, 0, -5.1799998283386, -0.60000002384186, 0.55000001192093, 1, },
+				},
+				{
+					animation = "idle",
+					crew = false,
+					forward = true,
+					group = 1,
+					transf = { 0.17399999499321, 0.98500001430511, 0, 0, -0.98500001430511, 0.17399999499321, 0, 0, 0, 0, 1, 0, -5.9800000190735, 0.94999998807907, 0.55000001192093, 1, },
+				},
+				{
+					animation = "idle",
+					crew = false,
+					forward = true,
+					group = 1,
+					transf = { 0.57400000095367, 0.81900000572205, 0, 0, -0.81900000572205, 0.57400000095367, 0, 0, 0, 0, 1, 0, -5.1999998092651, 0.75, 0.55000001192093, 1, },
+				},
+				{
+					animation = "idle",
+					crew = false,
+					forward = true,
+					group = 1,
+					transf = { 0, 1, 0, 0, -1, 0, 0, 0, 0, 0, 1, 0, -8.4499998092651, -0.85000002384186, 1.4500000476837, 1, },
+				},
+				{
+					animation = "idle",
+					crew = false,
+					forward = true,
+					group = 1,
+					transf = { 0, -1, 0, 0, 1, 0, 0, 0, 0, 0, 1, 0, -8.4499998092651, 0.85000002384186, 1.4500000476837, 1, },
+				},
+				{
+					animation = "idle",
+					crew = false,
+					forward = true,
+					group = 1,
+					transf = { 0, 1, 0, 0, -1, 0, 0, 0, 0, 0, 1, 0, 6.5500001907349, -0.85000002384186, 1.4500000476837, 1, },
+				},
+				{
+					animation = "idle",
+					crew = false,
+					forward = true,
+					group = 1,
+					transf = { 0, -1, 0, 0, 1, 0, 0, 0, 0, 0, 1, 0, 6.5500001907349, 0.85000002384186, 1.4500000476837, 1, },
+				},
+			},
+		},
+		transportVehicle = {
+			carrier = "RAIL",
+			compartmentsList = {
+				{
+					loadConfigs = {
+						{
+							cargoEntries = {
+								{
+									capacity = 72,
+									seats = { },
+									type = "PASSENGERS",
+								},
+							},
+							toHide = { },
+						},
+					},
+				},
+			},
+			groupFileName = "",
+			loadSpeed = 4,
+			multipleUnitOnly = true,
+			reversible = true,
+		},
+	},
+	version = 1,
+}
+end

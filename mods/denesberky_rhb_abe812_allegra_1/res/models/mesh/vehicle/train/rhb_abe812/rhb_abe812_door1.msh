@@ -1,0 +1,89 @@
+function data()
+return {
+	animations = {
+		open = {
+    		type = "KEYFRAME",
+    		params = {
+    			origin = { 0, 0, 0, },
+    			keyframes = {
+					{
+    					time = 0,
+    					rot = { 0, 0, 0 },
+    					transl = { 0, 0, 0 }
+    				},
+    				{
+    					time = 500,
+    					rot = { 0, 0, 0 },
+    					transl = { 0, 0, 0 }
+    				},
+					{
+						time = 1000,
+    					rot = { 0, 0, 0 },
+    					transl = { 0, -0.05, 0 }
+    				},
+					{
+						time = 2500,
+    					rot = { 0, 0, 0 },
+    					transl = { -1, -0.05, 0 }
+    				},
+					{
+						time = 3000,
+    					rot = { 0, 0, 0 },
+    					transl = { -1, -0.05, 0 }
+    				},
+				}
+   			 },
+   		 },
+    },
+	matConfigs = {
+		{ 0, }, 
+	},
+	subMeshes = {
+		{
+			indices = {
+				normal = {
+					count = 912,
+					offset = 1572,
+				},
+				position = {
+					count = 912,
+					offset = 2484,
+				},
+				tangent = {
+					count = 912,
+					offset = 3396,
+				},
+				uv0 = {
+					count = 912,
+					offset = 4308,
+				},
+			},
+			materials = {
+				"vehicle/train/rhb_abe812_ewa.mtl", 
+			},
+		}, 
+	},
+	vertexAttr = {
+		normal = {
+			count = 108,
+			numComp = 3,
+			offset = 0,
+		},
+		position = {
+			count = 480,
+			numComp = 3,
+			offset = 108,
+		},
+		tangent = {
+			count = 448,
+			numComp = 4,
+			offset = 588,
+		},
+		uv0 = {
+			count = 536,
+			numComp = 2,
+			offset = 1036,
+		},
+	},
+}
+end

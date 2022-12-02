@@ -1,0 +1,132 @@
+function data()
+return {
+	order = -4,
+	params = {
+		color_blend = {
+			albedoScale = 1.4,
+			
+		},
+		dirt_rust = {
+			dirtColor = {
+				0.20392156862745, 0.19607843137255, 0.1843137254902, 
+			},
+			dirtOpacity = 0.05,
+			dirtScale = 16,
+			rustColor = {
+				0.39607843137255, 0.22352941176471, 0.14901960784314, 
+			},
+			rustOpacity = 0.5,
+			rustScale = 1.6730801405387,
+			
+		},
+		fade_out_range = {
+			fadeOutEndDist = 20000,
+			fadeOutStartDist = 10000,
+			
+		},
+		map_albedo = {
+			compressionAllowed = true,
+			fileName = "models/vehicle/waggon/mark_86_ewi_a_028_sbb_ao.dds",
+			magFilter = "LINEAR",
+			minFilter = "LINEAR_MIPMAP_LINEAR",
+			mipmapAlphaScale = 0,
+			type = "TWOD",
+			wrapS = "CLAMP_TO_EDGE",
+			wrapT = "CLAMP_TO_EDGE",
+			
+		},
+		map_cblend_dirt_rust = {
+			compressionAllowed = true,
+			fileName = "models/vehicle/waggon/mark_86_ewi_a_028_sbb_cdr.dds",
+			magFilter = "LINEAR",
+			minFilter = "LINEAR_MIPMAP_LINEAR",
+			mipmapAlphaScale = 0,
+			type = "TWOD",
+			wrapS = "CLAMP_TO_EDGE",
+			wrapT = "CLAMP_TO_EDGE",
+			
+		},
+		map_dirt = {
+			compressionAllowed = true,
+			fileName = "models/vehicle/dirt_albedo.dds",
+			magFilter = "LINEAR",
+			minFilter = "LINEAR_MIPMAP_LINEAR",
+			mipmapAlphaScale = 0,
+			type = "TWOD",
+			wrapS = "REPEAT",
+			wrapT = "REPEAT",
+			
+		},
+		map_dirt_normal = {
+			compressionAllowed = true,
+			fileName = "models/vehicle/dirt_normal.dds",
+			magFilter = "LINEAR",
+			minFilter = "LINEAR_MIPMAP_LINEAR",
+			mipmapAlphaScale = 0,
+			redGreen = true,
+			type = "TWOD",
+			wrapS = "REPEAT",
+			wrapT = "REPEAT",
+			
+		},
+		map_metal_gloss_ao = {
+			compressionAllowed = true,
+			fileName = "models/vehicle/waggon/mark_86_ewi_a_028_sbb_mga.dds",
+			magFilter = "LINEAR",
+			minFilter = "LINEAR_MIPMAP_LINEAR",
+			mipmapAlphaScale = 0,
+			type = "TWOD",
+			wrapS = "CLAMP_TO_EDGE",
+			wrapT = "CLAMP_TO_EDGE",
+			
+		},
+		map_normal = {
+			compressionAllowed = true,
+			fileName = "models/vehicle/waggon/mark_86_ewi_a_028_sbb_nrml.dds",
+			magFilter = "LINEAR",
+			minFilter = "LINEAR_MIPMAP_LINEAR",
+			mipmapAlphaScale = 0,
+			redGreen = true,
+			type = "TWOD",
+			wrapS = "CLAMP_TO_EDGE",
+			wrapT = "CLAMP_TO_EDGE",
+			
+		},
+		map_rust = {
+			compressionAllowed = true,
+			fileName = "models/vehicle/rust_albedo.dds",
+			magFilter = "LINEAR",
+			minFilter = "LINEAR_MIPMAP_LINEAR",
+			mipmapAlphaScale = 0,
+			type = "TWOD",
+			wrapS = "REPEAT",
+			wrapT = "REPEAT",
+			
+		},
+		map_rust_normal = {
+			compressionAllowed = true,
+			fileName = "models/vehicle/rust_normal.dds",
+			magFilter = "LINEAR",
+			minFilter = "LINEAR_MIPMAP_LINEAR",
+			mipmapAlphaScale = 0,
+			redGreen = true,
+			type = "TWOD",
+			wrapS = "REPEAT",
+			wrapT = "REPEAT",
+			
+		},
+		polygon_offset = {
+			factor = 0,
+			units = 0,
+			
+		},
+		two_sided = {
+			twoSided = false,
+			
+		},
+		
+	},
+	type = "PHYSICAL_NRML_MAP_CBLEND_DIRT",
+	
+}
+end

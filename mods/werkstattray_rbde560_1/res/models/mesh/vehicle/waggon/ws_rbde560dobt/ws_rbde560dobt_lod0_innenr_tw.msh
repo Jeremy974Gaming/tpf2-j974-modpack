@@ -1,0 +1,54 @@
+function data()
+return {
+	matConfigs = {
+		{ 0, }, 
+	},
+	subMeshes = {
+		{
+			indices = {
+				normal = {
+					count = 264,
+					offset = 1136,
+				},
+				position = {
+					count = 264,
+					offset = 1400,
+				},
+				tangent = {
+					count = 264,
+					offset = 872,
+				},
+				uv0 = {
+					count = 264,
+					offset = 1664,
+				},
+			},
+			materials = {
+				"vehicle/train/ws_rbde560do_innen.mtl", 
+			},
+		}, 
+	},
+	vertexAttr = {
+		normal = {
+			count = 72,
+			numComp = 3,
+			offset = 336,
+		},
+		position = {
+			count = 240,
+			numComp = 3,
+			offset = 408,
+		},
+		tangent = {
+			count = 336,
+			numComp = 4,
+			offset = 0,
+		},
+		uv0 = {
+			count = 224,
+			numComp = 2,
+			offset = 648,
+		},
+	},
+}
+end

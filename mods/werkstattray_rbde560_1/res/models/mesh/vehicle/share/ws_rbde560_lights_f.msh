@@ -1,0 +1,54 @@
+function data()
+return {
+	matConfigs = {
+		{ 0, }, 
+	},
+	subMeshes = {
+		{
+			indices = {
+				normal = {
+					count = 384,
+					offset = 2012,
+				},
+				position = {
+					count = 384,
+					offset = 2780,
+				},
+				tangent = {
+					count = 384,
+					offset = 1628,
+				},
+				uv0 = {
+					count = 384,
+					offset = 2396,
+				},
+			},
+			materials = {
+				"vehicle/share/ws_rbde560_light_front.mtl", 
+			},
+		}, 
+	},
+	vertexAttr = {
+		normal = {
+			count = 372,
+			numComp = 3,
+			offset = 496,
+		},
+		position = {
+			count = 456,
+			numComp = 3,
+			offset = 1172,
+		},
+		tangent = {
+			count = 496,
+			numComp = 4,
+			offset = 0,
+		},
+		uv0 = {
+			count = 304,
+			numComp = 2,
+			offset = 868,
+		},
+	},
+}
+end

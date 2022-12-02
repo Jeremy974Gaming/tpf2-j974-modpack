@@ -1,0 +1,30 @@
+function data()
+return {
+	children = {
+		{
+			id = "vehicle/share/flirt200_kupplung.msh",
+			transf = {
+				1.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 4.80927, -0.034907, 1.05764, 1.0, 
+			},
+			type = "MESH",
+		},
+		{
+			id = "vehicle/share/flirt200_unsichtbarrad.msh",
+			transf = {
+				1.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 1.21467, 1.0, 0.0, 1.0, 
+			},
+			type = "MESH",
+		},
+		{
+			id = "vehicle/share/flirt200_unsichtbarrad.msh",
+			transf = {
+				1.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, -1.2146, 1.0, 0.0, 1.0, 
+			},
+			type = "MESH",
+		},
+	},
+	matConfigs = {
+		{ 0, }, 
+	},
+}
+end

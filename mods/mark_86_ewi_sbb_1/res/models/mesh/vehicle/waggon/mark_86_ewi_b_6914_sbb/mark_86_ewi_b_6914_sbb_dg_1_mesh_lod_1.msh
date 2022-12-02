@@ -1,0 +1,54 @@
+function data()
+return {
+	matConfigs = {
+		{ 0, }, 
+	},
+	subMeshes = {
+		{
+			indices = {
+				normal = {
+					count = 4176,
+					offset = 16736,
+				},
+				position = {
+					count = 4176,
+					offset = 8384,
+				},
+				tangent = {
+					count = 4176,
+					offset = 20912,
+				},
+				uv0 = {
+					count = 4176,
+					offset = 12560,
+				},
+			},
+			materials = {
+				"vehicle/waggon/mark_86_ewi_b_383_sbb_material_noalpha.mtl", 
+			},
+		}, 
+	},
+	vertexAttr = {
+		normal = {
+			count = 768,
+			numComp = 3,
+			offset = 5520,
+		},
+		position = {
+			count = 4224,
+			numComp = 3,
+			offset = 0,
+		},
+		tangent = {
+			count = 2096,
+			numComp = 4,
+			offset = 6288,
+		},
+		uv0 = {
+			count = 1296,
+			numComp = 2,
+			offset = 4224,
+		},
+	},
+}
+end

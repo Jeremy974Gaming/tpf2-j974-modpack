@@ -1,0 +1,308 @@
+local vec3 = require "vec3"
+local transf = require "transf"
+function data()
+return {
+	boundingInfo = {
+		bbMax = { 8.83, 1.51, 4.25, },
+		bbMin = { -8.83, -1.51, -0.041, },
+	},
+	collider = {
+		params = { },
+		transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+		type = "MESH",
+	},
+	lods = {
+		{
+			node = {
+				children = {
+					{
+						children = {
+							{
+								materials = { "vehicle/train/Giruno1_int.mtl", },
+								mesh = "vehicle/train/GirunoG/Giruno_G0_Interior.msh",
+								name = "MSH_Giruno_G0_Interior_1",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+							},
+							{
+								materials = { "vehicle/train/Giruno1.mtl", },
+								mesh = "vehicle/train/GirunoG/Giruno_G0_Koerper.msh",
+								name = "MSH_Giruno_G0_Koerper_1",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+							},
+						},
+						name = "GRP_GirunoG0_1",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+				},
+				name = "RootNode",
+				transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+			},
+			static = false,
+			visibleFrom = 0,
+			visibleTo = 180,
+		},
+		{
+			node = {
+				children = {
+					{
+						children = {
+							{
+								materials = { "vehicle/train/Giruno1_int.mtl", },
+								mesh = "vehicle/train/GirunoG/Giruno_G1_Interior.msh",
+								name = "MSH_Giruno_G1_Interior_1",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+							},
+							{
+								materials = { "vehicle/train/Giruno1.mtl", },
+								mesh = "vehicle/train/GirunoG/Giruno_G1_Koerper.msh",
+								name = "MSH_Giruno_G1_Koerper_1",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+							},
+						},
+						name = "GRP_GirunoG1_1",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+				},
+				name = "RootNode",
+				transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+			},
+			static = false,
+			visibleFrom = 180,
+			visibleTo = 400,
+		},
+		{
+			node = {
+				children = {
+					{
+						children = {
+							{
+								materials = { "vehicle/train/Giruno1.mtl", },
+								mesh = "vehicle/train/GirunoG/Giruno_G2_Koerper.msh",
+								name = "MSH_Giruno_G2_Koerper_1",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+							},
+						},
+						name = "GRP_GirunoG2_1",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+				},
+				name = "RootNode",
+				transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+			},
+			static = false,
+			visibleFrom = 400,
+			visibleTo = 2500,
+		},
+	},
+	metadata = {
+		availability = {
+			yearFrom = 2019,
+			yearTo = 0,
+		},
+		cost = {
+			price = -1,
+		},
+		emission = {
+			idleEmission = -1,
+			powerEmission = -1,
+			speedEmission = -1,
+		},
+		labelList = {
+			labels = {
+			--Anzeige links
+				{
+					childId = "MSH_Giruno_G0_Koerper_1",
+					color = { 0.215686, 0.254902, 0.529412, 1, },
+					fitting = "CUT",
+					verticalAlignment = "CENTER",
+					alignment = "CENTER",
+					size = { 0.60, 0.10, },
+					transf = { -1, 0, 0, 0, 0, 0, 1, 0, 0, -1, 0, 0, -3.08, 1.46, 2.00, 1, },
+					type = "LINE_NAME",
+					renderMode = "STD",
+				},
+				{
+					childId = "MSH_Giruno_G0_Koerper_1",
+					color = { 0, 0, 0, 1, },
+					fitting = "SCALE",
+					verticalAlignment = "CENTER",
+					alignment = "CENTER",
+					size = { 0.60, 0.09, },
+					transf = { -1, 0, 0, 0, 0, 0, 1, 0, 0, -1, 0, 0, -3.08, 1.46, 1.85 , 1, },
+					type = "NEXT_STOP",
+					renderMode = "STD",
+				},
+			--Anzeige rechts
+				{
+					childId = "MSH_Giruno_G0_Koerper_1",
+					color = { 0.215686, 0.254902, 0.529412, 1, },
+					fitting = "CUT",
+					verticalAlignment = "CENTER",
+					alignment = "CENTER",
+					size = { 0.6, 0.10, },
+					transf = { 1, 0, 0, 0, 0, 0, 1, 0, 0, -1, 0, 0, -3.64, -1.46, 2.00, 1},
+					type = "LINE_NAME",
+					renderMode = "STD",
+				},
+				{
+					childId = "MSH_Giruno_G0_Koerper_1",
+					color = { 0, 0, 0, 1, },
+					fitting = "SCALE",
+					verticalAlignment = "CENTER",
+					alignment = "CENTER",
+					size = { 0.6, 0.09, },
+					transf = { 1, 0, 0, 0, 0, 0, 1, 0, 0, -1, 0, 0, -3.64, -1.46, 1.85, 1},
+					type = "NEXT_STOP",
+					renderMode = "STD",
+				},
+			},
+		},
+		maintenance = {
+			lifespan = 36525,
+			runningCosts = -1,
+		},
+		railVehicle = {
+			configs = {
+				{
+					backBackwardParts = { },
+					backForwardParts = { },
+					blinkingLights0 = { },
+					blinkingLights1 = { },
+					frontBackwardParts = { },
+					frontForwardParts = { },
+					innerBackwardParts = { },
+					innerForwardParts = { },
+					fakeBogies = {
+						{
+							group = 1,
+							offset = 0,
+							position = 8.83,
+						},
+						{
+							group = 1,
+							offset = 0,
+							position = -8.83,
+						},
+					},
+				},
+				{
+					backBackwardParts = { },
+					backForwardParts = { },
+					blinkingLights0 = { },
+					blinkingLights1 = { },
+					frontBackwardParts = { },
+					frontForwardParts = { },
+					innerBackwardParts = { },
+					innerForwardParts = { },
+					fakeBogies = {
+						{
+							group = 1,
+							offset = 0,
+							position = 8.83,
+						},
+						{
+							group = 1,
+							offset = 0,
+							position = -8.83,
+						},
+					},
+				},
+				{
+					backBackwardParts = { },
+					backForwardParts = { },
+					blinkingLights0 = { },
+					blinkingLights1 = { },
+					frontBackwardParts = { },
+					frontForwardParts = { },
+					innerBackwardParts = { },
+					innerForwardParts = { },
+					fakeBogies = {
+						{
+							group = 1,
+							offset = 0,
+							position = 8.83,
+						},
+						{
+							group = 1,
+							offset = 0,
+							position = -8.83,
+						},
+					},
+				},
+			},
+			engines = { },
+			soundSet = {
+				name = "StadlerJakob",
+			},
+			topSpeed = 69.444444444444,
+			weight = 33,
+		},
+		seatProvider = {
+			drivingLicense = "RAIL",
+			seats = {
+				{ animation = "idle", crew = true, forward = true, group = 1, standing = true, transf = { 0.707, 0.707, 0, 0, -0.707, 0.707, 0, 0, 0, 0, 1, 0, -1.13, -0.43, 1.11, 1, }, },
+				{ animation = "idle", crew = true, forward = false, group = 1, standing = true, transf = { 0.707, 0.707, 0, 0, -0.707, 0.707, 0, 0, 0, 0, 1, 0, -1.13, -0.43, 1.11, 1, }, },
+				{ animation = "sitting", crew = false, forward = true, group = 1, standing = false, transf = { -0.985, -0.174, 0, 0, 0.174, -0.985, 0, 0, 0, 0, 1, 0, 7.45, 1.07, 1.11, 1, }, },
+				{ animation = "sitting", crew = false, forward = true, group = 1, standing = false, transf = { -0.985, 0.174, 0, 0, -0.174, -0.985, 0, 0, 0, 0, 1, 0, 7.45, -1.07, 1.11, 1, }, },
+				{ animation = "sitting", crew = false, forward = true, group = 1, standing = false, transf = { 0.985, -0.174, 0, 0, 0.174, 0.985, 0, 0, 0, 0, 1, 0, 5.96, 1.07, 1.11, 1, }, },
+				{ animation = "sitting", crew = false, forward = true, group = 1, standing = false, transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 5.96, -0.57, 1.11, 1, }, },
+				{ animation = "sitting", crew = false, forward = true, group = 1, standing = false, transf = { 0.985, 0.174, 0, 0, -0.174, 0.985, 0, 0, 0, 0, 1, 0, 5.96, -1.07, 1.11, 1, }, },
+				{ animation = "sitting", crew = false, forward = true, group = 1, standing = false, transf = { -0.985, -0.174, 0, 0, 0.174, -0.985, 0, 0, 0, 0, 1, 0, 5.38, 1.07, 1.11, 1, }, },
+				{ animation = "sitting", crew = false, forward = true, group = 1, standing = false, transf = { -1, 0, 0, 0, 0, -1, 0, 0, 0, 0, 1, 0, 5.38, -0.57, 1.11, 1, }, },
+				{ animation = "sitting", crew = false, forward = true, group = 1, standing = false, transf = { -0.985, 0.174, 0, 0, -0.174, -0.985, 0, 0, 0, 0, 1, 0, 5.38, -1.07, 1.11, 1, }, },
+				{ animation = "sitting", crew = false, forward = true, group = 1, standing = false, transf = { 0.985, -0.174, 0, 0, 0.174, 0.985, 0, 0, 0, 0, 1, 0, 3.9, 1.07, 1.11, 1, }, },
+				{ animation = "sitting", crew = false, forward = true, group = 1, standing = false, transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 3.9, -0.57, 1.11, 1, }, },
+				{ animation = "sitting", crew = false, forward = true, group = 1, standing = false, transf = { 0.985, 0.174, 0, 0, -0.174, 0.985, 0, 0, 0, 0, 1, 0, 3.9, -1.07, 1.11, 1, }, },
+				{ animation = "sitting", crew = false, forward = true, group = 1, standing = false, transf = { -0.985, -0.174, 0, 0, 0.174, -0.985, 0, 0, 0, 0, 1, 0, 3.33, 1.07, 1.11, 1, }, },
+				{ animation = "sitting", crew = false, forward = true, group = 1, standing = false, transf = { -1, 0, 0, 0, 0, -1, 0, 0, 0, 0, 1, 0, 3.33, -0.57, 1.11, 1, }, },
+				{ animation = "sitting", crew = false, forward = true, group = 1, standing = false, transf = { -0.985, 0.174, 0, 0, -0.174, -0.985, 0, 0, 0, 0, 1, 0, 3.33, -1.07, 1.11, 1, }, },
+				{ animation = "sitting", crew = false, forward = true, group = 1, standing = false, transf = { 0.985, -0.174, 0, 0, 0.174, 0.985, 0, 0, 0, 0, 1, 0, 1.84, 1.07, 1.11, 1, }, },
+				{ animation = "sitting", crew = false, forward = true, group = 1, standing = false, transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 1.84, -0.57, 1.11, 1, }, },
+				{ animation = "sitting", crew = false, forward = true, group = 1, standing = false, transf = { 0.985, 0.174, 0, 0, -0.174, 0.985, 0, 0, 0, 0, 1, 0, 1.84, -1.07, 1.11, 1, }, },
+				{ animation = "idle", crew = false, forward = true, group = 1, standing = true, transf = { 0.174, 0.985, 0, 0, -0.985, 0.174, 0, 0, 0, 0, 1, 0, 0.99, 0.7, 1.11, 1, }, },
+				{ animation = "idle", crew = false, forward = true, group = 1, standing = true, transf = { -0.574, 0.819, 0, 0, -0.819, -0.574, 0, 0, 0, 0, 1, 0, 0.9, -0.66, 1.11, 1, }, },
+				{ animation = "idle", crew = false, forward = true, group = 1, standing = true, transf = { 0.174, 0.985, 0, 0, -0.985, 0.174, 0, 0, 0, 0, 1, 0, 0.02, 0.85, 1.11, 1, }, },
+				{ animation = "idle", crew = false, forward = true, group = 1, standing = true, transf = { -0.94, 0.342, 0, 0, -0.342, -0.94, 0, 0, 0, 0, 1, 0, 0.16, -0.66, 1.11, 1, }, },
+				{ animation = "idle", crew = false, forward = true, group = 1, standing = true, transf = { 0, -1, 0, 0, 1, 0, 0, 0, 0, 0, 1, 0, -0.62, 0.52, 1.11, 1, }, },
+				{ animation = "idle", crew = false, forward = true, group = 1, standing = true, transf = { -0.707, -0.707, 0, 0, 0.707, -0.707, 0, 0, 0, 0, 1, 0, 0.09, 0.2, 1.11, 1, }, },
+				{ animation = "idle", crew = false, forward = true, group = 1, standing = true, transf = { 0, 1, 0, 0, -1, 0, 0, 0, 0, 0, 1, 0, -1.16, 0.98, 1.11, 1, }, },
+				{ animation = "idle", crew = false, forward = true, group = 1, standing = true, transf = { 0, 1, 0, 0, -1, 0, 0, 0, 0, 0, 1, 0, -2.07, 0.98, 1.11, 1, }, },
+				{ animation = "idle", crew = false, forward = true, group = 1, standing = true, transf = { 0, 1, 0, 0, -1, 0, 0, 0, 0, 0, 1, 0, -4.62, 0.98, 1.11, 1, }, },
+				{ animation = "idle", crew = false, forward = true, group = 1, standing = true, transf = { 0, 1, 0, 0, -1, 0, 0, 0, 0, 0, 1, 0, -5.62, 0.98, 1.11, 1, }, },
+			},
+		},
+		cameraConfig = {
+			positions = {
+				{
+					fov = 35, group = 2, transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -9.0, 0.0, 2.5, 1, },
+				}, {
+					fov = 35, group = 2, transf = { -1, 0, 0, 0, 0, -1, 0, 0, 0, 0, 1, 0, 9.0, 0.0, 2.5, 1, },
+				}, 
+			},
+		},
+		transportVehicle = {
+			carrier = "RAIL",
+			compartmentsList = {
+				{
+					loadConfigs = {
+						{
+							cargoEntries = {
+								{
+									capacity = 25,
+									seats = { },
+									type = "PASSENGERS",
+								},
+							},
+							toHide = { },
+						},
+					},
+				},
+			},
+			loadSpeed = 0,
+			multipleUnitOnly = true,
+			reversible = false,
+		},
+	},
+	version = 1,
+}
+end

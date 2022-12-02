@@ -1,0 +1,93 @@
+function data()
+return {
+	animations = {
+		open = {
+			params = {
+				keyframes = {
+					{
+						rot = { 0.0, 0.0, 0.0, },
+						time = 0.0,
+						transl = { 0.0, 0.0, 0.0, },
+					},
+					{
+						rot = { 0.0, 0.0, 0.0, },
+						time = 900.0,
+						transl = { 0.0, -0.03, 0.0, },
+					},
+					{
+						rot = { 0.0, 0.0, 0.0, },
+						time = 2900.0,
+						transl = { 1.0, -0.03, 0.0, },
+					}, 
+				},
+				origin = { 0.0, 0.0, 0.0, },
+			},
+			type = "KEYFRAME",
+		},
+	},
+	subMeshes = {
+		{
+			indices = {
+				normal = {
+					count = 1344,
+					offset = 6352,
+				},
+				position = {
+					count = 1344,
+					offset = 5008,
+				},
+				tangent = {
+					count = 1344,
+					offset = 3664,
+				},
+				uv0 = {
+					count = 1344,
+					offset = 7696,
+				},
+			},
+		},
+		{
+			indices = {
+				normal = {
+					count = 528,
+					offset = 10096,
+				},
+				position = {
+					count = 528,
+					offset = 9568,
+				},
+				tangent = {
+					count = 528,
+					offset = 9040,
+				},
+				uv0 = {
+					count = 528,
+					offset = 10624,
+				},
+			},
+		}, 
+	},
+	vertexAttr = {
+		normal = {
+			count = 336,
+			numComp = 3,
+			offset = 2048,
+		},
+		position = {
+			count = 672,
+			numComp = 3,
+			offset = 1376,
+		},
+		tangent = {
+			count = 1376,
+			numComp = 4,
+			offset = 0,
+		},
+		uv0 = {
+			count = 1280,
+			numComp = 2,
+			offset = 2384,
+		},
+	},
+}
+end

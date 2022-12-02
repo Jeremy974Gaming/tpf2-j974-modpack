@@ -1,0 +1,54 @@
+function data()
+return {
+	matConfigs = {
+		{ 0, }, 
+	},
+	subMeshes = {
+		{
+			indices = {
+				normal = {
+					count = 1080,
+					offset = 6376,
+				},
+				position = {
+					count = 1080,
+					offset = 5296,
+				},
+				tangent = {
+					count = 1080,
+					offset = 3136,
+				},
+				uv0 = {
+					count = 1080,
+					offset = 4216,
+				},
+			},
+			materials = {
+				"vehicle/share/flirt200_boogie.mtl", 
+			},
+		}, 
+	},
+	vertexAttr = {
+		normal = {
+			count = 516,
+			numComp = 3,
+			offset = 2620,
+		},
+		position = {
+			count = 588,
+			numComp = 3,
+			offset = 2032,
+		},
+		tangent = {
+			count = 1472,
+			numComp = 4,
+			offset = 0,
+		},
+		uv0 = {
+			count = 560,
+			numComp = 2,
+			offset = 1472,
+		},
+	},
+}
+end

@@ -1,0 +1,43 @@
+function data()
+return {
+	boundingInfo = {
+		bbMax = { 0.0, 0.78086, 1.10147, },
+		bbMin = { -2.26267, -2.66792, -0.18063, },
+	},
+	collider = {
+		params = {
+			
+		},
+		type = "MESH",
+	},
+	lods = {
+		{
+			children = {
+				{
+					id = "eat_jansch_switchbox_old.msh",
+					transf = {
+						1.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, -2.0, -2.1, 0.6, 1.0, 
+					},
+					type = "MESH",
+				}, 
+			},
+			events = {
+				
+			},
+			matConfigs = {
+				{
+					0, 0, 
+				}, 
+			},
+			static = false,
+			visibleFrom = 0,
+			visibleTo = 260,
+			
+		}, 
+	},
+	metadata = {
+		
+	},
+	
+}
+end

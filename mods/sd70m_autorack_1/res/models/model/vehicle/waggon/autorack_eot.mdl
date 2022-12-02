@@ -1,0 +1,74 @@
+function data()
+return {
+	availability = {
+		yearFrom = 1977,
+		yearTo = 0,
+	},
+	boundingInfo = {
+		bbMax = { 13.73653, 1.53028, 5.55955, },
+		bbMin = { -13.73653, -1.53028, -0.03473, },
+	},
+	collider = {
+		params = { },
+		transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+		type = "MESH",
+	},
+	cost = {
+		price = 0,
+	},
+	lods = {
+		{
+			node = {
+				children = {
+					{
+						animations = { },
+						children = {
+							{
+								_meshId = 2,
+								_origMeshId = 2,
+								animations = {
+									forever = {
+										params = {
+											id = "sd70m_base_set_1/light_forward_eot_light_msh.ani",
+										},
+										type = "FILE_REF",
+									},
+								},
+								materials = { "vehicle/waggon/sd70m_eot/eot_light.mtl", },
+								mesh = "vehicle/waggon/sd70m_eot/eot_light.msh",
+								name = "MSH_eot_light_2",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0.15417, -0.31424, 1.22484, 1, },
+							},
+							{
+								_meshId = 3,
+								_origMeshId = 3,
+								materials = { "vehicle/waggon/sd70m_eot/eot.mtl", },
+								mesh = "vehicle/waggon/sd70m_eot/eot_device_no_pipe.msh",
+								name = "MSH_eot_device_2",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+							},
+						},
+						name = "GRP_sd70m_eot_2",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -13.73653, 0, 0, 1, },
+					},
+				},
+				name = "RootNode",
+				transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+			},
+			static = false,
+			visibleFrom = 0,
+			visibleTo = 120,
+		},
+	},
+	metadata = {
+		cost = {
+			price = -1,
+		},
+		description = {
+			name = _(""),
+			description = _(""),
+		},
+	},
+	version = 1,
+}
+end
